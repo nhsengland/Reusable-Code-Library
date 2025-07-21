@@ -1,17 +1,16 @@
-# codonPython
+# National Reusable Code Library 🌍
 
-[![Build Status](https://travis-ci.com/codonlibrary/codonPython.svg?branch=master)](https://travis-ci.com/codonlibrary/codonPython)
-[![codecov](https://codecov.io/gh/codonlibrary/codonPython/branch/master/graph/badge.svg)](https://codecov.io/gh/codonlibrary/codonPython)
+## What is the `National Reusable Code Library`?
 
-## What is `codon`?
+The `National Reusable Code Library` is intended to agree, centralise and enable to reuse of common methods within the Health and Care sector. This will encourage consistancy of analysis, code and coding standards and encourage collaboration. The repository contains Python, R and SQL code for ease of use in workflows on platforms used within the NHS. Package documentation will be available shortly, but each function and module should have a docstring. 
 
-The `codon` project was created to increase code sharing, consistancy of code and coding standards and encourage collaboration. The repository contains Python, R and SQL code for ease of use in workflows on platforms used within NHS Digital such as Databricks. Package documentation is available on the [GitHub pages](https://codonlibrary.github.io/codonPython/) however further information for NHS Digital staff can be found [here](https://confluence.digital.nhs.uk/display/CON/Codon+-+Code+sharing), via our internal confluence page. `codonPython` aims to reduce the barrier for entry for analysis and provide software development experience for those at a higher level of technical ability. 
+The `National Reusable Code Library` aims to reduce the barrier for entry for analysis and data engineering, meaning colleagues need to develop less new code, and instead giving them the opportunity to help improve and reuse existing code, also making the opportunity of more advanced software development experience for those at a higher level of technical ability. 
 
-### Why `codon`?
+### Why do we need the `National Reusable Code Library`?
 
-In biological terms, a `codon` is one of the building blocks that make up our DNA. By openly sharing our code we hope that others will be able to take those blocks of code to build their own processes using the data that NHS Digital hold.
+Briefly, our colleagues write a lot of the same stuff, again and again. This by itself is wasteful, but it also leads to inconsistency, error and a lack of improvement, not to mention it's boring and doesn't stretch our colleagues and allow them to learn and build.
 
-By sharing code, the project aims to:
+By making code reusable, and making it easy to reuse, this work aims to:
 
 **Increase Transparency**: To align with government data principles and build public trust.
 
@@ -25,12 +24,12 @@ By sharing code, the project aims to:
 ## Installation 
 The package can be directly installed by typing in your terminal: 
 ```r
-python -m pip install --user git+https://github.com/codonlibrary/codonPython.git
+# TBC
 ```
-For further guidance on cloning from the remote repository to a local repository on your machine see the information in our [Wiki.](https://github.com/codonlibrary/codonPython/wiki/1.-Installing-codonPython)
+Other platform specific instructions to follow.
 
-## Contributing to codonPython
-All new contributions to `codon` are welcome; please follow the Coding Conventions in the [guidance document](https://github.com/codonlibrary/codonPython/blob/master/CONTRIBUTING.md) for contribution guidance. 
+## Contributing
+All new contributions to the `National Reusable Code Library` are welcome; please follow the Coding Conventions in the guidance document for contribution guidance. 
 
 Any improvements to documentation, bug fixes or general code enhancements are also welcomed. If a bug is found on the master branch, please use the GitHub guidance on raising an [issue.](https://help.github.com/en/github/managing-your-work-on-github/creating-an-issue)
 
