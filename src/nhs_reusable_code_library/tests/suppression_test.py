@@ -1,4 +1,4 @@
-from codonPython.suppression import central_suppression_method
+from nhs_reusable_code_library.suppression import central_suppression_method
 import pytest
 
 

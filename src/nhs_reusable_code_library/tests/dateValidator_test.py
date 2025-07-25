@@ -1,4 +1,4 @@
-from codonPython.validation import dateValidator
+from nhs_reusable_code_library.validation import dateValidator
 import pytest
 
 
