@@ -1,4 +1,8 @@
 # National Reusable Code Library 🌍
+[![CI](https://github.com/nhsengland/reusable-code-library/actions/workflows/ci.yml/badge.svg)](https://github.com/nhsengland/reusable-code-library/actions/workflows/ci.yml) 
+![Static Badge](https://img.shields.io/badge/status-development-blue) [![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
+[![Code Standard: RAP](https://img.shields.io/badge/code%20standard-RAP-000099.svg)](https://nhsdigital.github.io/rap-community-of-practice/) 
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 ## What is the `National Reusable Code Library`?
 

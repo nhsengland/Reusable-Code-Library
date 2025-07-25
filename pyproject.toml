@@ -1,0 +1,53 @@
+[build-system]
+requires = [
+    "setuptools>=64", 
+    #"setuptools-scm>=8"
+]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "nhs_reusable_code_library"
+version = "0.1.0a6"
+description = "Common NHS Python (& mainly specifically PySpark) functions for data processing, validations, cleansing and analysis"
+authors = [{name = "Sam Hollings", email = "sam.hollings1@nhs.net"}]
+readme = "README.md"
+keywords = ["PySpark", "cleansing", "validation", "data engineering"]
+license = {file = "LICENCE.md"}
+classifiers = ["Programming Language :: Python :: 3"]
+dependencies = [
+    "inflection",
+    "pyspark",
+    "pandas",
+    "pytest",
+    "pytest-spark",
+    "black",
+    "isort",
+    "build",
+    "sphinx",
+    "sphinx-rtd-theme",
+    #"setuptools-scm",
+]
+requires-python = ">=3.6"
+# dynamic = ['version'] - can't get this to work in github actions with setuptools-scm as the github action only pulls the latest commit and no tag info
+
+[project.urls]
+Repository = "https://github.com/nhsengland/reusable-code-library"
+Issues = "https://github.com/nhsengland/reusable-code-library/issues"
+
+# `isort` configurations
+[tool.isort]
+profile = "black"
+
+# `pytest` configurations
+[tool.pytest.ini_options]
+addopts = [
+    "-v",
+    "--doctest-modules",
+    "--doctest-report=cdiff",
+    "--doctest-continue-on-failure"
+]
+doctest_optionflags = "NORMALIZE_WHITESPACE"
+testpaths = [
+    "tests",
+    "src"
+]
