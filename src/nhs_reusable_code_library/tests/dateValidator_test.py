@@ -1,4 +1,4 @@
-from nhs_reusable_code_library.validation import dateValidator
+from nhs_reusable_code_library.standard_data_validations import dateValidator
 import pytest
 
 
