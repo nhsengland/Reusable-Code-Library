@@ -12,11 +12,13 @@ def spark():
 
 def test_mod11_check(spark):
     nhsNumber = spark.createDataFrame([{"nhsNumber":'8429141456'}],)
-    expected = spark.createDataFrame([{"mod11_check_is_valid": True}],["is_valid"])
+    expected = spark.createDataFrame([{"mod11_check_is_valid": True}],["mod11_check_is_valid"])
     
     df = nhsNumber.withColumn("mod11_check_is_valid",
         pyspark.mod11_check(F.col("nhsNumber"))
     )
-    print(df.show())
-    # assertDataFrameEqual(expected, df.select("mod11_check_is_valid"))
+
+    df.collect()
+
+    #assertDataFrameEqual(expected, df.select("mod11_check_is_valid"))
     assert True
