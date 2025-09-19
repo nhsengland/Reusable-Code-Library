@@ -18,7 +18,4 @@ def test_mod11_check(spark):
         pyspark.mod11_check(F.col("nhsNumber"))
     )
 
-    df.collect()
-
-    #assertDataFrameEqual(expected, df.select("mod11_check_is_valid"))
-    assert True
+    assertDataFrameEqual(expected, df.select("mod11_check_is_valid"))
