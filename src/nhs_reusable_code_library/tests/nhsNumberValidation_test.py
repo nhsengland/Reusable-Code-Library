@@ -27,17 +27,13 @@ def test_sensitive_legally_restricted(decision_to_admit,nhs_number_status_indica
     [
         ("8429141456", True),
         ("842914145", False),
-        ("84291414567", True),
+        ("84291414567", False),
         ("84291414A6", False),
+        (8429141456, False)
     ],
 )
 def test_palindromic_nhs_number_check(expected, nhs_number):
     assert expected == nhs_number_format_check(nhs_number)
-
-
-def test_nhs_number_format_check_int_type():
-    with pytest.raises(ValueError):
-        nhs_number_format_check(8429141456)
 
 @pytest.mark.parametrize(
     "nhs_number, expected",

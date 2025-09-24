@@ -62,20 +62,11 @@ def nhs_number_format_check(nhs_number : str) -> bool:
     True
     >>> nhs_number_format_check("842914145")
     False
-    >>> nhs_number_format_check("84291414567")
-    False
-    >>> nhs_number_format_check("84291414A6")
-    False
-    >>> nhs_number_format_check(8429141456)
-    ValueError: Please input a 10 character string (all integers) to validate (input not a string).
     """
-    if not isinstance(nhs_number, str):
-        raise ValueError("Please input a 10 character string (all integers) to validate (input not a string).")
-    if len(nhs_number) != 10:
+    if not isinstance(nhs_number, str) or len(nhs_number) != 10 or not nhs_number.isdigit():
         return False
-    if not nhs_number.isdigit():
-        return False
-    return True
+    else:
+        return True
 
 
 def palindromic_nhs_number_check(nhs_number : str) -> bool:
@@ -87,9 +78,9 @@ def palindromic_nhs_number_check(nhs_number : str) -> bool:
     Returns:
     bool: True if the NHS number is palindromic, False otherwise.
     Examples:
-    >>> palindromic_nhs_number("2000000002")
+    >>> palindromic_nhs_number_check("2000000002")
     True
-    >>> palindromic_nhs_number("1234567890")
+    >>> palindromic_nhs_number_check("1234567890")
     False
     """
     disallowed_nhs_numbers = ('0000000000','1111111111','2222222222','3333333333','4444444444','5555555555',
