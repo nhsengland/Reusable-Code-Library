@@ -1,4 +1,4 @@
-from nhs_reusable_code_library.standard_data_validations.nhsNumberValidation import mod11_check, nhs_number_format_check, palindromic_nhs_number_check, sensitive_legally_restricted
+from src.nhs_reusable_code_library.standard_data_validations.nhsNumberValidation.nhsNumberValidation import mod11_check, nhs_number_format_check, palindromic_nhs_number_check, sensitive_legally_restricted
 import pytest
 
 

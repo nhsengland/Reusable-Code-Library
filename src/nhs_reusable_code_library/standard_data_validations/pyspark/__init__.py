@@ -1,7 +1,7 @@
 import pyspark.sql.functions as F
 from pyspark.sql import DataFrame, Column
 from pyspark.sql.types import BooleanType
-import nhs_reusable_code_library.standard_data_validations.nhsNumberValidation as nhsNumberValidation
+import src.nhs_reusable_code_library.standard_data_validations.nhsNumberValidation.nhsNumberValidation as nhsNumberValidation
 
 def mod11_check(nhs_number_col : F.col) -> F.col:
     """

@@ -1,5 +1,5 @@
 import polars as pl
-import nhs_reusable_code_library.standard_data_validations.nhsNumberValidation as nhsNumberValidation
+import src.nhs_reusable_code_library.standard_data_validations.nhsNumberValidation.nhsNumberValidation as nhsNumberValidation
 
 def mod11_check(nhs_number_col : pl.col) -> pl.col:
     """
