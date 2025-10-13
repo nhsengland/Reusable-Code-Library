@@ -24,7 +24,6 @@ By making code reusable, and making it easy to reuse, this work aims to:
 
 **Be more cost effective**: Reusable 'generalised' code will increase efficiency in creating higher level processes.
 
-
 ## Installation 
 The package can be directly installed as a python package from PyPi by in your terminal: 
 ```terminal
@@ -68,26 +67,19 @@ Reusable-Code-Library/
 ```
 
 ## Governance
-
+New reusable code is discussed and signed off in the Reusable Code Assurance Group within NHS England. This group also sets the standards this code is made to.
+New code must have appropriate unit tests and all unit tests must pass before it can be merged into the main branch. These tests can be found in the `src/.../tests` folders.
 
 ## Contributing
-All new contributions to the `National Reusable Code Library` are welcome; please follow the Coding Conventions in the guidance document for contribution guidance. 
+All new contributions to the `National Reusable Code Library` are welcome; please follow the guidance document for contributions. 
 
 Any improvements to documentation, bug fixes or general code enhancements are also welcomed. If a bug is found on the master branch, please use the GitHub guidance on raising an [issue.](https://help.github.com/en/github/managing-your-work-on-github/creating-an-issue)
 
 ## New to GitHub?
-GitHub is a hosting site that allows for development and version control of software using Git. It allows users to edit and develop parts of code independently before submitting back to the master code, whilst using version control to track changes. Introductory videos to GitHub for beginners can be found [here.](https://github.com/codonlibrary/codonPython/wiki/2a.-GitHub-for-Beginners) 
-
-Quick links to beginner guidance can also be found below:
-
-* [**Cloning a repository to your local machine using GitBash**](https://github.com/codonlibrary/codonPython/wiki/1.-Installing-codonPython)
-* [**Checking out a branch using GitBash**](https://github.com/codonlibrary/codonPython/wiki/2b.-Checkout-a-branch-using-GitBash)
-* [**Removing a Commit from a repository using GitBash**](https://github.com/codonlibrary/codonPython/wiki/3.-Removing-a-Commit-From-a-GitHub-Repository)
-
-All other `codon` "How-to Articles" can be found [here.](https://github.com/codonlibrary/codonPython/wiki/2.-Git-Guidance)
-
-Suggestions regarding additional guidance or How-to articles are welcome.
+GitHub is a hosting site that allows for development and version control of software using Git. It allows users to edit and develop parts of code independently before submitting back to the master code, whilst using version control to track changes. Introductory guidance can be found here: [https://nhsdigital.github.io/rap-community-of-practice/training_resources/git/introduction-to-git/]
 
 ## Acknowledgments
+Thanks in particular to the amazing work of both the [NHS Digital RAP Squad](https://nhsdigital.github.io/rap-community-of-practice), and the [NHS Codon Project](https://github.com/codonlibrary/codonPython) who greatly inspired this work and set the foundations for it years ago.
 
 ## Contact
+NHS England Data Architecture Team
