@@ -48,26 +48,27 @@ nhs_number_valid = mod11_check(nhs_number)
 
 ```
 Reusable-Code-Library/
-├── .github/ # Directory for 
-│   ├── ISSUE_TEMPLATE/
-│   ├── pull_request_template.md
-│   └── workflows/
-│       └── ci.yml
+├── .github/ # Directory for github specific templates and CI/CD (github actions)
+│   ├── ISSUE_TEMPLATE/ # templates for when people raise issues
+│   ├── pull_request_template.md # template used when a pull request is raised
+│   └── workflows/ # Github Actions (CI/CD) pipelines go here
+│       └── ci.yml # This is the Continuous Integration pipeline which runs the unit tests and tests the package builds
 └── src/
-│   └── nhs_reusable_code_library/
-│       ├── standard_data_validations/
-│       │   ├── nhsNumberValidation/
-│       │   ├── polars/
-│       │   └── pyspark/
-│       └── tests/
-├── .gitignore
-├── CONTRIBUTING.md
-├── LICENSE
-├── pyproject.toml
-└── README.md
+│   └── nhs_reusable_code_library/ # the main package directory which will have a number of libraries
+│       ├── standard_data_validations/ # the place for data quality rules code
+│       │   ├── nhsNumberValidation/ # NHS number validation related code
+│       │   ├── polars/ # Polars implementations of data quality rules code
+│       │   └── pyspark/ # PySpark implementations of data quality ruls code
+│       └── tests/ # the unit tests for the functions within the package
+├── .gitignore # tells the repo which files to ignore, e.g. temporary, hidden and background files, and outputs.
+├── CONTRIBUTING.md # Describes how to contribute to the repository
+├── LICENSE # Describes the License the code can be used under.
+├── pyproject.toml # Used when building the package
+└── README.md # Describes what the package is for and how to use it.
 ```
 
 ## Governance
+
 
 ## Contributing
 All new contributions to the `National Reusable Code Library` are welcome; please follow the Coding Conventions in the guidance document for contribution guidance. 
