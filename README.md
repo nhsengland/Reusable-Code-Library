@@ -26,11 +26,48 @@ By making code reusable, and making it easy to reuse, this work aims to:
 
 
 ## Installation 
-The package can be directly installed by typing in your terminal: 
-```r
-# TBC
+The package can be directly installed as a python package from PyPi by in your terminal: 
+```terminal
+pip install nhs_reusable_code_library
 ```
 Other platform specific instructions to follow.
+
+## How to use the National Reusabel Code Library package
+When using Python, given that you've installed the package as described above, you can simply [import](https://docs.python.org/3/tutorial/modules.html#packages) it as normal:
+
+```Python
+from nhs_reusable_code_library.standard_data_validations.nhsNumberValidation import mod11_check
+
+nhs_number = '1111111111'
+
+nhs_number_valid = mod11_check(nhs_number)
+```
+
+## Code Manfiest
+(Made using "[project-tree-generator](https://project-tree-generator.netlify.app/generate-tree)")
+
+```
+Reusable-Code-Library/
+├── .github/ # Directory for 
+│   ├── ISSUE_TEMPLATE/
+│   ├── pull_request_template.md
+│   └── workflows/
+│       └── ci.yml
+└── src/
+│   └── nhs_reusable_code_library/
+│       ├── standard_data_validations/
+│       │   ├── nhsNumberValidation/
+│       │   ├── polars/
+│       │   └── pyspark/
+│       └── tests/
+├── .gitignore
+├── CONTRIBUTING.md
+├── LICENSE
+├── pyproject.toml
+└── README.md
+```
+
+## Governance
 
 ## Contributing
 All new contributions to the `National Reusable Code Library` are welcome; please follow the Coding Conventions in the guidance document for contribution guidance. 
@@ -49,3 +86,7 @@ Quick links to beginner guidance can also be found below:
 All other `codon` "How-to Articles" can be found [here.](https://github.com/codonlibrary/codonPython/wiki/2.-Git-Guidance)
 
 Suggestions regarding additional guidance or How-to articles are welcome.
+
+## Acknowledgments
+
+## Contact
