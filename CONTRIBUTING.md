@@ -28,12 +28,14 @@ We suggest you make sure all of your commits are atomic (one feature per commit)
 ## Coding standards
 
 In short:
-- Follow PEP-8 convento
+- Follow PEP-8, and use Black to enforce this on your code
+- Have unit tests for all your functions / methods
+- Write [Numpy-style](https://numpydoc.readthedocs.io/en/latest/format.html#docstring-standard) docstrings for functions, including descriptions, inputs, outputs, and example usage
+- Methods used in the code should have been approved by the appropriate body, e.g. the Data Quality Steering Group for DQ rules. For external submissions, this might require a longer review process in which these are brought to those bodies.
 
 We use the industry standard [PEP 8](https://www.python.org/dev/peps/pep-0008/) styling guide. **Therefore, it’s imperative that you use the coding standards found within PEP 8 when creating or modifying any code within the repository**. Autoformatters for PEP8, for instance [black](https://black.readthedocs.io/en/stable/), can easily ensure compliance. The reason we use PEP 8 coding standards is to make sure there is a layer of consistency across our codebase. This reduces the number of decisions that you need to make when styling your code, and also makes code easier to read when switching between functions etc.
 
-While you are creating code, we recommend that you understand the style guide standards for the following topics:
-
+The following articles can be useful when writing code to the standard:
 * [Code layout](https://www.python.org/dev/peps/pep-0008/#code-lay-out) – Indentation, tabs or spaces, maximum line length, blank lines, source file encoding, imports & module level Dunder name
 * [String quotes](https://www.python.org/dev/peps/pep-0008/#string-quotes)
 * [Whitespace in expressions and statements](https://www.python.org/dev/peps/pep-0008/#whitespace-in-expressions-and-statements) – Pet Peeves, alternative recommendations
@@ -42,21 +44,11 @@ While you are creating code, we recommend that you understand the style guide st
 * [Naming conventions](https://www.python.org/dev/peps/pep-0008/#naming-conventions) – Naming styles, naming conventions, names to avoid, ASCII compatibility, package and module names, class names, type variable names, exception names, global variable names, function and variable names, function and method arguments, method names and instance variables, constants & designing for inheritance
 * [Programming recommendations](https://www.python.org/dev/peps/pep-0008/#programming-recommendations) – Function annotations & variable annotations
 
-We also use docstrings and we try to follow [`numpy`'s docstring standards](https://numpydoc.readthedocs.io/en/latest/format.html#docstring-standard).
 
-Start reading our code to get a feel for it but most importantly, remember that this is open source software - consider the people who will read your code, and make it look nice for them.
+## Community
 
-* We use [PEP8](https://www.python.org/dev/peps/pep-0008/). Autoformatters for PEP8, for instance [black](https://black.readthedocs.io/en/stable/), can easily ensure compliance.
-* We use docstrings and we try to (loosely) follow [`numpy`'s docstring standards](https://numpydoc.readthedocs.io/en/latest/format.html#docstring-standard).
-* This is open source software. Consider the people who will read your code, and make it look nice for them.
-
-## Tests
-
-We do ask that you include some basic tests with your contributions. While the logic of your contribution is important, some basic unit tests to verify functionality and data types for the inputs are requested for a baseline level of assurance and 'elegant failing'.
+The discussions space on this github repo is the perfect place to discuss the code and reach out to those working on it.
 
 ## Code of Conduct
 
-As a contributer you can help us keep the Codon community open and inclusive. Please read and follow our [Code of Conduct](https://github.com/codonlibrary/code-of-conduct/tree/master). By contributing to it, you agree to comply with it.
-
-:clinking_glasses: Thank you!
-Team codon
+As a contributer you can help us keep the this community open and inclusive. Please read and follow our [Code of Conduct](https://github.com/codonlibrary/code-of-conduct/tree/master). By contributing to it, you agree to comply with it.
