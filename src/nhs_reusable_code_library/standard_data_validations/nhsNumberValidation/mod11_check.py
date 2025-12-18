@@ -20,17 +20,25 @@ def mod11_check(nhsNumber :str) -> bool:
         raise ValueError("Please input a 10 character string (all integers) to validate (input not a string).")
     if len(nhsNumber) != 10:
         raise ValueError("Please input a 10 character string (all integers) to validate (input not 10 characters).")
-    # ToDo: another check that all characters all integers
 
-    digits = [int(digit) for digit in nhsNumber]
-    # Apply weighting to first 9 digits
-    weighted_digits = np.dot(np.array(digits[:9]), np.arange(10, 1, -1))
-    # Validity is based on the check digit, which has to be equal to `remainder`
-    remainder = weighted_digits % 11
-    check_digit = 11 - remainder
-    if check_digit == 11:
-        check_digit = 0
-    if check_digit == digits[-1]:
-        return True
-    else:
-        return False
+    # check that all characters are integers - convert string to integer 
+    try:
+        invalid_nhsnumber = int(nhsNumber)
+    except ValueError:
+        print("The entered value is not a number.")
+        
+    try:
+        digits = [int(digit) for digit in nhsNumber]
+        # Apply weighting to first 9 digits
+        weighted_digits = np.dot(np.array(digits[:9]), np.arange(10, 1, -1))
+        # Validity is based on the check digit, which has to be equal to `remainder`
+        remainder = weighted_digits % 11
+        check_digit = 11 - remainder
+        if check_digit == 11:
+            check_digit = 0
+        if check_digit == digits[-1]:
+            return True
+        else:
+            return False
+    except ValueError:
+        print("Failed mod11 nhs_num check")
