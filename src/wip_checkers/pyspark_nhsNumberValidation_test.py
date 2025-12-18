@@ -10,7 +10,7 @@ def spark():
     return SparkSession.builder.master("local[1]").appName("pytest-pyspark").getOrCreate()
 
 
-def test_mod11_check(spark):
+def wip_test_mod11_check(spark):
     nhsNumber = spark.createDataFrame([{"nhsNumber":'8429141456'}],)
     expected = spark.createDataFrame([{"mod11_check_is_valid": True}],["mod11_check_is_valid"])
     

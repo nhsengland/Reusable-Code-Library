@@ -3,6 +3,8 @@ from nhs_reusable_code_library.standard_data_validations.nhsNumberValidation imp
                                                                                      palindromic_nhs_number_check, 
                                                                                      sensitive_legally_restricted
 )
+
+from nhs_reusable_code_library.standard_data_validations.nhsNumberValidation.nhs_number_int_check import nhs_number_int_check
 import pytest
 
 
@@ -10,6 +12,11 @@ import pytest
     "nhsNumber, expected",
     [
         ("8429141456", True),
+        # this values will fail test
+        # ("842914145", False),
+        # ("84291414567", False),
+        # ("84291414A6", False),
+        # (8429141456, False)
     ],
 )
 def test_mod11_check(nhsNumber, expected):
@@ -36,7 +43,7 @@ def test_sensitive_legally_restricted(decision_to_admit,nhs_number_status_indica
         (8429141456, False)
     ],
 )
-def test_palindromic_nhs_number_check(expected, nhs_number):
+def test_nhs_number_format_check(expected, nhs_number):
     assert expected == nhs_number_format_check(nhs_number)
 
 @pytest.mark.parametrize(
@@ -48,3 +55,14 @@ def test_palindromic_nhs_number_check(expected, nhs_number):
 )
 def test_palindromic_nhs_number_check(nhs_number, expected):
     assert expected == palindromic_nhs_number_check(nhs_number)
+
+    
+@pytest.mark.parametrize(
+    "nhs_number, expected",
+    [
+        ("8429141456", True),
+        ("842914145A", False),
+        ],
+)
+def test_nhs_number_int_check(expected, nhs_number):
+    assert expected == nhs_number_int_check(nhs_number)

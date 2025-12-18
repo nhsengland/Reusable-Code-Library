@@ -9,7 +9,7 @@ build-backend = "setuptools.build_meta"
 name = "nhs_reusable_code_library"
 version = "0.1.0a6"
 description = "Common NHS Python (& mainly specifically PySpark) functions for data processing, validations, cleansing and analysis"
-authors = [{name = "Sam Hollings", email = "sam.hollings1@nhs.net"}]
+authors = [{name = "Sam Hollings"}, {name = "Akinwale Akinyemi", email = "akinwale.akinyemi@nhs.net"}]
 readme = "README.md"
 keywords = ["PySpark", "cleansing", "validation", "data engineering"]
 license = {file = "LICENCE.md"}
