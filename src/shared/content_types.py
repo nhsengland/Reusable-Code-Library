@@ -1,0 +1,6 @@
+STANDARD_DATE_FORMAT = '%Y-%m-%d'  # Parse format for values such as '2015-12-18'
+NO_SEPARATOR_DATE_FORMAT = '%Y%m%d'  # Parse format for values such as '20151218'
+ISO8601_DATETIME_FORMAT = '%Y-%m-%dT%H:%M:%S'  # Parse format for values such as '2015-12-18T23:59:59'
+TIMESTAMP_FORMAT = '%Y%m%d%H%M%S%f'
+DATE_TIME_FORMAT = '%Y-%m-%d %H:%M:%S'
+DATE_TIME_NO_SEPARATOR_FORMAT = '%Y%m%d%H%M%S'
