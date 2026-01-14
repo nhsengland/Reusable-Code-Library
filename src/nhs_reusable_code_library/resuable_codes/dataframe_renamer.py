@@ -6,7 +6,7 @@ from pyspark.sql import DataFrame
 from pyspark.sql.functions import col
 from pyspark.sql.types import ArrayType, DataType, MapType, StructField, StructType
 
-from dsp.common import canonical_name
+from src.dsp.common import canonical_name
 
 
 class DataFrameRenamer:
