@@ -5,8 +5,8 @@ from typing import IO, AnyStr, List, Union, Optional, Any
 
 from botocore.response import StreamingBody
 
-from shared.common.retry_predicates import s3_throttle_retry_predicate
-from shared.common import retry
+from src.shared.common.retry_predicates import s3_throttle_retry_predicate
+from src.shared.common import retry
 
 
 class S3ObjectBuffer(IO):

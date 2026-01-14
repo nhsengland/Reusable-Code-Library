@@ -3,10 +3,11 @@ from decimal import Decimal
 
 import pytest
 from pyspark.sql import DataFrame, Row
-from pyspark.sql.functions import explode, expr
+import pyspark.sql.functions as F
+from pyspark.sql.functions import explode, expr, length
 from pyspark.sql.types import ArrayType, DecimalType, MapType, StringType, StructField, StructType
 
-from nhs_reusable_code_library.resuable_codes.dataframe_renamer import canonical_dataframe, strip_xml_namespaces_in_dataframe
+from src.nhs_reusable_code_library.resuable_codes.dataframe_renamer import canonical_dataframe, strip_xml_namespaces_in_dataframe 
 
 from pyspark.sql import SparkSession
 from pyspark.sql.functions import col
@@ -22,6 +23,7 @@ from pyspark.sql.functions import count
 #spark = LocalSpark().spark
 
 import pytest
+
 
 @pytest.fixture
 def spark_fixture():
@@ -83,10 +85,26 @@ def test_df(spark_fixture) -> DataFrame:
     return canonical_dataframe(df)
 
 
-def test_renames_non_nested_columns(test_df):
+def test_renames_non_nested_columns_2(test_df):
     rows = test_df.select("FIRST_NAME", "MIDDLE_NAME", "LAST_NAME").count()
     assert rows == 2
 
+def do_the_agg(df):
+    df_agg = df\
+        .groupBy('FIRST_NAME')\
+        .agg(
+            F.sum(F.col('VITAL_STATISTICS.HEIGHT')).alias('VAL_SUM')
+        )
+    return df_agg
+
+
+
+def test_renames_non_nested_columns(test_df):
+    test_df_agg = do_the_agg(test_df)
+    out_put = test_df_agg.sort('FIRST_NAME', 'VAL_SUM').collect()
+    assert len(out_put) == 2
+
+    
 
 def test_renames_nested_arrays(test_df):
     rows = test_df.select(explode(expr("ADDRESSES.HOUSE_NAME_NUMBER"))).count()
@@ -263,10 +281,12 @@ def test_renames_non_nested_columns(xml_test_df):
     assert rows == 2
 
 
+def input_dataframe(xml_test_df):
+    series = xml_test_df.param
+    yeild 
+
+
 def test_does_not_rename_non_prefixed_fields(xml_test_df):
-    # a = xml_test_df.select(explode(expr("addresses.houseNameNumber")))
-    # #a.createOrReplaceTempView('xml_test_db')
-    # rows = a.select(count("addresses.houseNameNumber"))
     rows = xml_test_df.select(explode(expr("addresses.houseNameNumber"))).count()
     assert rows == 3
     rows = xml_test_df.select(explode(expr("addresses.postCode"))).count()

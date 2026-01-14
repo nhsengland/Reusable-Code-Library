@@ -3,10 +3,10 @@ import os
 import sys
 from typing import Callable, Union, Tuple, List, Type
 
-from shared.logger.caller_info import find_caller_info
-from shared.logger.constants import Constants
-from shared.logger.formatters import JSONFormatter
-from shared.logger.handlers import sys_std_handlers
+from src.shared.logger.caller_info import find_caller_info
+from src.shared.logger.constants import Constants
+from src.shared.logger.formatters import JSONFormatter
+from src.shared.logger.handlers import sys_std_handlers
 
 
 class _Logger:

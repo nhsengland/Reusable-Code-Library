@@ -1,10 +1,12 @@
-from nhs_reusable_code_library.standard_data_validations.nhsNumberValidation import (mod11_check, 
+from src.nhs_reusable_code_library.standard_data_validations.nhsNumberValidation import (mod11_check, 
                                                                                      nhs_number_format_check, 
                                                                                      palindromic_nhs_number_check, 
                                                                                      sensitive_legally_restricted
 )
 
-from nhs_reusable_code_library.standard_data_validations.nhsNumberValidation.nhs_number_int_check import nhs_number_int_check
+from src.nhs_reusable_code_library.standard_data_validations.nhsNumberValidation.nhs_number_int_check import nhs_number_int_check
+
+
 import pytest
 
 

@@ -6,7 +6,7 @@ from typing import Any, AnyStr, Dict, List, Optional, Tuple, Union
 from uuid import uuid4
 from weakref import WeakKeyDictionary
 
-from shared.logger import find_caller_info
+from src.shared.logger import find_caller_info
 from .constants import Constants
 from .logger import app_logger
 

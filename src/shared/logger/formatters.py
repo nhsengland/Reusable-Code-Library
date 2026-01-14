@@ -4,7 +4,7 @@ import traceback
 from collections import OrderedDict
 from datetime import datetime, date
 
-from shared.version_data import FULL_VERSION_STRING
+from src.shared.version_data import FULL_VERSION_STRING
 
 
 def json_serializer(obj):

@@ -6,9 +6,9 @@ from typing import Callable
 
 import pip
 
-from dsp.common import enum
-from shared.aws import local_mode
-from shared.logger import add_temporary_global_fields
+from src.dsp.common import enum
+from src.shared.aws import local_mode
+from src.shared.logger import add_temporary_global_fields
 
 _re_replaces = [
     (re.compile('^ns:', re.IGNORECASE), ''),

@@ -37,6 +37,11 @@ dependencies = [
     "mesh_client<=3.0.0",
     "mmh3",
     "mock", 
+    "pytest_mock",
+    "pydantic",
+    "lxml",
+    "schematics",
+    "typing_inspect",
     #"setuptools-scm",
 ]
 requires-python = ">=3.6"
