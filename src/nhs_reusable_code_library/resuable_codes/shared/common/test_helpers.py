@@ -13,17 +13,17 @@ from random import randint
 from tempfile import TemporaryDirectory, TemporaryFile
 from typing import Callable, Generator, List, Iterable, Union, Pattern, IO
 
-from src.shared import aws
-from src.shared import local_path
-from src.shared.aws import s3_bucket, s3_split_path, s3_object, s3_delete_keys, s3_copy_object
-from src.shared.common import retry
-from src.shared.common.datasets import namespace_and_dataset
-from shared.common.retry_predicates import s3_throttle_retry_predicate
-from shared.common.s3_object_buffer import S3ObjectBuffer
-from shared.constants import METADATA, DS, DATASET_ID_VERSION_MAP
-from shared.models import MeshMetadata
-from src.nhs_reusable_code_library.resuable_codes.mesh_download_queues import MeshDownloadQueuesStore
-from shared.version_data import FULL_VERSION_STRING
+from src.nhs_reusable_code_library.resuable_codes.shared import aws
+from src.nhs_reusable_code_library.resuable_codes.shared import local_path
+from src.nhs_reusable_code_library.resuable_codes.shared.aws import s3_bucket, s3_split_path, s3_object, s3_delete_keys, s3_copy_object
+from src.nhs_reusable_code_library.resuable_codes.shared.common import retry
+from src.nhs_reusable_code_library.resuable_codes.shared.common.datasets import namespace_and_dataset
+from src.nhs_reusable_code_library.resuable_codes.shared.common.retry_predicates import s3_throttle_retry_predicate
+from src.nhs_reusable_code_library.resuable_codes.shared.common.s3_object_buffer import S3ObjectBuffer
+from src.nhs_reusable_code_library.resuable_codes.shared.constants import METADATA, DS, DATASET_ID_VERSION_MAP
+from src.nhs_reusable_code_library.resuable_codes.shared.models import MeshMetadata
+from src.nhs_reusable_code_library.resuable_codes.shared.store.mesh_download_queues import MeshDownloadQueuesStore
+from src.nhs_reusable_code_library.resuable_codes.shared.version_data import FULL_VERSION_STRING
 
 LOCAL_TESTING_BUCKET = 'local-testing'
 

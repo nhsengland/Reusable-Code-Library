@@ -3,10 +3,10 @@ import os
 import sys
 from typing import Callable, Union, Tuple, List, Type
 
-from src.shared.logger.caller_info import find_caller_info
-from src.shared.logger.constants import Constants
-from src.shared.logger.formatters import JSONFormatter
-from src.shared.logger.handlers import sys_std_handlers
+from src.nhs_reusable_code_library.resuable_codes.shared.logger.caller_info import find_caller_info
+from src.nhs_reusable_code_library.resuable_codes.shared.logger.constants import Constants
+from src.nhs_reusable_code_library.resuable_codes.shared.logger.formatters import JSONFormatter
+from src.nhs_reusable_code_library.resuable_codes.shared.logger.handlers import sys_std_handlers
 
 
 class _Logger:

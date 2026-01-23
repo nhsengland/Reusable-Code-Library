@@ -5,10 +5,10 @@ from functools import wraps
 from inspect import BoundArguments
 from typing import Callable, Union, List, Tuple, Dict, Any
 
-from src.shared.logger.caller_info import find_caller_info
-from src.shared.logger.constants import Constants
-from src.shared.logger.context import logging_context
-from src.shared.logger.logger import app_logger as _app_logger
+from src.nhs_reusable_code_library.resuable_codes.shared.logger.caller_info import find_caller_info
+from src.nhs_reusable_code_library.resuable_codes.shared.logger.constants import Constants
+from src.nhs_reusable_code_library.resuable_codes.shared.logger.context import logging_context
+from src.nhs_reusable_code_library.resuable_codes.shared.logger.logger import app_logger as _app_logger
 
 DEFAULT_LOG_LEVEL = Constants.DEFAULT_LOG_LEVEL
 LOG_AT_LEVEL = Constants.LOG_AT_LEVEL

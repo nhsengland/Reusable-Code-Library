@@ -3,10 +3,10 @@ from typing import Optional, List
 from uuid import uuid4
 from boto3.dynamodb.conditions import Key, Attr
 from botocore.exceptions import ClientError
-from shared.aws import dynamodb_retry_backoff, s3_uri_get_size
-from shared.constants import Blockables, Senders
-from shared.logger import log_action, LogLevel, app_logger, add_fields
-from shared.models import MeshTransferJob, MeshTransferStatus, MeshMetadata, Block
+from src.nhs_reusable_code_library.resuable_codes.shared.aws import dynamodb_retry_backoff, s3_uri_get_size
+from src.nhs_reusable_code_library.resuable_codes.shared.constants import Blockables, Senders
+from src.nhs_reusable_code_library.resuable_codes.shared.logger import log_action, LogLevel, app_logger, add_fields
+from src.nhs_reusable_code_library.resuable_codes.shared.models import MeshTransferJob, MeshTransferStatus, MeshMetadata, Block
 from src.nhs_reusable_code_library.resuable_codes.shared.store.mesh_transfer_jobs import MeshTransferJobsStore, MeshTransferJobPriority, Indexes as BaseIndexes
 
 

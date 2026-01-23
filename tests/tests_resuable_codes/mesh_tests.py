@@ -1,6 +1,6 @@
 from pytest import raises
 
-from src.nhs_reusable_code_library.resuable_codes.mesh import mesh_header_encode, mesh_header_decode, HeaderUnparseable, HeaderNotEncodeable
+from src.nhs_reusable_code_library.resuable_codes.shared.store.mesh import mesh_header_encode, mesh_header_decode, HeaderUnparseable, HeaderNotEncodeable
 
 
 def test_mesh_header_encode_safe_chars():
