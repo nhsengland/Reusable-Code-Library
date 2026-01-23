@@ -5,7 +5,7 @@ import datetime
 from decimal import Decimal
 from typing import Optional, Union
 
-from src.dve.metadata_parser.domain_types import NHSNumber
+from src.nhs_reusable_code_library.standard_data_validations.dve.metadata_parser.domain_types import NHSNumber
 
 
 def over_10k(x: float) -> bool:  # noqa: D103
