@@ -3,7 +3,7 @@ from typing import List, Optional, Tuple
 from pyspark.sql import SparkSession
 from pyspark.sql.functions import max
 
-from src.nhs_reusable_code_library.resuable_codes.file_store import File
+from src.nhs_reusable_code_library.resuable_codes.shared.file_store import File
 
 INGESTION_CONTROL_TABLE = "__ingestion_control"
 

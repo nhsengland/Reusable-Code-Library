@@ -5,12 +5,12 @@ from uuid import uuid4
 import boto3
 import pytest
 
-from shared import models
-from shared.constants import Blockables, BLOCKTYPE, MESH_WORKFLOW_ID
-from shared.models import MeshTransferStatus, MeshMetadata, Block
-from shared.store.base import ModelNotFound
-from shared.store.blocks import BlockStore
-from shared.store.mesh_download_queues import MeshDownloadQueuesStore, JobAlreadyExistsException
+from src.nhs_reusable_code_library.resuable_codes.shared import models
+from src.nhs_reusable_code_library.resuable_codes.shared.constants import Blockables, BLOCKTYPE, MESH_WORKFLOW_ID
+from src.nhs_reusable_code_library.resuable_codes.shared.models import MeshTransferStatus, MeshMetadata, Block
+from src.nhs_reusable_code_library.resuable_codes.shared.store.base import ModelNotFound
+from src.nhs_reusable_code_library.resuable_codes.shared.store.blocks import BlockStore
+from src.nhs_reusable_code_library.resuable_codes.shared.store.mesh_download_queues import MeshDownloadQueuesStore, JobAlreadyExistsException
 
 
 @pytest.fixture(scope='function')
