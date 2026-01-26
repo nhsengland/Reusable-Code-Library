@@ -1,0 +1,34 @@
+{
+  "input0.71.xml": {
+    "response_to": "257e6912-708f-43ce-a36c-1b47837736d8",
+    "status": "ok",
+    "details": []
+  },
+  "input0.75.xml": {
+    "response_to": "7027aabb-689e-45c3-b3d8-7ff62c7d1c06",
+    "status": "ok",
+    "details": []
+  },
+  "input0.76.xml": {
+    "response_to": "257e6912-708f-43ce-a36c-1b47837736d9",
+    "status": "ok",
+    "details": []
+  },
+  "input0.77.xml": {
+    "response_to": "257e6912-708f-43ce-a36c-1b47837736e0",
+    "status": "ok",
+    "details": []
+  },
+  "input_unsupported.xml": {
+    "response_to": "b0ee154c-990a-461c-95e5-d861b6fcdb7c",
+    "status": "fatal-error",
+    "details": [
+      {
+        "id": 1,
+        "code": 4,
+        "title": "Unsupported Schema Version",
+        "description": "Schema version 0.1 not currently supported by GP Data ingestion"
+      }
+    ]
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "input1.xml": "success",
+  "input2.xml": "success",
+  "input_good.xml": "failed",
+  "input_bad.xml": "failed"
+}

@@ -1,0 +1,17 @@
+{
+  "input.xml": {
+    "response_to": "07fa18fc-9c9b-4932-8eeb-1e5196d05c92",
+    "status": "ok",
+    "details": []
+  },
+  "input1.xml": {
+    "response_to": "b0ee154c-990a-461c-95e5-d861b6fcdb7c",
+    "status": "ok",
+    "details": []
+  },
+  "input2.xml": {
+    "response_to": "7027aabb-689e-45c3-b3d8-7ff62c7d1c06",
+    "status": "ok",
+    "details": []
+  }
+}

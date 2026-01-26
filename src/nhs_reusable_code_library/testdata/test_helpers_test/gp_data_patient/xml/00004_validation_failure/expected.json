@@ -1,0 +1,404 @@
+[
+  {
+    "META": {
+      "extract_id": "e2d870c1-bb23-4cec-a2b4-b52cd761cfdf",
+      "message_id": "b0ee154c-990a-461c-95e5-d861b6fcdb7c",
+      "record_sequence_number": 1,
+      "practice_extract_attributes": {
+        "id": "1d9b71ee-69f4-4d11-9733-78cde92c266c",
+        "issue_date_time": "2018-10-28T00:00:00",
+        "provider_id": "A81001",
+        "source_system": "SOURCE_EPR",
+        "source_version": "SOURCE_EPR_VERSION",
+        "supplier_provider_id": "A81001"
+      }
+    },
+    "allergy": [
+      {
+        "category": "medication",
+        "effective_date": "2010-07-24T10:13:00",
+        "encounter_id": "50ee2f2e-cce0-4c5c-9d20-87c6db63d3f6",
+        "id": "5f9b54c1-92ee-414e-a01a-f52c3c997952",
+        "other_code": "ALLERGY-READ2-14LK",
+        "other_code_system": "egton",
+        "other_display": "H/O: aspirin allergy",
+        "practitioner_id": "5f6e7464-44b9-480d-bd00-d88837050d23",
+        "rubric": "H/O: aspirin allergy",
+        "recorded_date": "2010-07-24T10:13:20",
+        "registration_id": "415c0b03-85fe-4974-ba6e-122ae31d299d",
+        "status": "active",
+        "user_selected": "other"
+      }
+    ],
+    "encounter": [
+      {
+        "snomed_concept_id": "37361000000105",
+        "effective_date": "2018-10-25T14:46:00",
+        "id": "50ee2f2e-cce0-4c5c-9d20-87c6db63d3f6",
+        "practitioner_id": "73989219-c122-4944-9b5c-74b2446f79c1",
+        "readv2_code": "9b01.00",
+        "recorded_date": "2018-10-25T14:46:05",
+        "registration_id": "415c0b03-85fe-4974-ba6e-122ae31d299d"
+      }
+    ],
+    "immunisation": [],
+    "medication": [],
+    "organisation": [
+      {
+        "id": "fc655595-2755-402d-8c49-298b45327fb1",
+        "name": "THE DENSHAM SURGERY",
+        "ods_code": "A81001"
+      },
+      {
+        "address_line_1": "ST. JAMES'S UNIVERSITY HOSPITAL",
+        "address_line_2": "BECKETT STREET",
+        "address_line_3": "LEEDS",
+        "address_line_4": "WEST YORKSHIRE",
+        "address_line_5": "LS9 7TF",
+        "id": "23b0abac-80f6-428a-9999-dcc98ddaea0e",
+        "local_code": "BLAH",
+        "name": "LEEDS TEACHING HOSPITALS NHS TRUST",
+        "ods_code": "RR8",
+        "role": "197",
+        "specialty": "303",
+        "type": "Hospital Trust"
+      },
+      {
+        "id": "d5f4e27c-d2e5-4397-97ad-7e26b1dbd197",
+        "name": "Minimal Local Org"
+      },
+      {
+        "id": "59033e62-0a1c-401d-9c5b-0e3b61f41f48",
+        "name": "NORTH DURHAM HEALTH CARE NHS TRUST",
+        "ods_code": "RR9"
+      }
+    ],
+    "observation": [],
+    "problem_link": [],
+    "practitioner": [
+      {
+        "forename": "Damien",
+        "id": "63cc6ed7-5561-45ca-b17b-23ce80c46561",
+        "employer_id": "fc655595-2755-402d-8c49-298b45327fb1",
+        "professional_identifier": "G5491898",
+        "surname": "Peters",
+        "title": "Dr",
+        "identifier_issuing_body": "02"
+      },
+      {
+        "forename": "Graham",
+        "id": "26390db1-399e-4f9d-b4fc-0602316d7a87",
+        "employer_id": "fc655595-2755-402d-8c49-298b45327fb1",
+        "professional_identifier": "G7155271",
+        "surname": "Gibson",
+        "title": "Dr",
+        "identifier_issuing_body": "02"
+      },
+      {
+        "forename": "Karen",
+        "id": "b195933d-13ad-44a1-8155-dcad85548c63",
+        "employer_id": "fc655595-2755-402d-8c49-298b45327fb1",
+        "professional_identifier": "G9604065",
+        "surname": "Little",
+        "title": "Dr",
+        "identifier_issuing_body": "02"
+      },
+      {
+        "forename": "Sam",
+        "id": "5f6e7464-44b9-480d-bd00-d88837050d23",
+        "employer_id": "fc655595-2755-402d-8c49-298b45327fb1",
+        "professional_identifier": "G9858633",
+        "surname": "Murphy",
+        "title": "Dr",
+        "identifier_issuing_body": "02"
+      },
+      {
+        "forename": "Melissa",
+        "id": "24a147e4-a884-4a21-bc92-1b144d2ca606",
+        "employer_id": "fc655595-2755-402d-8c49-298b45327fb1",
+        "professional_identifier": "G3683886",
+        "surname": "O'Connor",
+        "title": "Dr",
+        "identifier_issuing_body": "02"
+      },
+      {
+        "forename": "Jacqueline",
+        "id": "73989219-c122-4944-9b5c-74b2446f79c1",
+        "employer_id": "fc655595-2755-402d-8c49-298b45327fb1",
+        "professional_identifier": "G1501909",
+        "surname": "Walker",
+        "title": "Dr",
+        "identifier_issuing_body": "02"
+      },
+      {
+        "hcp_type": "D",
+        "id": "25d20a21-e6e9-452b-9542-d48cf5e01f90",
+        "employer_id": "59033e62-0a1c-401d-9c5b-0e3b61f41f48",
+        "surname": "Gould"
+      },
+      {
+        "hcp_type": "D",
+        "id": "97f871d8-261b-4632-86c2-1caf2a97045b",
+        "employer_id": "d5f4e27c-d2e5-4397-97ad-7e26b1dbd197",
+        "surname": "Williams"
+      }
+    ],
+    "problem": [],
+    "patient": {
+      "date_of_birth_deid": "NCHRXLJK",
+      "date_of_death_deid": "7EM2TLHH",
+      "ethnic_category": "275595001",
+      "gender": "1",
+      "id": "415c0b03-85fe-4974-ba6e-122ae31d299d",
+      "interpreter_required": false,
+      "local_id_deid": "YNQYBNX8H67VXFY",
+      "language_preferred": "315578005",
+      "lsoa": "E01006686",
+      "named_gp": "5f6e7464-44b9-480d-bd00-d88837050d23",
+      "practice": "fc655595-2755-402d-8c49-298b45327fb1",
+      "postcode_deid": "GL18 5NO",
+      "patient_id_deid": "Q999YP66NN94IQG",
+      "postcode_sector": "3 1EW",
+      "recorded_date": "2008-02-13T23:12:00.000Z",
+      "registered_date": "2008-02-13T23:12:00.000Z",
+      "registration_status": true,
+      "registration_type": "R",
+      "sexual_orientation": "1",
+      "source_registration_type": "Regular",
+      "week_of_birth": "111995",
+      "week_of_death": "371998"
+    },
+    "derived_provider_id": "A81001",
+    "referral": [
+      {
+        "action_date": "2019-10-14T00:00:00",
+        "snomed_concept_id": "183524004",
+        "ctv3_code": "8H49.",
+        "snomed_description_id": "283611014",
+        "direction": "out",
+        "effective_date": "2010-10-04T15:41:00",
+        "encounter_id": "50ee2f2e-cce0-4c5c-9d20-87c6db63d3f6",
+        "id": "01022d8a-f391-4f52-bfa8-41ab20acd8ff",
+        "other_code": "blah",
+        "other_code_system": "http://www.fhir.ns.uk/Id/Blahcodes",
+        "other_display": "blah",
+        "original_priority": "stat",
+        "other_reason": "Blah",
+        "original_service": "Colposcopy",
+        "original_type": "Outpatient",
+        "practitioner_id": "24a147e4-a884-4a21-bc92-1b144d2ca606",
+        "priority": "1",
+        "rubric": "Psychiatric referral",
+        "readv2_code": "8H49.00",
+        "recorded_date": "2010-10-04T15:41:03",
+        "registration_id": "415c0b03-85fe-4974-ba6e-122ae31d299d",
+        "specialty": "130",
+        "source": "01",
+        "service": "310024000",
+        "to_organisation": "23b0abac-80f6-428a-9999-dcc98ddaea0e",
+        "type": "1066111000000103",
+        "ubrn": "123456789012",
+        "user_selected": "rvt"
+      }
+    ],
+    "recall": []
+  },
+  {
+    "META": {
+      "extract_id": "bc4edcdb-8d86-4b14-9a6a-126b85aea667",
+      "message_id": "b0ee154c-990a-461c-95e5-d861b6fcdb7c",
+      "record_sequence_number": 2,
+      "practice_extract_attributes": {
+        "id": "1d9b71ee-69f4-4d11-9733-78cde92c266c",
+        "issue_date_time": "2018-10-28T00:00:00",
+        "provider_id": "A81001",
+        "source_system": "SOURCE_EPR",
+        "source_version": "SOURCE_EPR_VERSION",
+        "supplier_provider_id": "A81001"
+      }
+    },
+    "allergy": [],
+    "encounter": [
+      {
+        "snomed_concept_id": "37361000000105",
+        "effective_date": "1998-04-12T17:54:00",
+        "id": "29e0b0f0-b7f5-468c-a658-bd257a82e3d9",
+        "practitioner_id": "24a147e4-a884-4a21-bc92-1b144d2ca606",
+        "readv2_code": "9b01.00",
+        "recorded_date": "1998-04-12T17:54:57",
+        "registration_id": "a4ce4d45-fb18-47ec-ac0c-2d0af5a245d3"
+      }
+    ],
+    "immunisation": [],
+    "medication": [],
+    "organisation": [
+      {
+        "id": "fc655595-2755-402d-8c49-298b45327fb1",
+        "name": "THE DENSHAM SURGERY",
+        "ods_code": "A81001"
+      },
+      {
+        "address_line_1": "ST. JAMES'S UNIVERSITY HOSPITAL",
+        "address_line_2": "BECKETT STREET",
+        "address_line_3": "LEEDS",
+        "address_line_4": "WEST YORKSHIRE",
+        "address_line_5": "LS9 7TF",
+        "id": "23b0abac-80f6-428a-9999-dcc98ddaea0e",
+        "local_code": "BLAH",
+        "name": "LEEDS TEACHING HOSPITALS NHS TRUST",
+        "ods_code": "RR8",
+        "role": "197",
+        "specialty": "303",
+        "type": "Hospital Trust"
+      },
+      {
+        "id": "d5f4e27c-d2e5-4397-97ad-7e26b1dbd197",
+        "name": "Minimal Local Org"
+      },
+      {
+        "id": "59033e62-0a1c-401d-9c5b-0e3b61f41f48",
+        "name": "NORTH DURHAM HEALTH CARE NHS TRUST",
+        "ods_code": "RR9"
+      }
+    ],
+    "observation": [
+      {
+        "snomed_concept_id": "307749004",
+        "snomed_description_id": "451111014",
+        "effective_date": "2017-03-20T09:46:00",
+        "encounter_id": "29e0b0f0-b7f5-468c-a658-bd257a82e3d9",
+        "id": "4b0e420c-1efb-43f8-be53-784bb65450ee",
+        "practitioner_id": "b195933d-13ad-44a1-8155-dcad85548c63",
+        "rubric": "Incomp inev mis complicated by genital tract pelvic infect",
+        "readv2_code": "L044011",
+        "recorded_date": "2017-03-20T09:46:19",
+        "registration_id": "a4ce4d45-fb18-47ec-ac0c-2d0af5a245d3",
+        "user_selected": "rvt"
+      }
+    ],
+    "problem_link": [],
+    "practitioner": [
+      {
+        "forename": "Damien",
+        "id": "63cc6ed7-5561-45ca-b17b-23ce80c46561",
+        "employer_id": "fc655595-2755-402d-8c49-298b45327fb1",
+        "professional_identifier": "G5491898",
+        "surname": "Peters",
+        "title": "Dr",
+        "identifier_issuing_body": "02"
+      },
+      {
+        "forename": "Graham",
+        "id": "26390db1-399e-4f9d-b4fc-0602316d7a87",
+        "employer_id": "fc655595-2755-402d-8c49-298b45327fb1",
+        "professional_identifier": "G7155271",
+        "surname": "Gibson",
+        "title": "Dr",
+        "identifier_issuing_body": "02"
+      },
+      {
+        "forename": "Karen",
+        "id": "b195933d-13ad-44a1-8155-dcad85548c63",
+        "employer_id": "fc655595-2755-402d-8c49-298b45327fb1",
+        "professional_identifier": "G9604065",
+        "surname": "Little",
+        "title": "Dr",
+        "identifier_issuing_body": "02"
+      },
+      {
+        "forename": "Sam",
+        "id": "5f6e7464-44b9-480d-bd00-d88837050d23",
+        "employer_id": "fc655595-2755-402d-8c49-298b45327fb1",
+        "professional_identifier": "G9858633",
+        "surname": "Murphy",
+        "title": "Dr",
+        "identifier_issuing_body": "02"
+      },
+      {
+        "forename": "Melissa",
+        "id": "24a147e4-a884-4a21-bc92-1b144d2ca606",
+        "employer_id": "fc655595-2755-402d-8c49-298b45327fb1",
+        "professional_identifier": "G3683886",
+        "surname": "O'Connor",
+        "title": "Dr",
+        "identifier_issuing_body": "02"
+      },
+      {
+        "forename": "Jacqueline",
+        "id": "73989219-c122-4944-9b5c-74b2446f79c1",
+        "employer_id": "fc655595-2755-402d-8c49-298b45327fb1",
+        "professional_identifier": "G1501909",
+        "surname": "Walker",
+        "title": "Dr",
+        "identifier_issuing_body": "02"
+      },
+      {
+        "hcp_type": "D",
+        "id": "25d20a21-e6e9-452b-9542-d48cf5e01f90",
+        "employer_id": "59033e62-0a1c-401d-9c5b-0e3b61f41f48",
+        "surname": "Gould"
+      },
+      {
+        "hcp_type": "D",
+        "id": "97f871d8-261b-4632-86c2-1caf2a97045b",
+        "employer_id": "d5f4e27c-d2e5-4397-97ad-7e26b1dbd197",
+        "surname": "Williams"
+      }
+    ],
+    "problem": [],
+    "patient": {
+      "date_of_birth_deid": "30861A39",
+      "date_of_death_deid": "PNWHRBQ4",
+      "ethnic_category": "275592003",
+      "gender": "2",
+      "id": "a4ce4d45-fb18-47ec-ac0c-2d0af5a245d3",
+      "interpreter_required": false,
+      "local_id_deid": "7A9B9YX7SVZ1P85",
+      "language_preferred": "315572006",
+      "lsoa": "E01006686",
+      "named_gp": "63cc6ed7-5561-45ca-b17b-23ce80c46561",
+      "practice": "fc655595-2755-402d-8c49-298b45327fb1",
+      "postcode_deid": "AA26 3EA",
+      "patient_id_deid": "M3D5EBBFZFI1CML",
+      "postcode_sector": "T 0GL",
+      "recorded_date": "1998-04-12T23:12:00.000Z",
+      "registered_date": "1998-04-12T23:12:00.000Z",
+      "registration_status": true,
+      "registration_type": "R",
+      "sexual_orientation": "1",
+      "source_registration_type": "Regular",
+      "week_of_birth": "461996",
+      "week_of_death": "321999"
+    },
+    "derived_provider_id": "A81001",
+    "referral": [],
+    "recall": [
+      {
+        "snomed_concept_id": "9217002",
+        "snomed_description_id": "511731000000116",
+        "effective_date": "2001-01-08T00:00:00",
+        "encounter_id": "29e0b0f0-b7f5-468c-a658-bd257a82e3d9",
+        "id": "5525ce47-4c20-46f9-a681-233827285efb",
+        "practitioner_id": "73989219-c122-4944-9b5c-74b2446f79c1",
+        "rubric": "Surgical outfracture of turbinate of nose",
+        "readv2_code": "7403900",
+        "recorded_date": "1999-02-18T10:47:34",
+        "registration_id": "a4ce4d45-fb18-47ec-ac0c-2d0af5a245d3",
+        "user_selected": "rvt"
+      },
+      {
+        "snomed_concept_id": "39774008",
+        "snomed_description_id": "730711000000111",
+        "effective_date": "2009-01-10T00:00:00",
+        "encounter_id": "29e0b0f0-b7f5-468c-a658-bd257a82e3d9",
+        "id": "8c629f57-182e-4d14-80e0-3e8501e5b52a",
+        "practitioner_id": "73989219-c122-4944-9b5c-74b2446f79c1",
+        "rubric": "Septal reconstruction with cartilage graft",
+        "readv2_code": "7402A00",
+        "recorded_date": "1999-02-18T10:47:34",
+        "registration_id": "a4ce4d45-fb18-47ec-ac0c-2d0af5a245d3",
+        "user_selected": "rvt"
+      }
+    ]
+  }
+]

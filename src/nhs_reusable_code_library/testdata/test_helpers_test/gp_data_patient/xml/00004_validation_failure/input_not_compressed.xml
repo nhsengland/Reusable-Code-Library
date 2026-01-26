@@ -1,0 +1,8 @@
+<?xml version="1.0" ?>
+<gpdata-extract channel-id="da8a54e0-c973-4a1b-b707-71b981430a0e" channel-sequence="5" gpdata-version="0.77"
+                id="8a9c2edb-60fe-4620-a3c8-edb69592e3bc" issue-date-time="2018-10-28T00:00:00" source="SOURCE-SUPPLIER"
+                source-message-address="SOURCE-MESH" source-system="SOURCE-SYSTEM" source-version="SOURCE-VERSION"
+                xmlns="http://www.nhsdigital.nhs.uk/GPDFSU/XMLSchema/GPDataExtract/ns"
+                xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                xsi:schemaLocation="http://www.nhsdigital.nhs.uk/GPDFSU/XMLSchema/GPDataExtract/ns GPDataExtract-0.77.xsd">
+</gpdata-extract>

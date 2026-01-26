@@ -2,7 +2,7 @@ from datetime import datetime
 from typing import Dict, Iterable, List, Union
 
 import boto3
-from src.shared.aws import s3_client
+from src.nhs_reusable_code_library.resuable_codes.shared.aws import s3_client
 import os
 
 S3_PROTOCOL = "s3://"

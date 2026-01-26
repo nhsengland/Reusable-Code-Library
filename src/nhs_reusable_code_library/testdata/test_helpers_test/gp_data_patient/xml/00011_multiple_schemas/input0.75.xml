@@ -1,0 +1,136 @@
+<?xml version="1.0" ?>
+<gpdata-extract channel-id="da8a54e0-c973-4a1b-b707-71b981430a0e" channel-sequence="4" gpdata-version="0.75"
+                id="7027aabb-689e-45c3-b3d8-7ff62c7d1c06" issue-date-time="2018-10-27T00:00:00" source="SOURCE-SUPPLIER"
+                source-message-address="SOURCE-MESH" source-system="SOURCE-SYSTEM" source-version="SOURCE-VERSION"
+                xmlns="http://www.nhsdigital.nhs.uk/GPDFSU/XMLSchema/GPDataExtract/ns"
+                xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                xsi:schemaLocation="http://www.nhsdigital.nhs.uk/GPDFSU/XMLSchema/GPDataExtract/ns GPDataExtract-0.75.xsd">
+    <practice-extract id="27d365e0-31ea-487d-a2df-b14ef8962540" issue-date-time="2018-10-27T00:00:00"
+                      provider-id="A81075" source-system="SOURCE_EPR" source-version="SOURCE_EPR_VERSION"
+                      supplier-provider-id="A81075">
+        <practice-directory>
+            <ort id="fc655595-2755-402d-8c49-298b45327fb1" nm="THE DENSHAM SURGERY" oc="A81075"/>
+            <ort al1="ST. JAMES'S UNIVERSITY HOSPITAL" al2="BECKETT STREET" al3="LEEDS" al4="WEST YORKSHIRE"
+                 al5="LS9 7TF" id="23b0abac-80f6-428a-9999-dcc98ddaea0e" lc="BLAH"
+                 nm="LEEDS TEACHING HOSPITALS NHS TRUST" oc="RR8" rl="197" sp="303" tp="Hospital Trust"/>
+            <ort id="d5f4e27c-d2e5-4397-97ad-7e26b1dbd197" nm="Minimal Local Org"/>
+            <ort id="59033e62-0a1c-401d-9c5b-0e3b61f41f48" nm="NORTH DURHAM HEALTH CARE NHS TRUST" oc="RR9"/>
+            <prct fn="Wendy" ib="02" id="a4ef02ec-f970-4273-b76c-1132d2b6a67d"
+                  oid="fc655595-2755-402d-8c49-298b45327fb1" pi="G3188052" sn="Willis" t="Dr"/>
+            <prct fn="Damien" ib="02" id="63cc6ed7-5561-45ca-b17b-23ce80c46561"
+                  oid="fc655595-2755-402d-8c49-298b45327fb1" pi="G5491898" sn="Peters" t="Dr"/>
+            <prct fn="Graham" ib="02" id="26390db1-399e-4f9d-b4fc-0602316d7a87"
+                  oid="fc655595-2755-402d-8c49-298b45327fb1" pi="G7155271" sn="Gibson" t="Dr"/>
+            <prct fn="Karen" ib="02" id="b195933d-13ad-44a1-8155-dcad85548c63"
+                  oid="fc655595-2755-402d-8c49-298b45327fb1" pi="G9604065" sn="Little" t="Dr"/>
+            <prct fn="Hayley" ib="02" id="84aaed58-e47b-4638-a8aa-86ee977a873b"
+                  oid="fc655595-2755-402d-8c49-298b45327fb1" pi="G2528184" sn="Jones" t="Dr"/>
+            <prct fn="Sam" ib="02" id="5f6e7464-44b9-480d-bd00-d88837050d23" oid="fc655595-2755-402d-8c49-298b45327fb1"
+                  pi="G9858633" sn="Murphy" t="Dr"/>
+            <prct fn="Melissa" ib="02" id="24a147e4-a884-4a21-bc92-1b144d2ca606"
+                  oid="fc655595-2755-402d-8c49-298b45327fb1" pi="G3683886" sn="O'Connor" t="Dr"/>
+            <prct fn="Derek" ib="02" id="0a184c19-4175-46fc-bdd5-e878d7f21dd7"
+                  oid="fc655595-2755-402d-8c49-298b45327fb1" pi="G0072679" sn="Davies" t="Dr"/>
+            <prct fn="Andrew" ib="02" id="450b833d-7cee-42a7-b97b-4bc94f428142"
+                  oid="fc655595-2755-402d-8c49-298b45327fb1" pi="G3841290" sn="Kelly" t="Dr"/>
+            <prct fn="Jacqueline" ib="02" id="73989219-c122-4944-9b5c-74b2446f79c1"
+                  oid="fc655595-2755-402d-8c49-298b45327fb1" pi="G1501909" sn="Walker" t="Dr"/>
+            <prct fn="Damian" ib="02" id="bcff2e89-926c-4689-9a34-c27b5a6d6b56"
+                  oid="fc655595-2755-402d-8c49-298b45327fb1" pi="G9780816" sn="Potter" t="Dr"/>
+            <prct fn="Carolyn" ib="02" id="277c6c12-3bcb-42dd-9a6d-e90f3503adf3"
+                  oid="fc655595-2755-402d-8c49-298b45327fb1" pi="G7568791" sn="White" t="Dr"/>
+            <prct fn="Owen" ht="C" ib="03" id="a7d70a75-1477-468c-8d7c-0c1684e6b29e" li="7196923056"
+                  lr="Hospital Consultant" oid="d5f4e27c-d2e5-4397-97ad-7e26b1dbd197" pi="C1025086" sc="R0064" sn="Gill"
+                  sp="100" sr="357433463399" su="40340476413742997400" t="Dr"/>
+            <prct ht="D" id="a4410ca4-6824-46d0-98fe-6587b09ec1ed" oid="59033e62-0a1c-401d-9c5b-0e3b61f41f48"
+                  sn="Gray"/>
+            <prct fn="Russell" ht="D06" ib="03" id="e1a5246c-b13e-47a0-9fe1-04fb7b0dc3c7" li="1785102521"
+                  lr="Surgical Registrar" oid="d5f4e27c-d2e5-4397-97ad-7e26b1dbd197" pi="C9855467" sc="R0063"
+                  sn="Carpenter" sp="101" sr="717120129869" su="78225844110780012391" t="Dr"/>
+            <prct fn="Gillian" ht="B" ib="03" id="e849b735-35de-462c-8930-e4d1631382c5" li="5042567315"
+                  lr="Hospital Consultant" oid="d5f4e27c-d2e5-4397-97ad-7e26b1dbd197" pi="C6941511" sc="R0064"
+                  sn="Richardson" sp="110" sr="864416994765" su="47363003307056489142" t="Dr"/>
+            <prct fn="Mitchell" ht="D" ib="03" id="a3b79c19-4753-4ae3-a9af-a0e3bd1a2daf" li="7050038792"
+                  lr="Hospital Consultant" oid="23b0abac-80f6-428a-9999-dcc98ddaea0e" pi="C8570228" sc="R0064"
+                  sn="Evans" sp="141" sr="089909096289" su="96849192087717177425" t="Dr"/>
+            <prct fn="Ann" ht="C" ib="03" id="1d7f6896-5001-41ed-adb5-f864a23790ee" li="9605299093"
+                  lr="Surgical Registrar" oid="23b0abac-80f6-428a-9999-dcc98ddaea0e" pi="C5346773" sc="R0063" sn="Flynn"
+                  sp="140" sr="002824478341" su="77117098410146995589" t="Dr"/>
+            <prct fn="Carl" ht="D06" ib="03" id="b739e0ab-d4be-439c-ac93-a8ad3d41b5d6" li="8465885286"
+                  lr="Hospital Consultant" oid="d5f4e27c-d2e5-4397-97ad-7e26b1dbd197" pi="C3325965" sc="R0063"
+                  sn="Lewis" sp="120" sr="057933930897" su="35272624713259573545" t="Dr"/>
+            <prct fn="Jodie" ht="C" ib="03" id="4b4c4bb1-a1b4-461e-89b4-c9cf7506d8b7" li="8361483207"
+                  lr="Hospital Consultant" oid="59033e62-0a1c-401d-9c5b-0e3b61f41f48" pi="C1532061" sc="R0064"
+                  sn="Smith" sp="141" sr="765355652674" su="48892824922327419776" t="Dr"/>
+            <prct ht="D" id="25d20a21-e6e9-452b-9542-d48cf5e01f90" oid="59033e62-0a1c-401d-9c5b-0e3b61f41f48"
+                  sn="Gould"/>
+            <prct ht="D" id="97f871d8-261b-4632-86c2-1caf2a97045b" oid="d5f4e27c-d2e5-4397-97ad-7e26b1dbd197"
+                  sn="Williams"/>
+        </practice-directory>
+        <practice-patient-extracts>
+            <patient-extract-snapshot continuity-hint="false" id="65e4672d-f64d-420a-89c4-a2e1287416c7"
+                                      issue-date-time="2018-10-27T00:00:00"
+                                      local-id-deid="CiECj2WxwF+KJVS95YTFqIHQBGTHIA1M4dwf0bHhKv5vwmQSIQMw9AUvI/IAT2oHfWZOkIasUtrPTW3wOZQnr9HIYOwWwxgBIiQxNjNiNzdjNi0xNDMxLTNmNGUtOGU3YS01YzNjNjBmZDQwNjIqJDg3NGM1Y2U2LWMzOWEtM2M4MS1iYmFmLWRkM2U1NmNmN2M0Yw=="
+                                      patient-id-deid="CiECWy6EqwsXolPuxXZwRzavk/EwANt5xMzTGAL2x1vA90oSIQPOvK9DLzgnX9kS5mSBOMisEZxGBNjI+inQnimJKvRHjBgBIiQxNjNiNzdjNi0xNDMxLTNmNGUtOGU3YS01YzNjNjBmZDQwNjIqJDg3NGM1Y2U2LWMzOWEtM2M4MS1iYmFmLWRkM2U1NmNmN2M0Yw=="
+                                      registration-id="7b11b7ba-9b66-4ae2-80c3-9c198b6eaced" sequence="1">
+                <pt dbd="CiECtB7NEyXb76JCB1o8KNOfHlMaf9Yk71RzLBsdCWBklwESIQIhMOXuMYM7wee4pjzOkkZKMb5yuMiNYv9F261IJDr1whgBIiQxNjNiNzdjNi0xNDMxLTNmNGUtOGU3YS01YzNjNjBmZDQwNjIqJDg3NGM1Y2U2LWMzOWEtM2M4MS1iYmFmLWRkM2U1NmNmN2M0Yw=="
+                    ec="275590006" g="1" id="7b11b7ba-9b66-4ae2-80c3-9c198b6eaced" ir="false"
+                    lid="CiECj2WxwF+KJVS95YTFqIHQBGTHIA1M4dwf0bHhKv5vwmQSIQMw9AUvI/IAT2oHfWZOkIasUtrPTW3wOZQnr9HIYOwWwxgBIiQxNjNiNzdjNi0xNDMxLTNmNGUtOGU3YS01YzNjNjBmZDQwNjIqJDg3NGM1Y2U2LWMzOWEtM2M4MS1iYmFmLWRkM2U1NmNmN2M0Yw=="
+                    lp="315572006" lsoa="E01006686" ng="a4ef02ec-f970-4273-b76c-1132d2b6a67d"
+                    p="fc655595-2755-402d-8c49-298b45327fb1"
+                    pd="CiEDQ6dTwmoL5iVSjxSYuNnN5uI+yNo71vOouq5Ey6Mi97MSIQLz5lWEi+Dh/qRfqU9mCokkIjdXdF/S1dChDPpMS6MHzhgBIiQxNjNiNzdjNi0xNDMxLTNmNGUtOGU3YS01YzNjNjBmZDQwNjIqJDg3NGM1Y2U2LWMzOWEtM2M4MS1iYmFmLWRkM2U1NmNmN2M0Yw=="
+                    pidd="CiECWy6EqwsXolPuxXZwRzavk/EwANt5xMzTGAL2x1vA90oSIQPOvK9DLzgnX9kS5mSBOMisEZxGBNjI+inQnimJKvRHjBgBIiQxNjNiNzdjNi0xNDMxLTNmNGUtOGU3YS01YzNjNjBmZDQwNjIqJDg3NGM1Y2U2LWMzOWEtM2M4MS1iYmFmLWRkM2U1NmNmN2M0Yw=="
+                    ps="7 3YH" rd="2002-03-15T23:12:00.000Z" rgd="2002-03-15T23:12:00.000Z" rs="true" rt="R" so="1"
+                    srt="Regular" wb="061978"/>
+                <et cid="37361000000105" ed="2018-10-25T14:46:00" id="50ee2f2e-cce0-4c5c-9d20-87c6db63d3f6"
+                    pid="73989219-c122-4944-9b5c-74b2446f79c1" rct="9b01.00" rd="2018-10-25T14:46:05"
+                    rid="7b11b7ba-9b66-4ae2-80c3-9c198b6eaced"/>
+                <ot cid="214230002" did="326195015" ed="2018-10-25T14:42:00" eid="50ee2f2e-cce0-4c5c-9d20-87c6db63d3f6"
+                    id="d93ad4d6-cf0a-4d92-a369-4cd58bcbf9c9" pid="277c6c12-3bcb-42dd-9a6d-e90f3503adf3"
+                    rb="MVTA+collis+pedestrian NOS - occupant of tram injured" rct="T14z400" rd="2018-10-25T14:42:08"
+                    rid="7b11b7ba-9b66-4ae2-80c3-9c198b6eaced" us="rvt"/>
+                <rt cid="172842002" did="267590010" ed="1979-06-26T00:00:00" eid="50ee2f2e-cce0-4c5c-9d20-87c6db63d3f6"
+                    id="b721c6a8-fb82-40ce-885b-28179b87e677" pid="0a184c19-4175-46fc-bdd5-e878d7f21dd7"
+                    rb="Skoog correction of alar slump" rct="7409113" rd="1978-05-23T11:42:26"
+                    rid="7b11b7ba-9b66-4ae2-80c3-9c198b6eaced" us="rvt"/>
+                <rt cid="73776009" did="1233659015" ed="1978-08-07T00:00:00" eid="50ee2f2e-cce0-4c5c-9d20-87c6db63d3f6"
+                    id="80a3c4d8-693a-4d81-9b3b-81a7fce3baf4" pid="0a184c19-4175-46fc-bdd5-e878d7f21dd7"
+                    rb="Closure of fistula between maxillary antrum and mouth" rct="7411400" rd="1978-05-23T11:42:26"
+                    rid="7b11b7ba-9b66-4ae2-80c3-9c198b6eaced" us="rvt"/>
+            </patient-extract-snapshot>
+            <patient-extract-snapshot continuity-hint="false" id="4ce678ba-b307-4a65-9b70-20dab16f0ab7"
+                                      issue-date-time="2018-10-27T00:00:00"
+                                      local-id-deid="CiECWGFvrqLcTLkwBldMdTMu1wfPBbTvTbhgD3HrzFwMyzsSIQOa8UU70V4aJIIjNNYPwpAz+c5AJ4LDuQfslh+DRh+enxgBIiQxNjNiNzdjNi0xNDMxLTNmNGUtOGU3YS01YzNjNjBmZDQwNjIqJDg3NGM1Y2U2LWMzOWEtM2M4MS1iYmFmLWRkM2U1NmNmN2M0Yw=="
+                                      patient-id-deid="CiEDhLPeC+cTCaEucMWF+Lni6wx5BAW/2UcCU6+JcdXKYSMSIQIVT2RNKO0gFT6JOVqTqNlola/a3/kYgHxdqjeat/tDGBgBIiQxNjNiNzdjNi0xNDMxLTNmNGUtOGU3YS01YzNjNjBmZDQwNjIqJDg3NGM1Y2U2LWMzOWEtM2M4MS1iYmFmLWRkM2U1NmNmN2M0Yw=="
+                                      registration-id="e8c85f88-947d-4c8f-926c-1c2e30febe99" sequence="1">
+                <pt dbd="CiEDe9ta62zfREawVjkjjt4wRZePVGa2QFtzbuOW1DkB56kSIQImPjhGT5QUcXLO4FpUlf8gZLeK1H+9jJk/hpF5T+hvbRgBIiQxNjNiNzdjNi0xNDMxLTNmNGUtOGU3YS01YzNjNjBmZDQwNjIqJDg3NGM1Y2U2LWMzOWEtM2M4MS1iYmFmLWRkM2U1NmNmN2M0Yw=="
+                    ec="186023009" g="2" id="e8c85f88-947d-4c8f-926c-1c2e30febe99" ir="false"
+                    lid="CiECWGFvrqLcTLkwBldMdTMu1wfPBbTvTbhgD3HrzFwMyzsSIQOa8UU70V4aJIIjNNYPwpAz+c5AJ4LDuQfslh+DRh+enxgBIiQxNjNiNzdjNi0xNDMxLTNmNGUtOGU3YS01YzNjNjBmZDQwNjIqJDg3NGM1Y2U2LWMzOWEtM2M4MS1iYmFmLWRkM2U1NmNmN2M0Yw=="
+                    lp="315583002" lsoa="E01006686" ng="24a147e4-a884-4a21-bc92-1b144d2ca606"
+                    p="fc655595-2755-402d-8c49-298b45327fb1"
+                    pd="CiECbVhU1ZfJZ7Dz8DweJHMM6oQYv0lkRBmhNurF3tLBB3YSIQJ3NPhX8vLBZEnxk5aeJ6tCdyUq/neZPDAV6j6FND5P6BgBIiQxNjNiNzdjNi0xNDMxLTNmNGUtOGU3YS01YzNjNjBmZDQwNjIqJDg3NGM1Y2U2LWMzOWEtM2M4MS1iYmFmLWRkM2U1NmNmN2M0Yw=="
+                    pidd="CiEDhLPeC+cTCaEucMWF+Lni6wx5BAW/2UcCU6+JcdXKYSMSIQIVT2RNKO0gFT6JOVqTqNlola/a3/kYgHxdqjeat/tDGBgBIiQxNjNiNzdjNi0xNDMxLTNmNGUtOGU3YS01YzNjNjBmZDQwNjIqJDg3NGM1Y2U2LWMzOWEtM2M4MS1iYmFmLWRkM2U1NmNmN2M0Yw=="
+                    ps="9 4YA" rd="1993-07-01T23:12:00.000Z" rgd="1993-07-01T23:12:00.000Z" rs="true" rt="R" so="1"
+                    srt="Regular" wb="241988"/>
+                <et cid="37361000000105" ed="1998-04-12T17:54:00" id="29e0b0f0-b7f5-468c-a658-bd257a82e3d9"
+                    pid="24a147e4-a884-4a21-bc92-1b144d2ca606" rct="9b01.00" rd="1998-04-12T17:54:57"
+                    rid="e8c85f88-947d-4c8f-926c-1c2e30febe99"/>
+                <rft ad="2019-10-14T00:00:00" cid="183524004" ctv3="8H49." did="283611014" dir="out"
+                     ed="2006-06-12T09:25:00" eid="29e0b0f0-b7f5-468c-a658-bd257a82e3d9"
+                     id="6e4b0b04-c5be-4653-ba6c-d4fe4c434c52" oc="blah" ocs="http://www.fhir.ns.uk/Id/Blahcodes"
+                     od="blah" opr="stat" orsn="Blah" osvc="Colposcopy" otyp="Outpatient"
+                     pid="5f6e7464-44b9-480d-bd00-d88837050d23" pr="1" rb="Psychiatric referral" rct="8H49.00"
+                     rd="2006-06-12T09:25:03" rid="e8c85f88-947d-4c8f-926c-1c2e30febe99" sp="130" src="01"
+                     svc="310024000" to="d5f4e27c-d2e5-4397-97ad-7e26b1dbd197" typ="1066111000000103" ub="123456789012"
+                     us="rvt"/>
+                <prt cid="195967001" did="301485011" ed="2000-01-05T12:47:00" eid="29e0b0f0-b7f5-468c-a658-bd257a82e3d9"
+                     id="96a3094f-9581-474e-a313-6e0a36bef89d" pid="26390db1-399e-4f9d-b4fc-0602316d7a87" rb="Asthma"
+                     rct="H33..00" rd="2000-01-05T12:47:07" rid="e8c85f88-947d-4c8f-926c-1c2e30febe99" sg="major"
+                     st="active" us="sct"/>
+                <plt eid="29e0b0f0-b7f5-468c-a658-bd257a82e3d9" id="a0eb147c-096f-464f-b75e-cc2578a40813"
+                     pid="96a3094f-9581-474e-a313-6e0a36bef89d" rd="2016-10-10T17:07:30"
+                     rid="e8c85f88-947d-4c8f-926c-1c2e30febe99"/>
+            </patient-extract-snapshot>
+        </practice-patient-extracts>
+    </practice-extract>
+</gpdata-extract>

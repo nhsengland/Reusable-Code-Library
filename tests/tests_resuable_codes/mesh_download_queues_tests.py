@@ -29,7 +29,7 @@ def temp_mesh_download_data(temp_mesh_download_queues: MeshDownloadQueuesStore) 
     for the temp table to the test method.
     """
     store = temp_mesh_download_queues
-    timestamp = datetime.utcnow()
+    timestamp = datetime.now(datetime.timezone.utc)
 
     items = list()
 

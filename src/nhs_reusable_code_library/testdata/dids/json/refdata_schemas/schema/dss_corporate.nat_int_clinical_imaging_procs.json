@@ -1,0 +1,148 @@
+{
+  "fields": [
+    {
+      "name": "NICIP_KEY",
+      "type": "integer",
+      "nullable": true,
+      "metadata": {}
+    },
+    {
+      "name": "ID",
+      "type": "integer",
+      "nullable": true,
+      "metadata": {}
+    },
+    {
+      "name": "SCT_ID",
+      "type": "string",
+      "nullable": true,
+      "metadata": {}
+    },
+    {
+      "name": "SCT_FSN",
+      "type": "string",
+      "nullable": true,
+      "metadata": {}
+    },
+    {
+      "name": "LATERALITY_ID",
+    "type": "string",
+    "nullable": true,
+    "metadata": {}
+    },
+    {
+      "name": "LATERALITY",
+      "type": "string",
+      "nullable": true,
+      "metadata": {}
+    },
+    {
+      "name": "SHORT_CODE",
+      "type": "string",
+      "nullable": true,
+      "metadata": {}
+    },
+    {
+      "name": "SHORT_CODE_START_DATE",
+    "type": "date",
+    "nullable": true,
+    "metadata": {}
+    },
+    {
+      "name": "SHORT_CODE_END_DATE",
+    "type": "date",
+    "nullable": true,
+    "metadata": {}
+    },
+    {
+      "name": "MULTI_FACTOR",
+    "type": "integer",
+    "nullable": true,
+    "metadata": {}
+    },
+    {
+      "name": "STATUS",
+      "type": "string",
+      "nullable": true,
+      "metadata": {}
+    },
+    {
+      "name": "DEPRECATE_REASON",
+    "type": "string",
+    "nullable": true,
+    "metadata": {}
+    },
+    {
+      "name": "DIAGNOSTIC",
+      "type": "string",
+      "nullable": true,
+      "metadata": {}
+    },
+    {
+      "name": "INTERVENTIONAL",
+    "type": "string",
+    "nullable": true,
+    "metadata": {}
+    },
+    {
+      "name": "SUBSTITUTE",
+      "type": "string",
+      "nullable": true,
+      "metadata": {}
+    },
+    {
+      "name": "PREFERRED",
+      "type": "string",
+      "nullable": true,
+      "metadata": {}
+    },
+    {
+      "name": "SYNONYM_1",
+      "type": "string",
+      "nullable": true,
+      "metadata": {}
+    },
+    {
+      "name": "SYNONYM_2",
+      "type": "string",
+      "nullable": true,
+      "metadata": {}
+    },
+    {
+      "name": "SYNONYM_3",
+      "type": "string",
+      "nullable": true,
+      "metadata": {}
+    },
+    {
+      "name": "BUSINESS_START_DATE",
+    "type": "date",
+    "nullable": true,
+    "metadata": {}
+    },
+    {
+      "name": "BUSINESS_END_DATE",
+    "type": "date",
+    "nullable": true,
+    "metadata": {}
+    },
+    {
+      "name": "SHORT_CODE_IS_CURRENT",
+    "type": "integer",
+    "nullable": true,
+    "metadata": {}
+    },
+    {
+      "name": "SYSTEM_CREATED_DATE",
+    "type": "date",
+    "nullable": true,
+    "metadata": {}
+    },
+    {
+      "name": "SYSTEM_UPDATED_DATE",
+    "type": "date",
+    "nullable": true,
+    "metadata": {}
+    }
+  ]
+}
