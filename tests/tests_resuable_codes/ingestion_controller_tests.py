@@ -4,8 +4,8 @@ from unittest.mock import Mock
 import pytest
 from pyspark.sql import SparkSession, Row
 
-from src.nhs_reusable_code_library.resuable_codes.shared.file_store import File
-from src.nhs_reusable_code_library.resuable_codes.shared.ingestion_controller import IngestionController
+from src.nhs_reusable_code_library.resuable_codes.file_store import File
+from src.nhs_reusable_code_library.resuable_codes.ingestion_controller import IngestionController
 
 CONTROL_TABLE = "test_table_ingestion_control"
 

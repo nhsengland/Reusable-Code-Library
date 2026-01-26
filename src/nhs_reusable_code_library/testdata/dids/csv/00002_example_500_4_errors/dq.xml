@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!--This QA file is no longer used since validations were removed from the DIDS pipeline - see DEP001-745--> 
+<ROWS>
+    <ROW>
+        <ROW_INDEX>0</ROW_INDEX>
+        <ATTRIBUTE>PERSON_BIRTH_DATE</ATTRIBUTE>
+        <FIELDS>PERSON_BIRTH_DATE</FIELDS>
+        <CODE>DIDS005</CODE>
+        <MESSAGE>Record rejected - Row: Provider Site Code: Accession Number: - Person Birth Date is not a valid date, in the format `yyyy-MM-dd`</MESSAGE>
+        <FIELD_VALUES/>
+        <TYPE>error</TYPE>
+        <ACTION>reject_file</ACTION>
+    </ROW>
+    <ROW>
+        <ROW_INDEX>0</ROW_INDEX>
+        <ATTRIBUTE>PERSON_GENDER_CODE</ATTRIBUTE>
+        <FIELDS>PERSON_GENDER_CODE</FIELDS>
+        <CODE>DQ50001</CODE>
+        <MESSAGE>No valid person gender code, An error occurred on the attribute associated with: PERSON_GENDER_CODE</MESSAGE>
+        <FIELD_VALUES/>
+        <TYPE>error</TYPE>
+        <ACTION>reject_file</ACTION>
+    </ROW>
+    <ROW>
+        <ROW_INDEX>1</ROW_INDEX>
+        <ATTRIBUTE>PERSON_BIRTH_DATE</ATTRIBUTE>
+        <FIELDS>PERSON_BIRTH_DATE</FIELDS>
+        <CODE>DQ50013</CODE>
+        <MESSAGE>PERSON_BIRTH_DATE : is not a valid date, in the format `yyyy-MM-dd`</MESSAGE>
+        <FIELD_VALUES/>
+        <TYPE>error</TYPE>
+        <ACTION>reject_file</ACTION>
+    </ROW>
+    <ROW>
+        <ROW_INDEX>1</ROW_INDEX>
+        <ATTRIBUTE>NHS_NUMBER</ATTRIBUTE>
+        <FIELDS>NHS_NUMBER</FIELDS>
+        <CODE>DIDS001</CODE>
+        <MESSAGE>Row:  Provider Site Code:  Accession Number:  - The NHS Number:  is invalid, it should be in line with NHS Number specification and it must satisfy the modulus 11 algorithm</MESSAGE>
+        <FIELD_VALUES/>
+        <TYPE>error</TYPE>
+        <ACTION>reject_file</ACTION>
+    </ROW>
+    <ROW>
+        <ROW_INDEX>4</ROW_INDEX>
+        <ATTRIBUTE>PERSON_GENDER_CODE</ATTRIBUTE>
+        <FIELDS>PERSON_GENDER_CODE</FIELDS>
+        <CODE>DQ50001</CODE>
+        <MESSAGE>No valid person gender code, An error occurred on the attribute associated with: PERSON_GENDER_CODE</MESSAGE>
+        <FIELD_VALUES/>
+        <TYPE>error</TYPE>
+        <ACTION>reject_file</ACTION>
+    </ROW>
+    <ROW>
+        <ROW_INDEX>5</ROW_INDEX>
+        <ATTRIBUTE>DIAG_TEST_REQUEST_REC_DATE</ATTRIBUTE>
+        <FIELDS>DIAG_TEST_REQUEST_REC_DATE</FIELDS>
+        <CODE>DQ50013</CODE>
+        <MESSAGE>DIAG_TEST_REQUEST_REC_DATE : is not a valid date, in the format `yyyy-MM-dd`</MESSAGE>
+        <FIELD_VALUES/>
+        <TYPE>error</TYPE>
+        <ACTION>reject_file</ACTION>
+    </ROW>
+    <ROW>
+        <ROW_INDEX>6</ROW_INDEX>
+        <ATTRIBUTE>DIAGNOSTIC_TEST_DATE</ATTRIBUTE>
+        <FIELDS>DIAGNOSTIC_TEST_DATE</FIELDS>
+        <FIELDS>SERVICE_REPORT_DATE</FIELDS>
+        <CODE>DQ1001</CODE>
+        <MESSAGE>DIAGNOSTIC_TEST_DATE should be less than or equal to SERVICE_REPORT_DATE</MESSAGE>
+        <FIELD_VALUES/>
+        <TYPE>error</TYPE>
+        <ACTION>reject_file</ACTION>
+    </ROW>
+    <ROW>
+        <ROW_INDEX>6</ROW_INDEX>
+        <ATTRIBUTE>PERSON_GENDER_CODE</ATTRIBUTE>
+        <FIELDS>PERSON_GENDER_CODE</FIELDS>
+        <CODE>DQ50001</CODE>
+        <MESSAGE>No valid person gender code, An error occurred on the attribute associated with: PERSON_GENDER_CODE</MESSAGE>
+        <FIELD_VALUES/>
+        <TYPE>error</TYPE>
+        <ACTION>reject_file</ACTION>
+    </ROW>
+    <ROW>
+        <ROW_INDEX>7</ROW_INDEX>
+        <ATTRIBUTE>NHS_NUMBER</ATTRIBUTE>
+        <FIELDS>NHS_NUMBER</FIELDS>
+        <CODE>DIDS001</CODE>
+        <MESSAGE>Row:  Provider Site Code:  Accession Number:  - The NHS Number:  is invalid, it should be in line with NHS Number specification and it must satisfy the modulus 11 algorithm</MESSAGE>
+        <FIELD_VALUES/>
+        <TYPE>error</TYPE>
+        <ACTION>reject_file</ACTION>
+    </ROW>
+    <ROW>
+        <ROW_INDEX>7</ROW_INDEX>
+        <ATTRIBUTE>NHS_NUMBER</ATTRIBUTE>
+        <FIELDS>NHS_NUMBER</FIELDS>
+        <CODE>DIDS002</CODE>
+        <MESSAGE>Record rejected - Row: Provider Site Code:  Accession Number:  - The NHS Number:  has an incorrect data format</MESSAGE>
+        <FIELD_VALUES/>
+        <TYPE>error</TYPE>
+        <ACTION>reject_file</ACTION>
+    </ROW>
+</ROWS>

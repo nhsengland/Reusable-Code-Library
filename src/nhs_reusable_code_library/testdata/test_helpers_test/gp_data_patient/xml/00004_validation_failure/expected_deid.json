@@ -1,0 +1,146 @@
+[
+  {
+    "id": [
+      "A81001",
+      "415c0b03-85fe-4974-ba6e-122ae31d299d"
+    ],
+    "transit_id": "CiECSQ9hV9lbdML2bXtcAT6zGm8E8A9oQpFb9Gy4FAw0kj8SIQLo1XgD9BIOGkw0h6LoVuvIORnKkMsMuf7DUadifAhOthgBIiQxNjNiNzdjNi0xNDMxLTNmNGUtOGU3YS01YzNjNjBmZDQwNjIqJDg3NGM1Y2U2LWMzOWEtM2M4MS1iYmFmLWRkM2U1NmNmN2M0Yw==",
+    "pseudo_type": "NHSNumber"
+  },
+  {
+    "id": [
+      "A81001",
+      "415c0b03-85fe-4974-ba6e-122ae31d299d"
+    ],
+    "transit_id": "CiEDOXicYkOE4UPuFan3mJ53VIByojL7/NqIWKO+sNmQFrwSIQLyaHnIdZjZLNlrkudIaV5gMN9s/R2AOQctPblf48iHChgBIiQxNjNiNzdjNi0xNDMxLTNmNGUtOGU3YS01YzNjNjBmZDQwNjIqJDg3NGM1Y2U2LWMzOWEtM2M4MS1iYmFmLWRkM2U1NmNmN2M0Yw==",
+    "pseudo_type": "LocalPatientNumber"
+  },
+  {
+    "id": [
+      "A81001",
+      "415c0b03-85fe-4974-ba6e-122ae31d299d"
+    ],
+    "transit_id": "CiED4l9LosTz32Wsv/L+AY1DIvtGxGYKR5jpGaG8CN/Jxh8SIQO9YE1yvqbliRIF05QyN43b0xP/0DFlqlDtO+XFu7EWExgBIiQxNjNiNzdjNi0xNDMxLTNmNGUtOGU3YS01YzNjNjBmZDQwNjIqJDg3NGM1Y2U2LWMzOWEtM2M4MS1iYmFmLWRkM2U1NmNmN2M0Yw==",
+    "pseudo_type": "Postcode"
+  },
+  {
+    "id": [
+      "A81001",
+      "415c0b03-85fe-4974-ba6e-122ae31d299d"
+    ],
+    "transit_id": "CiED8mabsWztaf44OoA75ipJh1bEcbp5Xh1vPAtT9iKiA+8SIQMj0ZzjCQH8G6HrS28oO4rfem8/CoGMRPRN4iSxlfh4wBgBIiQxNjNiNzdjNi0xNDMxLTNmNGUtOGU3YS01YzNjNjBmZDQwNjIqJDg3NGM1Y2U2LWMzOWEtM2M4MS1iYmFmLWRkM2U1NmNmN2M0Yw==",
+    "pseudo_type": "DoB"
+  },
+  {
+    "id": [
+      "A81001",
+      "415c0b03-85fe-4974-ba6e-122ae31d299d"
+    ],
+    "transit_id": "CiECnEqOEoZnMogFoaU9cqRbbFzjnHQ5/pVpkzhjFH5bhTcSIQK3k/7HT9FLpCSKXOSNEBplB/7nvWiWYM+XLbtjUGmgCxgBIiQxNjNiNzdjNi0xNDMxLTNmNGUtOGU3YS01YzNjNjBmZDQwNjIqJDg3NGM1Y2U2LWMzOWEtM2M4MS1iYmFmLWRkM2U1NmNmN2M0Yw==",
+    "pseudo_type": "DoD"
+  },
+  {
+    "id": [
+      "A81001",
+      "a4ce4d45-fb18-47ec-ac0c-2d0af5a245d3"
+    ],
+    "transit_id": "CiEDUb8ZOazE7tHDrqWYCrGewjPAQW2Ac2TMEog1tYOMBq8SIQO9lY9VmeEWd8qVs2IDW68zrKDTfgr42cgbQadmi16RRhgBIiQxNjNiNzdjNi0xNDMxLTNmNGUtOGU3YS01YzNjNjBmZDQwNjIqJDg3NGM1Y2U2LWMzOWEtM2M4MS1iYmFmLWRkM2U1NmNmN2M0Yw==",
+    "pseudo_type": "NHSNumber"
+  },
+  {
+    "id": [
+      "A81001",
+      "a4ce4d45-fb18-47ec-ac0c-2d0af5a245d3"
+    ],
+    "transit_id": "CiECKYyQTrjssHtdzajNxvroBBR2ADuQlWB37YltfLLUBxkSIQMTrK+YSZnoJPm9rznmi6/FDF/wDkoqL5nvPWzp/aZ31BgBIiQxNjNiNzdjNi0xNDMxLTNmNGUtOGU3YS01YzNjNjBmZDQwNjIqJDg3NGM1Y2U2LWMzOWEtM2M4MS1iYmFmLWRkM2U1NmNmN2M0Yw==",
+    "pseudo_type": "LocalPatientNumber"
+  },
+  {
+    "id": [
+      "A81001",
+      "a4ce4d45-fb18-47ec-ac0c-2d0af5a245d3"
+    ],
+    "transit_id": "CiED8dsP1RnmMu80xXM7HH0jnIvpSSNkrqHt4LABXOd6dO8SIQMBk4Oyy6WtBrzXkgwkTB6kykUXXOcdBlVxBTei6HoNkBgBIiQxNjNiNzdjNi0xNDMxLTNmNGUtOGU3YS01YzNjNjBmZDQwNjIqJDg3NGM1Y2U2LWMzOWEtM2M4MS1iYmFmLWRkM2U1NmNmN2M0Yw==",
+    "pseudo_type": "Postcode"
+  },
+  {
+    "id": [
+      "A81001",
+      "a4ce4d45-fb18-47ec-ac0c-2d0af5a245d3"
+    ],
+    "transit_id": "CiEDQdq/XsWW93jLHMiVfPFphNYofIv1/BqguEPRrP6gwI4SIQN3WNhjKWiSj3Z5ealAy+SCpHE/H0Q0oAgzayEO1jg9pRgBIiQxNjNiNzdjNi0xNDMxLTNmNGUtOGU3YS01YzNjNjBmZDQwNjIqJDg3NGM1Y2U2LWMzOWEtM2M4MS1iYmFmLWRkM2U1NmNmN2M0Yw==",
+    "pseudo_type": "DoB"
+  },
+  {
+    "id": [
+      "A81001",
+      "a4ce4d45-fb18-47ec-ac0c-2d0af5a245d3"
+    ],
+    "transit_id": "CiED8jc8n64Ng3gFAu/YZCnL69z9VpvfuSPrFTEgrxcvZQ8SIQOyxTky53dADNi03dZlP0VMpkA8XrIuHdfiEEOQ8wj6dBgBIiQxNjNiNzdjNi0xNDMxLTNmNGUtOGU3YS01YzNjNjBmZDQwNjIqJDg3NGM1Y2U2LWMzOWEtM2M4MS1iYmFmLWRkM2U1NmNmN2M0Yw==",
+    "pseudo_type": "DoD"
+  },
+  {
+    "id": [
+      "A81003",
+      "415c0b03-85fe-4974-ba6e-122ae31d299d"
+    ],
+    "transit_id": "AiECSQ9hV9lbdML2bXtcAT6zGm8E8A9oQpFb9Gy4FAw0kj8SIQLo1XgD9BIOGkw0h6LoVuvIORnKkMsMuf7DUadifAhOthgBIiQxNjNiNzdjNi0xNDMxLTNmNGUtOGU3YS01YzNjNjBmZDQwNjIqJDg3NGM1Y2U2LWMzOWEtM2M4MS1iYmFmLWRkM2U1NmNmN2M0Yw==",
+    "pseudo_type": "NHSNumber"
+  },
+  {
+    "id": [
+      "A81003",
+      "415c0b03-85fe-4974-ba6e-122ae31d299d"
+    ],
+    "transit_id": "AiEDOXicYkOE4UPuFan3mJ53VIByojL7/NqIWKO+sNmQFrwSIQLyaHnIdZjZLNlrkudIaV5gMN9s/R2AOQctPblf48iHChgBIiQxNjNiNzdjNi0xNDMxLTNmNGUtOGU3YS01YzNjNjBmZDQwNjIqJDg3NGM1Y2U2LWMzOWEtM2M4MS1iYmFmLWRkM2U1NmNmN2M0Yw==",
+    "pseudo_type": "LocalPatientNumber"
+  },
+  {
+    "id": [
+      "A81003",
+      "415c0b03-85fe-4974-ba6e-122ae31d299d"
+    ],
+    "transit_id": "CiED4l9LosTz32Wsv/L+AY1DIvtGxGYKR5jpGaG8CN/Jxh8SIQO9YE1yvqbliRIF05QyN43b0xP/0DFlqlDtO+XFu7EWExgBIiQxNjNiNzdjNi0xNDMxLTNmNGUtOGU3YS01YzNjNjBmZDQwNjIqJDg3NGM1Y2U2LWMzOWEtM2M4MS1iYmFmLWRkM2U1NmNmN2M0Yw==",
+    "pseudo_type": "Postcode"
+  },
+  {
+    "id": [
+      "A81003",
+      "415c0b03-85fe-4974-ba6e-122ae31d299d"
+    ],
+    "transit_id": "CiED8mabsWztaf44OoA75ipJh1bEcbp5Xh1vPAtT9iKiA+8SIQMj0ZzjCQH8G6HrS28oO4rfem8/CoGMRPRN4iSxlfh4wBgBIiQxNjNiNzdjNi0xNDMxLTNmNGUtOGU3YS01YzNjNjBmZDQwNjIqJDg3NGM1Y2U2LWMzOWEtM2M4MS1iYmFmLWRkM2U1NmNmN2M0Yw==",
+    "pseudo_type": "DoB"
+  },
+  {
+    "id": [
+      "A81004",
+      "515c0b03-85fe-4974-ba6e-122ae31d299e"
+    ],
+    "transit_id": "CiECSQ9hV9lbdML2bXtcAT6zGm8E8A9oQpFb9Gy4FAw0kj8SIQLo1XgD9BIOGkw0h6LoVuvIORnKkMsMuf7DUadifAhOthgBIiQxNjNiNzdjNi0xNDMxLTNmNGUtOGU3YS01YzNjNjBmZDQwNjIqJDg3NGM1Y2U2LWMzOWEtM2M4MS1iYmFmLWRkM2U1NmNmN2M0Yw==",
+    "pseudo_type": "NHSNumber"
+  },
+  {
+    "id": [
+      "A81004",
+      "515c0b03-85fe-4974-ba6e-122ae31d299e"
+    ],
+    "transit_id": "CiEDOXicYkOE4UPuFan3mJ53VIByojL7/NqIWKO+sNmQFrwSIQLyaHnIdZjZLNlrkudIaV5gMN9s/R2AOQctPblf48iHChgBIiQxNjNiNzdjNi0xNDMxLTNmNGUtOGU3YS01YzNjNjBmZDQwNjIqJDg3NGM1Y2U2LWMzOWEtM2M4MS1iYmFmLWRkM2U1NmNmN2M0Yw==",
+    "pseudo_type": "LocalPatientNumber"
+  },
+  {
+    "id": [
+      "A81004",
+      "515c0b03-85fe-4974-ba6e-122ae31d299e"
+    ],
+    "transit_id": "CiED4l9LosTz32Wsv/L+AY1DIvtGxGYKR5jpGaG8CN/Jxh8SIQO9YE1yvqbliRIF05QyN43b0xP/0DFlqlDtO+XFu7EWExgBIiQxNjNiNzdjNi0xNDMxLTNmNGUtOGU3YS01YzNjNjBmZDQwNjIqJDg3NGM1Y2U2LWMzOWEtM2M4MS1iYmFmLWRkM2U1NmNmN2M0Yw==",
+    "pseudo_type": "Postcode"
+  },
+  {
+    "id": [
+      "A81004",
+      "515c0b03-85fe-4974-ba6e-122ae31d299e"
+    ],
+    "transit_id": "CiED8mabsWztaf44OoA75ipJh1bEcbp5Xh1vPAtT9iKiA+8SIQMj0ZzjCQH8G6HrS28oO4rfem8/CoGMRPRN4iSxlfh4wBgBIiQxNjNiNzdjNi0xNDMxLTNmNGUtOGU3YS01YzNjNjBmZDQwNjIqJDg3NGM1Y2U2LWMzOWEtM2M4MS1iYmFmLWRkM2U1NmNmN2M0Yw==",
+    "pseudo_type": "DoB"
+  }
+]

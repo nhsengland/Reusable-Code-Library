@@ -8,11 +8,11 @@ import shutil
 import gzip
 
 # noinspection PyUnresolvedReferences
-from shared import local_path
-from shared.common import test_helpers
-from shared.common.test_helpers import smart_csv_reader, smart_upload, scenario_input_path, smart_open, smart_copy, \
+from src.nhs_reusable_code_library.resuable_codes.shared import local_path
+from src.nhs_reusable_code_library.resuable_codes.shared.common import test_helpers
+from src.nhs_reusable_code_library.resuable_codes.shared.common.test_helpers import smart_csv_reader, smart_upload, scenario_input_path, smart_open, smart_copy, \
     gzip_file_copy
-from shared.constants import DS, FT, PATHS
+from src.nhs_reusable_code_library.resuable_codes.shared.constants import DS, FT, PATHS
 
 
 @pytest.fixture()
@@ -27,7 +27,7 @@ def scenario_path() -> str:
 
 @pytest.fixture()
 def gzip_scenario_path() -> str:
-    return local_path('testdata/mps/csv/mps_test_data/correct.csv.gz')
+    return local_path('testdata/test_helpers_test/correct.csv.gz')
 
 
 @pytest.fixture()
@@ -103,11 +103,11 @@ def test_get_version_with_id(version_number, s3_temp, gzip_scenario_path):
     s3_key = os.path.join(s3_path, PATHS.RAW_DATA)
 
     if version_number == 1:
-        smart_upload(local_path('testdata/gp_data_patient/xml/00006_invalid_filename/input_invalid_file.xml'), s3_key)
+        smart_upload(local_path('testdata/test_helpers_test/gp_data_patient/xml/00006_invalid_filename/input_invalid_file.xml'), s3_key)
         smart_upload(gzip_scenario_path, s3_key)
     else:
         smart_upload(gzip_scenario_path, s3_key)
-        smart_upload(local_path('testdata/gp_data_patient/xml/00006_invalid_filename/input_invalid_file.xml'), s3_key)
+        smart_upload(local_path('testdata/test_helpers_test/gp_data_patient/xml/00006_invalid_filename/input_invalid_file.xml'), s3_key)
 
     versions = bucket.object_versions.filter(Prefix=s3_key)
     versions = sorted(versions, key=lambda version_object: version_object.last_modified)

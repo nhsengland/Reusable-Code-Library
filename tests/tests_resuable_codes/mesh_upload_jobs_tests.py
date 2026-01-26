@@ -26,7 +26,7 @@ List[Dict[Any, Any]]]:
     """
     store = temp_mesh_upload_jobs
     items = []
-    timestamp = datetime.utcnow()
+    timestamp = datetime.now(datetime.timezone.utc)
 
     def add_item(created, status, workflow_id, s3_locs, mailbox_to: str = 'MB_TO', mailbox_from: str = 'MB_FROM'):
         item = dict(

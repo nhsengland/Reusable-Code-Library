@@ -1,0 +1,26 @@
+{
+  "input_uniqueness_failure.xml": {
+    "response_to": "147e2884-7dbb-485c-95c0-d67202f0a79f",
+    "status": "fatal-error",
+    "details": [
+      {
+        "id": 1,
+        "code": 4,
+        "title": "Uniqueness Check Failure",
+        "description": "Uniqueness Error: Repeated attribute value for uniqueness group 'GlobalUniqueRecallIDs'."
+      }
+    ]
+  },
+  "input_ref_integrity_failure.xml": {
+    "response_to": "aee0c6a9-7a17-4c77-87ff-e48824ab81a2",
+    "status": "fatal-error",
+    "details": [
+      {
+        "id": 1,
+        "code": 4,
+        "title": "Referential Integrity Check Failure",
+        "description": "Referential Integrity Error: Attribute 'eid' of element 'rt' with ID '5525ce47-4c20-46f9-a681-233827285efb' references a key which does not exist as attribute 'id' of elements 'et'."
+      }
+    ]
+  }
+}

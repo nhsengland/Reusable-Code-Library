@@ -1,0 +1,63 @@
+{
+    "fields": [
+        {
+            "metadata": {},
+            "name": "META",
+            "nullable": true,
+            "type": {
+                "fields": [
+                    {
+                        "metadata": {},
+                        "name": "DATASET_VERSION",
+                        "nullable": true,
+                        "type": "string"
+                    },
+                    {
+                        "metadata": {},
+                        "name": "EVENT_ID",
+                        "nullable": true,
+                        "type": "string"
+                    },
+                    {
+                        "metadata": {},
+                        "name": "EVENT_RECEIVED_TS",
+                        "nullable": true,
+                        "type": "timestamp"
+                    },
+                    {
+                        "metadata": {},
+                        "name": "RECORD_INDEX",
+                        "nullable": true,
+                        "type": "integer"
+                    },
+                    {
+                        "metadata": {},
+                        "name": "RECORD_VERSION",
+                        "nullable": true,
+                        "type": "integer"
+                    }
+                ],
+                "type": "struct"
+            }
+        },
+        {
+            "metadata": {},
+            "name": "PATIENTID",
+            "nullable": true,
+            "type": "string"
+        },
+        {
+            "metadata": {},
+            "name": "NHSNUMBER",
+            "nullable": true,
+            "type": "string"
+        },
+        {
+            "metadata": {},
+            "name": "BIRTHDATE",
+            "nullable": true,
+            "type": "string"
+        }
+    ],
+    "type": "struct"
+}

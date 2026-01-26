@@ -3,7 +3,7 @@ from unittest.mock import Mock, patch
 
 import pytest
 
-from src.nhs_reusable_code_library.resuable_codes.shared.file_store import File, FileStore
+from src.nhs_reusable_code_library.resuable_codes.file_store import File, FileStore
 
 buckets = {
     "bucket_1": ["user_A", "user_B"],

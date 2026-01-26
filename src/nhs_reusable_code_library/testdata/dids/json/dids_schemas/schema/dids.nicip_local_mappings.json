@@ -1,0 +1,22 @@
+{
+  "fields": [
+    {
+      "name": "SUBMITTER_ORGANISATION",
+      "type": "string",
+      "nullable": true,
+      "metadata": {}
+    },
+    {
+      "name": "LOCAL_IMAGING_CODE",
+      "type": "string",
+      "nullable": true,
+      "metadata": {}
+    },
+    {
+      "name": "IMAGING_CODE_NICIP",
+      "type": "string",
+      "nullable": true,
+      "metadata": {}
+    }
+  ]
+}

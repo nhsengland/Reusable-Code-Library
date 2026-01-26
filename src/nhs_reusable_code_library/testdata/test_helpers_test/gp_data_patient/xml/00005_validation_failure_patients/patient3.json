@@ -1,0 +1,183 @@
+{
+  "at": [
+    {
+      "eid": "50ee2f2e-cce0-4c5c-9d20-87c6db63d3f6",
+      "pid": "78e6a78f-8dc9-4c0d-b084-f131ba44e8a6",
+      "rid": "1f78327f-5463-4a5b-9430-d990566a6c99",
+      "tid": "5d1bcc9e-9436-4c16-8ad6-3f7525ea86d2",
+      "cid": "1ffdc43b-49c6-4e98-b2f2-cbd96cd3d186",
+      "did": "0d8155bf-d281-40c5-9f41-a12d923aab82",
+      "us": "sct"
+    }
+  ],
+  "et": [
+    {
+      "or": "b21978a7-99c2-4251-9cb5-62eed0b14f32",
+      "id": "50ee2f2e-cce0-4c5c-9d20-87c6db63d3f6",
+      "pid": "4d898809-2c40-4276-af6e-83bb8657dbf7",
+      "rid": "1f78327f-5463-4a5b-9430-d990566a6c99",
+      "cid": "1ffdc43b-49c6-4e98-b2f2-cbd96cd3d186",
+      "us": "sct"
+    },
+    {
+      "or": "cddd603e-4190-4b3a-8a60-730d8a737182",
+      "id": "91645832-0df5-4119-82c2-5584936c69ab",
+      "pid": "78e6a78f-8dc9-4c0d-b084-f131ba44e8a6",
+      "rid": "1f78327f-5463-4a5b-9430-d990566a6c99",
+      "cid": "1ffdc43b-49c6-4e98-b2f2-cbd96cd3d186",
+      "us": "sct"
+    }
+  ],
+  "it": [
+    {
+      "id": "152563f0-6d90-4069-85f3-8ecc2fccb822",
+      "eid": "91645832-0df5-4119-82c2-5584936c69ab",
+      "pid": "4d898809-2c40-4276-af6e-83bb8657dbf7",
+      "rid": "1f78327f-5463-4a5b-9430-d990566a6c99",
+      "tid": "5d1bcc9e-9436-4c16-8ad6-3f7525ea86d2",
+      "cid": "1ffdc43b-49c6-4e98-b2f2-cbd96cd3d186",
+      "did": "0d8155bf-d281-40c5-9f41-a12d923aab82",
+      "us": "sct",
+      "s-oc": "8150e796-0e45-45c7-8735-bd3ac8070cda",
+      "s-ocs": "a2c8e055-09ed-40bc-a4ab-74e8b963dd19",
+      "s-od": "c784a147-dbb8-43ce-9d5b-9ff05baaacaf",
+      "s-us": "sct"
+    }
+  ],
+  "mt": [
+    {
+      "id": "7988d3d9-5924-4698-aaca-ab5de9565ed9",
+      "aid": "a1e610e3-529e-413a-b861-60f491a837b3",
+      "rr": "5d1bcc9e-9436-4c16-8ad6-3f7525ea86d2",
+      "eid": "50ee2f2e-cce0-4c5c-9d20-87c6db63d3f6",
+      "pid": "78e6a78f-8dc9-4c0d-b084-f131ba44e8a6",
+      "rid": "1f78327f-5463-4a5b-9430-d990566a6c99",
+      "tid": "4d1c4efc-4cb3-4bd7-b810-cfbe043d6cbd",
+      "cid": "1ffdc43b-49c6-4e98-b2f2-cbd96cd3d186",
+      "did": "0d8155bf-d281-40c5-9f41-a12d923aab82",
+      "us": "sct"
+    },
+    {
+      "id": "a1e610e3-529e-413a-b861-60f491a837b3",
+      "aid": "7988d3d9-5924-4698-aaca-ab5de9565ed9",
+      "rr": "4d1c4efc-4cb3-4bd7-b810-cfbe043d6cbd",
+      "eid": "91645832-0df5-4119-82c2-5584936c69ab",
+      "pid": "4d898809-2c40-4276-af6e-83bb8657dbf7",
+      "rid": "1f78327f-5463-4a5b-9430-d990566a6c99",
+      "tid": "4d1c4efc-4cb3-4bd7-b810-cfbe043d6cbd",
+      "cid": "1ffdc43b-49c6-4e98-b2f2-cbd96cd3d186",
+      "did": "0d8155bf-d281-40c5-9f41-a12d923aab82",
+      "us": "sct"
+    }
+  ],
+  "ort": [
+    {
+      "id": "b21978a7-99c2-4251-9cb5-62eed0b14f32",
+      "nm": "2015e660-9c15-4d6d-be5e-c34d4e7a5a4d"
+    },
+    {
+      "id": "cddd603e-4190-4b3a-8a60-730d8a737182",
+      "nm": "2015e660-9c15-4d6d-be5e-c34d4e7a5a4d"
+    }
+  ],
+  "ot": [
+    {
+      "id": "5d1bcc9e-9436-4c16-8ad6-3f7525ea86d2",
+      "eid": "50ee2f2e-cce0-4c5c-9d20-87c6db63d3f6",
+      "pid": "78e6a78f-8dc9-4c0d-b084-f131ba44e8a6",
+      "rid": "1f78327f-5463-4a5b-9430-d990566a6c99",
+      "tid": "4d1c4efc-4cb3-4bd7-b810-cfbe043d6cbd",
+      "cid": "1ffdc43b-49c6-4e98-b2f2-cbd96cd3d186",
+      "did": "0d8155bf-d281-40c5-9f41-a12d923aab82",
+      "us": "sct"
+    },
+    {
+      "id": "4d1c4efc-4cb3-4bd7-b810-cfbe043d6cbd",
+      "eid": "91645832-0df5-4119-82c2-5584936c69ab",
+      "pid": "4d898809-2c40-4276-af6e-83bb8657dbf7",
+      "rid": "1f78327f-5463-4a5b-9430-d990566a6c99",
+      "tid": "5d1bcc9e-9436-4c16-8ad6-3f7525ea86d2",
+      "cid": "1ffdc43b-49c6-4e98-b2f2-cbd96cd3d186",
+      "did": "0d8155bf-d281-40c5-9f41-a12d923aab82",
+      "us": "sct"
+    }
+  ],
+  "plt": [
+    {
+      "pid": "9199fe5c-3a20-43aa-8fe5-3c58a3728f5c",
+      "rid": "1f78327f-5463-4a5b-9430-d990566a6c99"
+    }
+  ],
+  "prct": [
+    {
+      "id": "78e6a78f-8dc9-4c0d-b084-f131ba44e8a6",
+      "oid": "b21978a7-99c2-4251-9cb5-62eed0b14f32"
+    },
+    {
+      "id": "4d898809-2c40-4276-af6e-83bb8657dbf7",
+      "oid": "cddd603e-4190-4b3a-8a60-730d8a737182"
+    }
+  ],
+  "prt": [
+    {
+      "id": "9199fe5c-3a20-43aa-8fe5-3c58a3728f5c",
+      "pi": "455ee056-203e-4124-84c6-eccf5f86d5eb",
+      "rl": "80fd7db7-2fea-4366-aa51-eb085d88f2ab",
+      "eid": "50ee2f2e-cce0-4c5c-9d20-87c6db63d3f6",
+      "pid": "4d898809-2c40-4276-af6e-83bb8657dbf7",
+      "tid": "5d1bcc9e-9436-4c16-8ad6-3f7525ea86d2",
+      "cid": "1ffdc43b-49c6-4e98-b2f2-cbd96cd3d186",
+      "did": "0d8155bf-d281-40c5-9f41-a12d923aab82",
+      "us": "sct"
+    },
+    {
+      "id": "455ee056-203e-4124-84c6-eccf5f86d5eb",
+      "pi": "9199fe5c-3a20-43aa-8fe5-3c58a3728f5c",
+      "rl": "80fd7db7-2fea-4366-aa51-eb085d88f2ab",
+      "eid": "91645832-0df5-4119-82c2-5584936c69ab",
+      "pid": "78e6a78f-8dc9-4c0d-b084-f131ba44e8a6",
+      "tid": "4d1c4efc-4cb3-4bd7-b810-cfbe043d6cbd",
+      "cid": "1ffdc43b-49c6-4e98-b2f2-cbd96cd3d186",
+      "did": "0d8155bf-d281-40c5-9f41-a12d923aab82",
+      "us": "sct"
+    }
+  ],
+  "pt": {
+    "id": "1f78327f-5463-4a5b-9430-d990566a6c99",
+    "ng": "78e6a78f-8dc9-4c0d-b084-f131ba44e8a6",
+    "p": "b21978a7-99c2-4251-9cb5-62eed0b14f32",
+    "rid": "1f78327f-5463-4a5b-9430-d990566a6c99",
+    "lid": "0dc17709-64d2-4b37-9031-5e0917526f44"
+  },
+  "rft": [
+    {
+      "otc": "5d1bcc9e-9436-4c16-8ad6-3f7525ea86d2",
+      "to": "cddd603e-4190-4b3a-8a60-730d8a737182",
+      "eid": "50ee2f2e-cce0-4c5c-9d20-87c6db63d3f6",
+      "pid": "4d898809-2c40-4276-af6e-83bb8657dbf7",
+      "rid": "1f78327f-5463-4a5b-9430-d990566a6c99",
+      "tid": "5d1bcc9e-9436-4c16-8ad6-3f7525ea86d2",
+      "cid": "1ffdc43b-49c6-4e98-b2f2-cbd96cd3d186",
+      "did": "0d8155bf-d281-40c5-9f41-a12d923aab82",
+      "us": "sct"
+    }
+  ],
+  "rt": [
+    {
+      "id": "01ed860e-58aa-4cbd-8361-acc368525e76",
+      "eid": "91645832-0df5-4119-82c2-5584936c69ab",
+      "pid": "78e5a78f-8dc9-4c0d-b084-f131ba44e8a6",
+      "rid": "1f78327f-5463-4a5b-9430-d990566a6c99",
+      "tid": "4d1c4efc-4cb3-4bd7-b810-cfbe043d6cbd",
+      "cid": "1ffdc43b-49c6-4e98-b2f2-cbd96cd3d186",
+      "did": "0d8155bf-d281-40c5-9f41-a12d923aab82",
+      "us": "sct"
+    }
+  ],
+  "patient-extract-snapshot": {
+    "registration-id": "1f78327f-5463-4a5b-9430-d990566a6c99",
+    "patient-id-deid": "df4541b6-b99b-452e-b59d-fbbfb1c905f3",
+    "local-id-deid": "0bc6f836-2801-4ac6-ae22-8808489d2052",
+    "id": "214c7fba-1be9-460e-80ff-d5e31085fe11"
+  }
+}

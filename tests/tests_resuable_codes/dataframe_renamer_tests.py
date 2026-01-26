@@ -7,7 +7,7 @@ import pyspark.sql.functions as F
 from pyspark.sql.functions import explode, expr, length
 from pyspark.sql.types import ArrayType, DecimalType, MapType, StringType, StructField, StructType
 
-from src.nhs_reusable_code_library.resuable_codes.shared.dataframe_renamer import canonical_dataframe, strip_xml_namespaces_in_dataframe 
+from src.nhs_reusable_code_library.resuable_codes.dataframe_renamer import canonical_dataframe, strip_xml_namespaces_in_dataframe 
 
 from pyspark.sql import SparkSession
 from pyspark.sql.functions import col
