@@ -3,6 +3,7 @@ from lxml.etree import XMLSyntaxError
 
 from src.nhs_reusable_code_library.resuable_codes.xml_helpers import xml_to_dict, xml_bytes_to_dict
 
+#These are tests for xml interractions using etree to dict
 
 def test_xml_to_dict_root_only():
     xml = '<xml/>'

@@ -283,7 +283,7 @@ def test_renames_non_nested_columns(xml_test_df):
 
 def input_dataframe(xml_test_df):
     series = xml_test_df.param
-    yeild 
+    yield 
 
 
 def test_does_not_rename_non_prefixed_fields(xml_test_df):

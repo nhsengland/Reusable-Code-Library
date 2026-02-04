@@ -43,6 +43,7 @@ dependencies = [
     "schematics",
     "typing_inspect",
     "delta-spark",
+    "sqlalchemy",
     #"setuptools-scm",
 ]
 requires-python = ">=3.6"
