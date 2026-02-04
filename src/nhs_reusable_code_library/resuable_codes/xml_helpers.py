@@ -5,7 +5,7 @@ from io import BytesIO, StringIO
 from lxml import etree as ET
 
 
-def _etree_to_dict(t, retain_namespaces: bool):
+def _etree_to_dict(t, retain_namespaces: bool): #function for interracting with xml using etree to dict 
     children = list(t)
 
     def tag_name(tag):

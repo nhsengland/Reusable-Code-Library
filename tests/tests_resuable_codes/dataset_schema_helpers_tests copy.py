@@ -1,7 +1,6 @@
 from uuid import uuid4
 
 import pytest
-import tempfile
 from pyspark.sql import SparkSession
 
 from src.nhs_reusable_code_library.resuable_codes.dataset_schema_helpers import get_cols, create_view, create_pseudo_sensitive_view
@@ -9,16 +8,8 @@ from src.nhs_reusable_code_library.resuable_codes.shared.common import concurren
 
 @pytest.fixture
 def spark():
-    #temp_dir = tempfile.mkdtemp()
-    spark = (
-        SparkSession.builder.config("spark.sql.extensions", "io.delta.sql.DeltaSparkSessionExtension")
-        .config(
-            "spark.sql.catalog.spark_catalog", "org.apache.spark.sql.delta.catalog.DeltaCatalog"
-        )
-        .getOrCreate()
-    )
-    spark.sql("create database if not exists temp_db")
-    return spark
+    spark = SparkSession.builder.getOrCreate()
+    yield spark
 
 
 def test_get_cols(spark: SparkSession, temp_db):

@@ -16,17 +16,17 @@ class XmlParser:
     # so it must be specified when parsing. The schema must be defined manually
     # as the corresponding table schema will have canonicalised column names so
     # passing in the table schema would cause a schema mismatch error.
-    class MultiRowExtracts(NamedTuple):
+    class MultiRowExtracts(NamedTuple): #Extracting multiple rows 
         row_tags: List[str]
         schema: StructType
 
-    class SingleRowExtract(NamedTuple):
+    class SingleRowExtract(NamedTuple): #Extracting single rows 
         row_tag: str
         dest_column: str
         schema: StructType
 
     @staticmethod
-    def _parse_rows(
+    def _parse_rows( #function to parse rows within an xml file using a defined schema
         spark: SparkSession, file_path: str, row_tag: str, schema: StructType
     ) -> DataFrame:
         reader = (
@@ -41,7 +41,7 @@ class XmlParser:
         return reader.load(file_path.replace("\\", "\\\\"))
 
     @staticmethod
-    def _parse_single_row_extract(
+    def _parse_single_row_extract(  #function to extract single row within an xml file
         spark, file_path: str, row_tag: str, schema: StructType
     ) -> Row:
         df = XmlParser._parse_rows(spark, file_path, row_tag, schema)
@@ -56,7 +56,7 @@ class XmlParser:
         return df.head()
 
     @staticmethod
-    def _parse_single_rows_df(
+    def _parse_single_rows_df(  #function to parse single row to a dataframe 
         spark: SparkSession, file_path: str, single_row_extracts: List[SingleRowExtract]
     ) -> DataFrame:
         single_row_values = []
@@ -76,7 +76,7 @@ class XmlParser:
         return broadcast(single_rows_df)
 
     @staticmethod
-    def _parse_multi_row_df(
+    def _parse_multi_row_df( #function to parse multiples rows to a dataframe 
         spark: SparkSession, file_path: str, multi_row_extracts: MultiRowExtracts
     ) -> DataFrame:
         extract_dataframes = []

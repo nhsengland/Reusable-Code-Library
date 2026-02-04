@@ -61,9 +61,9 @@ def expected_row() -> str:
 
 
 def test_s3_upload_read(s3_temp, column_headers, scenario_path, expected_dict):
-
+    s3_temp = 'testdata/test_helpers_test/'
     bucket, s3_path = s3_temp
-
+    
     smart_upload(scenario_path, os.path.join(s3_path, PATHS.RAW_DATA))
 
     with smart_csv_reader(os.path.join(s3_path, PATHS.RAW_DATA), column_headers) as f:
