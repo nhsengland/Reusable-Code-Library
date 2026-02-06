@@ -9,18 +9,30 @@ from src.nhs_reusable_code_library.resuable_codes.ingestion_controller import In
 
 CONTROL_TABLE = "test_table_ingestion_control"
 
+from src.nhs_reusable_code_library.resuable_codes.shared import local_path
+
+warehouse_location = local_path('testdata/test_helpers_test/')
 
 @pytest.fixture
 def spark():
-    spark = SparkSession.builder.getOrCreate()
+    spark = SparkSession \
+        .builder \
+        .config("spark.sql.warehouse.dir", warehouse_location) \
+        .enableHiveSupport() \
+        .getOrCreate()
+    temp_db = "temp_db"
+    spark.sql(f"CREATE DATABASE IF NOT EXISTS {temp_db}")
     yield spark
+
 
 
 IngestionController._create_control_table = Mock()
 
 
 @pytest.fixture()
-def controller(spark: SparkSession, temp_db) -> IngestionController:
+def controller(spark: SparkSession) -> IngestionController:
+    temp_db = "temp_db"
+    spark.sql(f"CREATE DATABASE IF NOT EXISTS {temp_db}")
     _ctrl = IngestionController(spark, temp_db, 0, CONTROL_TABLE)
     _ctrl._spark = Mock()
     _ctrl._get_next_file_id = Mock(side_effect=[0, 1])
@@ -57,8 +69,10 @@ def test_successful_file_ingestion(controller):
     controller.verify_ingestion_status()
 
 
-def test_file_ingestion_error(spark: SparkSession, temp_db):
+def test_file_ingestion_error(spark: SparkSession):
     # ACT
+    temp_db = "temp_db"
+    spark.sql(f"CREATE DATABASE IF NOT EXISTS {temp_db}")
     tolerant_ingestion_controller = IngestionController(
         spark, temp_db, 1, CONTROL_TABLE
     )
