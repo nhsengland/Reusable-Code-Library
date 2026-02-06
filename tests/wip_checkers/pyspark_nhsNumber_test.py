@@ -4,8 +4,8 @@ from src.nhs_reusable_code_library.standard_data_validations.nhsNumberValidation
 import pytest
 import pyspark.sql.functions as F
 from pyspark.sql import SparkSession
-import pyspark.testing
-from pyspark.testing import assertDataFrameEqual
+#import pyspark.testing
+#from pyspark.testing import assertDataFrameEqual
 from pyspark.testing.utils import assertDataFrameEqual
 from pyspark.sql.functions import col, regexp_replace
 
