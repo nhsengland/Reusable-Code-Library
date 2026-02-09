@@ -8,10 +8,10 @@ from functools import partial, wraps
 from time import sleep
 from typing import Any, Generator, IO, List, Optional, Union, Dict, Iterable, Tuple, Sequence, Mapping, Callable
 
-from src.nhs_reusable_code_library.resuable_codes.shared.constants import PATHS
-from src.nhs_reusable_code_library.resuable_codes.shared.content_types import STANDARD_DATE_FORMAT, TIMESTAMP_FORMAT, NO_SEPARATOR_DATE_FORMAT, \
+from nhs_reusable_code_library.resuable_codes.shared.constants import PATHS
+from nhs_reusable_code_library.resuable_codes.shared.content_types import STANDARD_DATE_FORMAT, TIMESTAMP_FORMAT, NO_SEPARATOR_DATE_FORMAT, \
     ISO8601_DATETIME_FORMAT
-from src.nhs_reusable_code_library.resuable_codes.shared.logger import add_temporary_global_fields
+from nhs_reusable_code_library.resuable_codes.shared.logger import add_temporary_global_fields
 
 DEFAULT_SPARK_VERSION = '6.4.x-esr-scala2.11'
 

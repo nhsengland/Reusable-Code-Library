@@ -1,7 +1,7 @@
-from src.nhs_reusable_code_library.resuable_codes.shared.aws import ddb_table, dynamodb_retry_backoff
-from src.nhs_reusable_code_library.resuable_codes.shared.common import enumlike_values
-from src.nhs_reusable_code_library.resuable_codes.shared.logger import app_logger, log_action
-from src.nhs_reusable_code_library.resuable_codes.shared.store.common import replace_decimals
+from nhs_reusable_code_library.resuable_codes.shared.aws import ddb_table, dynamodb_retry_backoff
+from nhs_reusable_code_library.resuable_codes.shared.common import enumlike_values
+from nhs_reusable_code_library.resuable_codes.shared.logger import app_logger, log_action
+from nhs_reusable_code_library.resuable_codes.shared.store.common import replace_decimals
 
 
 class CounterAttributes:

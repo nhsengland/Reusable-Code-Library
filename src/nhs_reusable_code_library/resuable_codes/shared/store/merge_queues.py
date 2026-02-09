@@ -4,11 +4,11 @@ from typing import Dict, Union
 from boto3.dynamodb import conditions
 from botocore.exceptions import ClientError
 
-from src.nhs_reusable_code_library.resuable_codes.shared import models
-from src.nhs_reusable_code_library.resuable_codes.shared.aws import dynamodb_retry_backoff
-from src.nhs_reusable_code_library.resuable_codes.shared.logger import log_action, add_fields
-from src.nhs_reusable_code_library.resuable_codes.shared.models import MergeQueue
-from src.nhs_reusable_code_library.resuable_codes.shared.store.base import ModelNotFound, BaseStore
+from nhs_reusable_code_library.resuable_codes.shared import models
+from nhs_reusable_code_library.resuable_codes.shared.aws import dynamodb_retry_backoff
+from nhs_reusable_code_library.resuable_codes.shared.logger import log_action, add_fields
+from nhs_reusable_code_library.resuable_codes.shared.models import MergeQueue
+from nhs_reusable_code_library.resuable_codes.shared.store.base import ModelNotFound, BaseStore
 
 
 class NotFirstInQueue(ValueError):

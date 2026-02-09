@@ -1,10 +1,10 @@
 from botocore import exceptions as botocore_exceptions
 
-from src.nhs_reusable_code_library.resuable_codes.shared import aws
-from src.nhs_reusable_code_library.resuable_codes.shared import logger
-from src.nhs_reusable_code_library.resuable_codes.shared.logger import add_fields
-from src.nhs_reusable_code_library.resuable_codes.shared.models import LastSequenceNumber
-from src.nhs_reusable_code_library.resuable_codes.shared.store.base import BaseStore
+from nhs_reusable_code_library.resuable_codes.shared import aws
+from nhs_reusable_code_library.resuable_codes.shared import logger
+from nhs_reusable_code_library.resuable_codes.shared.logger import add_fields
+from nhs_reusable_code_library.resuable_codes.shared.models import LastSequenceNumber
+from nhs_reusable_code_library.resuable_codes.shared.store.base import BaseStore
 
 
 class OutOfOrderTimeStampOrSequenceNumberException(ValueError):

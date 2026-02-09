@@ -22,10 +22,10 @@ from schematics import types
 from schematics.exceptions import DataError
 from schematics.types import serializable
 
-from src.nhs_reusable_code_library.resuable_codes.shared import common, constants
-from src.nhs_reusable_code_library.resuable_codes.shared.aws import instance_profile_to_arn
-from src.nhs_reusable_code_library.resuable_codes.shared.common import DEFAULT_SPARK_VERSION, enumlike_values
-from src.nhs_reusable_code_library.resuable_codes.shared.constants import (
+from nhs_reusable_code_library.resuable_codes.shared import common, constants
+from nhs_reusable_code_library.resuable_codes.shared.aws import instance_profile_to_arn
+from nhs_reusable_code_library.resuable_codes.shared.common import DEFAULT_SPARK_VERSION, enumlike_values
+from nhs_reusable_code_library.resuable_codes.shared.constants import (
     BLOCKTYPE,
     COMPRESS,
     DS,
@@ -35,8 +35,8 @@ from src.nhs_reusable_code_library.resuable_codes.shared.constants import (
     ClusterPools,
     ExtractFileVersions,
 )
-from src.nhs_reusable_code_library.resuable_codes.shared.utils import SUBMISSION_DATASET_IDS, parse_filename
-from src.nhs_reusable_code_library.resuable_codes.shared.version_data import FULL_VERSION_STRING
+from nhs_reusable_code_library.resuable_codes.shared.utils import SUBMISSION_DATASET_IDS, parse_filename
+from nhs_reusable_code_library.resuable_codes.shared.version_data import FULL_VERSION_STRING
 
 
 class VersionedModel(schematics.Model):

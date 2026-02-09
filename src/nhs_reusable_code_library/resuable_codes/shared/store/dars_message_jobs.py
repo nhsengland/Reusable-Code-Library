@@ -3,17 +3,17 @@ from typing import AbstractSet, Generator, Union
 
 from boto3.dynamodb.conditions import Key
 
-from src.nhs_reusable_code_library.resuable_codes.shared.aws import (
+from nhs_reusable_code_library.resuable_codes.shared.aws import (
     ddb_query_paginate,
     ddb_query_paginated_count,
     dynamodb_retry_backoff,
 )
-from src.nhs_reusable_code_library.resuable_codes.shared.constants import JOBS, DigiTrialsPipelines
-from src.nhs_reusable_code_library.resuable_codes.shared.logger import add_fields, log_action
-from src.nhs_reusable_code_library.resuable_codes.shared.models import Block, DarsMessageJob, DarsMessageStatus, DarsSender
-from src.nhs_reusable_code_library.resuable_codes.shared.store.base import BaseStore
-from src.nhs_reusable_code_library.resuable_codes.shared.store.blocks import Blocks, BlockStore
-from src.nhs_reusable_code_library.resuable_codes.shared.store.counters import Counters
+from nhs_reusable_code_library.resuable_codes.shared.constants import JOBS, DigiTrialsPipelines
+from nhs_reusable_code_library.resuable_codes.shared.logger import add_fields, log_action
+from nhs_reusable_code_library.resuable_codes.shared.models import Block, DarsMessageJob, DarsMessageStatus, DarsSender
+from nhs_reusable_code_library.resuable_codes.shared.store.base import BaseStore
+from nhs_reusable_code_library.resuable_codes.shared.store.blocks import Blocks, BlockStore
+from nhs_reusable_code_library.resuable_codes.shared.store.counters import Counters
 
 
 class Indexes:

@@ -8,10 +8,10 @@ from typing import Any, ClassVar, Optional, TypeVar, Union
 from pydantic import BaseModel, Extra, Field, root_validator, validate_arguments, validator
 from typing_extensions import Literal
 
-from src.nhs_reusable_code_library.standard_data_validations.dve.metadata_parser.reference_data import ReferenceConfigUnion
-from src.nhs_reusable_code_library.standard_data_validations.dve.metadata_parser.reporting import LegacyReportingConfig, ReportingConfig
-from src.nhs_reusable_code_library.standard_data_validations.dve.metadata_parser.templating import template_object
-from src.nhs_reusable_code_library.standard_data_validations.dve.metadata_parser.type_hints import (
+from nhs_reusable_code_library.standard_data_validations.dve.metadata_parser.reference_data import ReferenceConfigUnion
+from nhs_reusable_code_library.standard_data_validations.dve.metadata_parser.reporting import LegacyReportingConfig, ReportingConfig
+from nhs_reusable_code_library.standard_data_validations.dve.metadata_parser.templating import template_object
+from nhs_reusable_code_library.standard_data_validations.dve.metadata_parser.type_hints import (
     Alias,
     EntityName,
     Expression,

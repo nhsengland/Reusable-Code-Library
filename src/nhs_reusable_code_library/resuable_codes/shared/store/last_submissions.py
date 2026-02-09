@@ -1,12 +1,12 @@
 from boto3.dynamodb.conditions import Attr
 from botocore import exceptions as botocore_exceptions
 
-from src.nhs_reusable_code_library.resuable_codes.shared import aws
-from src.nhs_reusable_code_library.resuable_codes.shared import logger
-from src.nhs_reusable_code_library.resuable_codes.shared import models
-from src.nhs_reusable_code_library.resuable_codes.shared.constants import DS
-from src.nhs_reusable_code_library.resuable_codes.shared.models import LastSubmission
-from src.nhs_reusable_code_library.resuable_codes.shared.store.base import BaseStore
+from nhs_reusable_code_library.resuable_codes.shared import aws
+from nhs_reusable_code_library.resuable_codes.shared import logger
+from nhs_reusable_code_library.resuable_codes.shared import models
+from nhs_reusable_code_library.resuable_codes.shared.constants import DS
+from nhs_reusable_code_library.resuable_codes.shared.models import LastSubmission
+from nhs_reusable_code_library.resuable_codes.shared.store.base import BaseStore
 
 
 class OutOfOrderException(ValueError):

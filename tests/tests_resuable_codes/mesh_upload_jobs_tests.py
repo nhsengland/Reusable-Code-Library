@@ -5,10 +5,10 @@ from uuid import uuid4
 import boto3
 import pytest
 
-from src.nhs_reusable_code_library.resuable_codes.shared.common.test_helpers import smart_open
-from src.nhs_reusable_code_library.resuable_codes.shared.constants import Blockables, BLOCKTYPE, Senders
-from src.nhs_reusable_code_library.resuable_codes.shared.models import MeshMetadata, MeshTransferStatus, MeshTransferJob, Block
-from src.nhs_reusable_code_library.resuable_codes.shared.store.mesh_upload_jobs import MeshUploadJobsStore, MeshTransferJobPriority
+from nhs_reusable_code_library.resuable_codes.shared.common.test_helpers import smart_open
+from nhs_reusable_code_library.resuable_codes.shared.constants import Blockables, BLOCKTYPE, Senders
+from nhs_reusable_code_library.resuable_codes.shared.models import MeshMetadata, MeshTransferStatus, MeshTransferJob, Block
+from nhs_reusable_code_library.resuable_codes.shared.store.mesh_upload_jobs import MeshUploadJobsStore, MeshTransferJobPriority
 
 
 @pytest.fixture(scope='function')

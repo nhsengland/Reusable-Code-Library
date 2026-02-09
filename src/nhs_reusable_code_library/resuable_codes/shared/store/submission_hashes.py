@@ -1,9 +1,9 @@
 from typing import Union
 
-from src.nhs_reusable_code_library.resuable_codes.shared.aws import dynamodb_retry_backoff
-from src.nhs_reusable_code_library.resuable_codes.shared.logger import log_action, add_fields
-from src.nhs_reusable_code_library.resuable_codes.shared.models import SubmissionHash
-from src.nhs_reusable_code_library.resuable_codes.shared.store.base import BaseStore
+from nhs_reusable_code_library.resuable_codes.shared.aws import dynamodb_retry_backoff
+from nhs_reusable_code_library.resuable_codes.shared.logger import log_action, add_fields
+from nhs_reusable_code_library.resuable_codes.shared.models import SubmissionHash
+from nhs_reusable_code_library.resuable_codes.shared.store.base import BaseStore
 
 
 class Indexes:

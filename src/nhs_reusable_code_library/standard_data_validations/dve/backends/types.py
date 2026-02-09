@@ -8,7 +8,7 @@ These are defined here because in general this information should not
 from collections.abc import MutableMapping
 from typing import TypeVar
 
-from src.nhs_reusable_code_library.standard_data_validations.dve.metadata_parser.type_hints import EntityName
+from nhs_reusable_code_library.standard_data_validations.dve.metadata_parser.type_hints import EntityName
 
 EntityType = TypeVar("EntityType")  # pylint: disable=invalid-name
 """

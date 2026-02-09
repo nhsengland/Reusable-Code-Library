@@ -4,8 +4,8 @@ import pytest
 import tempfile
 from pyspark.sql import SparkSession
 
-from src.nhs_reusable_code_library.resuable_codes.dataset_schema_helpers import get_cols, create_view, create_pseudo_sensitive_view
-from src.nhs_reusable_code_library.resuable_codes.shared.common import concurrent_tasks
+from nhs_reusable_code_library.resuable_codes.dataset_schema_helpers import get_cols, create_view, create_pseudo_sensitive_view
+from nhs_reusable_code_library.resuable_codes.shared.common import concurrent_tasks
 
 # @pytest.fixture
 # def spark():
@@ -21,7 +21,7 @@ from src.nhs_reusable_code_library.resuable_codes.shared.common import concurren
 #     return spark
 
 
-from src.nhs_reusable_code_library.resuable_codes.shared import local_path
+from nhs_reusable_code_library.resuable_codes.shared import local_path
 
 warehouse_location = local_path('testdata/test_helpers_test/')
 @pytest.fixture

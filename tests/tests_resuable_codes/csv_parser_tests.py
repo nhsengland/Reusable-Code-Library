@@ -1,6 +1,6 @@
 import pytest
 
-from src.nhs_reusable_code_library.resuable_codes.csv_parser import CsvParser
+from nhs_reusable_code_library.resuable_codes.csv_parser import CsvParser
 
 
 def test_extracts_table_name_from_snapshot_path() -> None:

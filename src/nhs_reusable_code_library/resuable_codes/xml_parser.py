@@ -5,7 +5,7 @@ from pyspark.sql import DataFrame, Row, SparkSession
 from pyspark.sql.functions import broadcast
 from pyspark.sql.types import StructType
 
-from src.nhs_reusable_code_library.resuable_codes.dataframe_renamer import (
+from nhs_reusable_code_library.resuable_codes.dataframe_renamer import (
     strip_xml_namespaces_in_dataframe,
 )
 

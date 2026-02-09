@@ -2,7 +2,7 @@ import logging
 import sys
 from typing import List
 
-from src.nhs_reusable_code_library.resuable_codes.shared.logger.formatters import StructuredFormatter, JSONFormatter
+from nhs_reusable_code_library.resuable_codes.shared.logger.formatters import StructuredFormatter, JSONFormatter
 
 _filter_are_errors = staticmethod(lambda r: r.levelno >= logging.ERROR)
 _filter_not_errors = staticmethod(lambda r: r.levelno < logging.ERROR)

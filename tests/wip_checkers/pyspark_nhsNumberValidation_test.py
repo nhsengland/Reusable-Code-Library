@@ -1,5 +1,5 @@
 
-from src.nhs_reusable_code_library.standard_data_validations import pyspark
+from nhs_reusable_code_library.standard_data_validations import pyspark
 import pytest
 import pyspark.sql.functions as F
 from pyspark.sql import SparkSession
