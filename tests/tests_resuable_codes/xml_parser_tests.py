@@ -5,7 +5,7 @@ import pytest
 from pyspark.sql import DataFrame, SparkSession
 from pyspark.sql.types import LongType, StringType, StructField, StructType
 
-from src.nhs_reusable_code_library.resuable_codes.xml_parser import XmlParser
+from nhs_reusable_code_library.resuable_codes.xml_parser import XmlParser
 
 @pytest.fixture
 def spark():

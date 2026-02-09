@@ -3,8 +3,8 @@ from uuid import uuid4
 import pytest
 from pyspark.sql import SparkSession
 
-from src.nhs_reusable_code_library.resuable_codes.dataset_schema_helpers import get_cols, create_view, create_pseudo_sensitive_view
-from src.nhs_reusable_code_library.resuable_codes.shared.common import concurrent_tasks
+from nhs_reusable_code_library.resuable_codes.dataset_schema_helpers import get_cols, create_view, create_pseudo_sensitive_view
+from nhs_reusable_code_library.resuable_codes.shared.common import concurrent_tasks
 
 @pytest.fixture
 def spark():

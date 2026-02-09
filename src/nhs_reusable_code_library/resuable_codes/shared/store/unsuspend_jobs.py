@@ -8,10 +8,10 @@ from typing import (
 from boto3.dynamodb.conditions import Key
 from botocore.exceptions import ClientError
 
-from src.nhs_reusable_code_library.resuable_codes.shared.aws import dynamodb_retry_backoff, ddb_query_paginated_count
-from src.nhs_reusable_code_library.resuable_codes.shared.logger import log_action, LogLevel, app_logger, add_fields
-from src.nhs_reusable_code_library.resuable_codes.shared.models import UnsuspendJob, UnsuspendJobStatus
-from src.nhs_reusable_code_library.resuable_codes.shared.store.base import BaseStore
+from nhs_reusable_code_library.resuable_codes.shared.aws import dynamodb_retry_backoff, ddb_query_paginated_count
+from nhs_reusable_code_library.resuable_codes.shared.logger import log_action, LogLevel, app_logger, add_fields
+from nhs_reusable_code_library.resuable_codes.shared.models import UnsuspendJob, UnsuspendJobStatus
+from nhs_reusable_code_library.resuable_codes.shared.store.base import BaseStore
 
 
 class Indexes:

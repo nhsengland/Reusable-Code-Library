@@ -12,7 +12,8 @@ description = "Common NHS Python (& mainly specifically PySpark) functions for d
 authors = [{name = "Sam Hollings"}, {name = "Akinwale Akinyemi", email = "akinwale.akinyemi@nhs.net"}]
 readme = "README.md"
 keywords = ["PySpark", "cleansing", "validation", "data engineering"]
-license = {file = "LICENCE.md"}
+license = {file = "LICENSE.md"}
+
 classifiers = ["Programming Language :: Python :: 3"]
 dependencies = [
     "inflection",
@@ -26,7 +27,7 @@ dependencies = [
     "delta-spark==1.1.0",
     "boto3>=1.26.72,<1.29",
     "botocore",
-    "PyYAML==6.0.3",
+    "PyYAML==6.0.1",
     "behave==1.3.3",
     "sphinx",
     "sphinx-rtd-theme",
@@ -73,3 +74,7 @@ testpaths = [
     "tests",
     "src"
 ]
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+include-package-data = true

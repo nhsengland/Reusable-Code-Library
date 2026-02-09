@@ -5,8 +5,8 @@ from abc import ABC, abstractmethod
 from collections.abc import Mapping
 from typing import Any, Optional
 
-from src.nhs_reusable_code_library.standard_data_validations.dve.backends.message import FeedbackMessage
-from src.nhs_reusable_code_library.standard_data_validations.dve.metadata_parser.type_hints import EntityName, ErrorCategory, ErrorLocation, Messages
+from nhs_reusable_code_library.standard_data_validations.dve.backends.message import FeedbackMessage
+from nhs_reusable_code_library.standard_data_validations.dve.metadata_parser.type_hints import EntityName, ErrorCategory, ErrorLocation, Messages
 
 PipelineErrorLocation = str
 """A location within the pipeline execution, for context within the error."""

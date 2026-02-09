@@ -1,14 +1,14 @@
 import re
 from typing import Optional, Tuple
 
-from src.nhs_reusable_code_library.resuable_codes.shared.constants import DS, MESH_WORKFLOW_ID, DigiTrialsPipelines
+from nhs_reusable_code_library.resuable_codes.shared.constants import DS, MESH_WORKFLOW_ID, DigiTrialsPipelines
 from datetime import date, datetime
 from dateutil.relativedelta import relativedelta
 
-from src.nhs_reusable_code_library.resuable_codes.shared.logger import log_action, add_fields
-from src.nhs_reusable_code_library.resuable_codes.shared.models import PipelineStatus, MeshTransferStatus
-from src.nhs_reusable_code_library.resuable_codes.shared.store import MeshUploadJobs
-from src.nhs_reusable_code_library.resuable_codes.shared.store.submissions import Submissions
+from nhs_reusable_code_library.resuable_codes.shared.logger import log_action, add_fields
+from nhs_reusable_code_library.resuable_codes.shared.models import PipelineStatus, MeshTransferStatus
+from nhs_reusable_code_library.resuable_codes.shared.store import MeshUploadJobs
+from nhs_reusable_code_library.resuable_codes.shared.store.submissions import Submissions
 
 NIC_NUMBER_PATTERN = re.compile(r".*?(?P<nic_number>NIC-\d+-[a-zA-Z0-9]{5}).*")
 

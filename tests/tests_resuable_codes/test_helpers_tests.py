@@ -8,11 +8,11 @@ import shutil
 import gzip
 
 # noinspection PyUnresolvedReferences
-from src.nhs_reusable_code_library.resuable_codes.shared import local_path
-from src.nhs_reusable_code_library.resuable_codes.shared.common import test_helpers
-from src.nhs_reusable_code_library.resuable_codes.shared.common.test_helpers import smart_csv_reader, smart_upload, scenario_input_path, smart_open, smart_copy, \
+from nhs_reusable_code_library.resuable_codes.shared import local_path
+from nhs_reusable_code_library.resuable_codes.shared.common import test_helpers
+from nhs_reusable_code_library.resuable_codes.shared.common.test_helpers import smart_csv_reader, smart_upload, scenario_input_path, smart_open, smart_copy, \
     gzip_file_copy
-from src.nhs_reusable_code_library.resuable_codes.shared.constants import DS, FT, PATHS
+from nhs_reusable_code_library.resuable_codes.shared.constants import DS, FT, PATHS
 
 
 @pytest.fixture()

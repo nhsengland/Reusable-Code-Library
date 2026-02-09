@@ -7,7 +7,7 @@ from shared.aws import dynamodb_retry_backoff, s3_uri_get_size
 from shared.constants import Blockables, Senders
 from shared.logger import log_action, LogLevel, app_logger, add_fields
 from shared.models import MeshTransferJob, MeshTransferStatus, MeshMetadata, Block
-from src.nhs_reusable_code_library.resuable_codes.shared.store.mesh_transfer_jobs import MeshTransferJobsStore, MeshTransferJobPriority, Indexes as BaseIndexes
+from nhs_reusable_code_library.resuable_codes.shared.store.mesh_transfer_jobs import MeshTransferJobsStore, MeshTransferJobPriority, Indexes as BaseIndexes
 
 
 class Indexes(BaseIndexes):

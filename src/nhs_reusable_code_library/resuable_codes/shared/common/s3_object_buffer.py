@@ -5,8 +5,8 @@ from typing import IO, AnyStr, List, Union, Optional, Any
 
 from botocore.response import StreamingBody
 
-from src.nhs_reusable_code_library.resuable_codes.shared.common.retry_predicates import s3_throttle_retry_predicate
-from src.nhs_reusable_code_library.resuable_codes.shared.common import retry
+from nhs_reusable_code_library.resuable_codes.shared.common.retry_predicates import s3_throttle_retry_predicate
+from nhs_reusable_code_library.resuable_codes.shared.common import retry
 
 
 class S3ObjectBuffer(IO):

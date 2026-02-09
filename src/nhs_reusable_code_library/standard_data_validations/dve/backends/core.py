@@ -5,9 +5,9 @@ from typing import Any, Generic, Optional
 
 from typing_extensions import get_args, get_origin
 
-from src.nhs_reusable_code_library.standard_data_validations.dve.backends.exceptions import ConstraintError, MissingEntity, MissingRefDataEntity
-from src.nhs_reusable_code_library.standard_data_validations.dve.backends.types import EntityType
-from src.nhs_reusable_code_library.standard_data_validations.dve.metadata_parser.type_hints import EntityName
+from nhs_reusable_code_library.standard_data_validations.dve.backends.exceptions import ConstraintError, MissingEntity, MissingRefDataEntity
+from nhs_reusable_code_library.standard_data_validations.dve.backends.types import EntityType
+from nhs_reusable_code_library.standard_data_validations.dve.metadata_parser.type_hints import EntityName
 
 get_original_bases: Callable[[type], tuple[Any, ...]]
 try:

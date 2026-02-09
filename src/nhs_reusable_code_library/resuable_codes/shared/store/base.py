@@ -3,10 +3,10 @@ from typing import Dict, Generator, Iterable, List, Sequence, Tuple, TypeVar, Ge
 
 from schematics import models as schematics_models
 
-from src.nhs_reusable_code_library.resuable_codes.shared import logger, safe_issubclass
-from src.nhs_reusable_code_library.resuable_codes.shared import models
-from src.nhs_reusable_code_library.resuable_codes.shared.aws import ddb_table, dynamodb_retry_backoff
-from src.nhs_reusable_code_library.resuable_codes.shared.logger import debug_fields, add_fields
+from nhs_reusable_code_library.resuable_codes.shared import logger, safe_issubclass
+from nhs_reusable_code_library.resuable_codes.shared import models
+from nhs_reusable_code_library.resuable_codes.shared.aws import ddb_table, dynamodb_retry_backoff
+from nhs_reusable_code_library.resuable_codes.shared.logger import debug_fields, add_fields
 
 
 class ModelNotFound(ValueError):

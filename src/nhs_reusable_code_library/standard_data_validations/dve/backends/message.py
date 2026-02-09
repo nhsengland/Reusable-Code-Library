@@ -12,9 +12,9 @@ from typing import Any, ClassVar, Optional, Union
 from pydantic import BaseModel, ValidationError, field_validator
 from pydantic.dataclasses import dataclass
 
-from src.nhs_reusable_code_library.standard_data_validations.dve.metadata_parser.constants import CONTRACT_ERROR_VALUE_FIELD_NAME, ROWID_COLUMN_NAME
-from src.nhs_reusable_code_library.standard_data_validations.dve.metadata_parser.templating import template_object
-from src.nhs_reusable_code_library.standard_data_validations.dve.metadata_parser.type_hints import (
+from nhs_reusable_code_library.standard_data_validations.dve.metadata_parser.constants import CONTRACT_ERROR_VALUE_FIELD_NAME, ROWID_COLUMN_NAME
+from nhs_reusable_code_library.standard_data_validations.dve.metadata_parser.templating import template_object
+from nhs_reusable_code_library.standard_data_validations.dve.metadata_parser.type_hints import (
     EntityName,
     ErrorCategory,
     FailureType,
@@ -22,7 +22,7 @@ from src.nhs_reusable_code_library.standard_data_validations.dve.metadata_parser
     MessageTuple,
     Record,
 )
-from src.nhs_reusable_code_library.standard_data_validations.dve.parser.type_hints import FieldName
+from nhs_reusable_code_library.standard_data_validations.dve.parser.type_hints import FieldName
 
 
 class DataContractErrorDetail(BaseModel):

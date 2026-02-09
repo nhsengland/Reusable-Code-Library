@@ -1,6 +1,6 @@
 import pytest
 
-from src.nhs_reusable_code_library.resuable_codes.parquet_parser import ParquetParser
+from nhs_reusable_code_library.resuable_codes.parquet_parser import ParquetParser
 
 
 def test_extracts_table_name_from_snapshot_path() -> None:

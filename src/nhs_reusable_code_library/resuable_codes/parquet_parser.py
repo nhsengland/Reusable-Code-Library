@@ -3,7 +3,7 @@ import re
 from pyspark.sql import DataFrame, SparkSession
 from pyspark.sql.types import StructType
 
-from src.dsp.common import canonical_name
+from dsp.common import canonical_name
 
 
 class ParquetParser:

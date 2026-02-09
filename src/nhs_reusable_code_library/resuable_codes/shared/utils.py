@@ -1,7 +1,7 @@
 import re
 from collections import namedtuple
 
-from src.nhs_reusable_code_library.resuable_codes.shared.constants import MESH_WORKFLOW_ID, GP_DATA_SUBMISSION_WORKFLOWS, DS
+from nhs_reusable_code_library.resuable_codes.shared.constants import MESH_WORKFLOW_ID, GP_DATA_SUBMISSION_WORKFLOWS, DS
 
 SUBMISSION_DATASET_IDS = {
     MESH_WORKFLOW_ID.GP_DATA_PATIENT: DS.GP_DATA_PATIENT,

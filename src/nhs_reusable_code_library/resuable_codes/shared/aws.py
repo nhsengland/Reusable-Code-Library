@@ -24,9 +24,9 @@ from botocore.config import Config
 from botocore.exceptions import ClientError, UnknownServiceError
 from botocore.parsers import ResponseParserError
 
-from src.nhs_reusable_code_library.resuable_codes.shared.common import strtobool, retry
-from src.nhs_reusable_code_library.resuable_codes.shared.common.s3_object_buffer import S3ObjectBuffer
-from src.nhs_reusable_code_library.resuable_codes.shared.logger import log_action, add_fields
+from nhs_reusable_code_library.resuable_codes.shared.common import strtobool, retry
+from nhs_reusable_code_library.resuable_codes.shared.common.s3_object_buffer import S3ObjectBuffer
+from nhs_reusable_code_library.resuable_codes.shared.logger import log_action, add_fields
 
 LOCAL_MODE = 'LOCAL_MODE'
 AWS_REGION = 'eu-west-2'

@@ -2,10 +2,10 @@ from typing import List, Union
 
 from boto3.dynamodb.conditions import Key
 
-from src.nhs_reusable_code_library.resuable_codes.shared.aws import dynamodb_retry_backoff
-from src.nhs_reusable_code_library.resuable_codes.shared.logger import log_action, debug_fields
-from src.nhs_reusable_code_library.resuable_codes.shared.models import Agent
-from src.nhs_reusable_code_library.resuable_codes.shared.store.base import BaseStore
+from nhs_reusable_code_library.resuable_codes.shared.aws import dynamodb_retry_backoff
+from nhs_reusable_code_library.resuable_codes.shared.logger import log_action, debug_fields
+from nhs_reusable_code_library.resuable_codes.shared.models import Agent
+from nhs_reusable_code_library.resuable_codes.shared.store.base import BaseStore
 
 
 class Indexes:

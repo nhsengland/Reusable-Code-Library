@@ -4,7 +4,7 @@ import traceback
 from collections import OrderedDict
 from datetime import datetime, date
 
-from src.nhs_reusable_code_library.resuable_codes.shared.version_data import FULL_VERSION_STRING
+from nhs_reusable_code_library.resuable_codes.shared.version_data import FULL_VERSION_STRING
 
 
 def json_serializer(obj):

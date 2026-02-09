@@ -4,12 +4,12 @@ from unittest.mock import Mock
 import pytest
 from pyspark.sql import SparkSession, Row
 
-from src.nhs_reusable_code_library.resuable_codes.file_store import File
-from src.nhs_reusable_code_library.resuable_codes.ingestion_controller import IngestionController
+from nhs_reusable_code_library.resuable_codes.file_store import File
+from nhs_reusable_code_library.resuable_codes.ingestion_controller import IngestionController
 
 CONTROL_TABLE = "test_table_ingestion_control"
 
-from src.nhs_reusable_code_library.resuable_codes.shared import local_path
+from nhs_reusable_code_library.resuable_codes.shared import local_path
 
 warehouse_location = local_path('testdata/test_helpers_test/')
 

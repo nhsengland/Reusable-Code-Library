@@ -9,9 +9,9 @@ from uuid import uuid4
 
 from typing_extensions import Literal, Protocol, get_type_hints
 
-from src.nhs_reusable_code_library.standard_data_validations.dve.backends.core import get_entity_type
-from src.nhs_reusable_code_library.standard_data_validations.dve.backends.exceptions import render_error
-from src.nhs_reusable_code_library.standard_data_validations.dve.metadata_parser.rules import (
+from nhs_reusable_code_library.standard_data_validations.dve.backends.core import get_entity_type
+from nhs_reusable_code_library.standard_data_validations.dve.backends.exceptions import render_error
+from nhs_reusable_code_library.standard_data_validations.dve.metadata_parser.rules import (
     AbstractStep,
     Aggregation,
     AntiJoin,
@@ -36,9 +36,9 @@ from src.nhs_reusable_code_library.standard_data_validations.dve.metadata_parser
     SemiJoin,
     TableUnion,
 )
-from src.nhs_reusable_code_library.standard_data_validations.dve.backends.types import Entities, EntityType, StageSuccessful
-from src.nhs_reusable_code_library.standard_data_validations.dve.backends.loggers import get_logger
-from src.nhs_reusable_code_library.standard_data_validations.dve.metadata_parser.type_hints import URI, EntityName, Messages, TemplateVariables
+from nhs_reusable_code_library.standard_data_validations.dve.backends.types import Entities, EntityType, StageSuccessful
+from nhs_reusable_code_library.standard_data_validations.dve.backends.loggers import get_logger
+from nhs_reusable_code_library.standard_data_validations.dve.metadata_parser.type_hints import URI, EntityName, Messages, TemplateVariables
 
 T_contra = TypeVar("T_contra", bound=AbstractStep, contravariant=True)
 T = TypeVar("T", bound=AbstractStep)
