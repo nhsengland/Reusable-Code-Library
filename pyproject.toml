@@ -13,10 +13,7 @@ authors = [{name = "Sam Hollings"}, {name = "Akinwale Akinyemi", email = "akinwa
 readme = "README.md"
 keywords = ["PySpark", "cleansing", "validation", "data engineering"]
 license = {file = "LICENSE.md"}
-<<<<<<< HEAD
 
-=======
->>>>>>> daddc3437fa57db99dfcb7e9867db7585f059109
 classifiers = ["Programming Language :: Python :: 3"]
 dependencies = [
     "inflection",
