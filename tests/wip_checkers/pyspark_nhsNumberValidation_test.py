@@ -3,7 +3,8 @@ from nhs_reusable_code_library.standard_data_validations import pyspark
 import pytest
 import pyspark.sql.functions as F
 from pyspark.sql import SparkSession
-from pyspark.testing import assertDataFrameEqual
+#from pyspark.testing import assertDataFrameEqual
+from pyspark_test import assert_pyspark_df_equal
 
 @pytest.fixture(scope="session")
 def spark():
@@ -18,4 +19,4 @@ def wip_test_mod11_check(spark):
         pyspark.mod11_check(F.col("nhsNumber"))
     )
 
-    assertDataFrameEqual(expected, df.select("mod11_check_is_valid"))
+    assert_pyspark_df_equal(expected, df.select("mod11_check_is_valid"))
