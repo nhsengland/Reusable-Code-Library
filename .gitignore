@@ -132,3 +132,6 @@ dmypy.json
 testdata/
 src/testdata/
 src/dsp/ref_data.lmdb/
+metastore_db/
+test.db/
+my.db/
