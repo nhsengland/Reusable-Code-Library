@@ -131,4 +131,4 @@ dmypy.json
 # Folders
 testdata/
 src/testdata/
-src/dsp/ref_data.lmdb
+src/dsp/ref_data.lmdb/
