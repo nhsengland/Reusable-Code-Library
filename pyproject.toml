@@ -7,7 +7,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "nhs_reusable_code_library"
-version = "0.1.0a6"
+version = "0.0.1"
 description = "Common NHS Python (& mainly specifically PySpark) functions for data processing, validations, cleansing and analysis"
 authors = [{name = "Sam Hollings"}, {name = "Akinwale Akinyemi", email = "akinwale.akinyemi@nhs.net"}]
 readme = "README.md"
@@ -21,6 +21,7 @@ dependencies = [
     "pandas",
     "pytest",
     "pytest-spark",
+    "pyspark_test",
     "black",
     "isort",
     "build",
@@ -38,6 +39,8 @@ dependencies = [
     "mesh_client<=3.0.0",
     "mmh3",
     "numpy",
+    "defusedxml",
+    "jaydebeapi",
     "mock", 
     "pytest_mock",
     "pydantic",
@@ -47,7 +50,13 @@ dependencies = [
     "schematics",
     "typing_inspect",
     "delta-spark",
+    "petname",
+    "deepdiff",
+    "msgpack",
     "sqlalchemy",
+    "covid_19_terms",
+    "requests_pkcs12",
+    "lmdb==1.2.1",
     #"setuptools-scm",
 ]
 requires-python = ">=3.6"

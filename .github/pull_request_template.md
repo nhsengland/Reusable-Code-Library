@@ -1,6 +1,6 @@
 * **Please check if the Pull Request fulfills these requirements**
 - [ ] The commit message is clear and concise
-- [ ] Test for the changes have been added and reviewed
+- [ ] Test scripts for the additions or changes have been included and reviewed
 - [ ] Documentation has been added to all new features and edited code has had documentation reviewed
 
 * **What kind of change does this Pull request introduce?** (Bug fix, feature, docs update, ...)

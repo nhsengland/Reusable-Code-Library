@@ -127,3 +127,7 @@ dmypy.json
 
 # Text editors
 .vscode
+
+# Folders
+testdata/
+src/testdata/

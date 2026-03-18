@@ -1,0 +1,4 @@
+
+
+class LoaderRejectionError(Exception):
+    pass

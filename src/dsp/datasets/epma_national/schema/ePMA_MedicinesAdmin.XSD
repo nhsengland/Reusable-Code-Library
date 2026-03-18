@@ -1,0 +1,385 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" version="1.0bDraft">
+	<xs:element name="ePMA_MedicinesAdmin" type="ePMA_MedicinesAdmin"/>
+	<xs:complexType name="ePMA_MedicinesAdmin">
+		<xs:annotation>
+			<xs:documentation>ePMA_MedicinesAdmin Data Set V1.0bDraft</xs:documentation>
+		</xs:annotation>
+		<xs:sequence>
+			<xs:element name="Header" type="Header" minOccurs="1" maxOccurs="1"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:element name="Header" type="Header"/>
+	<xs:complexType name="Header">
+		<xs:sequence>
+			<xs:element name="OrganisationSiteIdentifierSystemLocation" minOccurs="1" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>ORGANISATION SITE IDENTIFIER (SYSTEM LOCATION)</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:minLength value="5"/>
+						<xs:maxLength value="9"/>
+						<xs:pattern value="([A-Z0-9])*"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="DataSetCreatedTimestamp" minOccurs="1" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>DATA SET CREATED TIMESTAMP</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:dateTime"/>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="PrimSystemInUse" minOccurs="1" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>PRIMARY DATA COLLECTION SYSTEM IN USE</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="20"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="ReportingPeriodStartDate" minOccurs="1" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>REPORTING PERIOD START DATE</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:date"/>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="ReportingPeriodEndDate" minOccurs="1" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>REPORTING PERIOD END DATE</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:date"/>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="MedicationAdministration" type="MedicationAdministration" minOccurs="1" maxOccurs="unbounded"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:element name="MedicationAdministration" type="MedicationAdministration"/>
+	<xs:complexType name="MedicationAdministration">
+		<xs:sequence>
+			<xs:element name="NHSNumber" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>NHS NUMBER</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:integer">
+						<xs:totalDigits value="10"/>
+						<xs:minInclusive value="1000000000"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="NHSNumberStatusIndicatorCode" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>NHS NUMBER STATUS INDICATOR CODE</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:enumeration value="01"/>
+						<xs:enumeration value="02"/>
+						<xs:enumeration value="03"/>
+						<xs:enumeration value="04"/>
+						<xs:enumeration value="05"/>
+						<xs:enumeration value="06"/>
+						<xs:enumeration value="07"/>
+						<xs:enumeration value="08"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="PersonBirthDate" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>PERSON BIRTH DATE</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:date"/>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="OrganisationSiteIdentifierOfTreatment" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>ORGANISATION SITE IDENTIFIER (OF TREATMENT)</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:minLength value="5"/>
+						<xs:maxLength value="9"/>
+						<xs:pattern value="([A-Z0-9])*"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="MedicationAdministrationSettingType_Actual" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>MEDICATION ADMINISTRATION SETTING TYPE (ACTUAL)</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:enumeration value="1"/>
+						<xs:enumeration value="2"/>
+						<xs:enumeration value="3"/>
+						<xs:enumeration value="7"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="OtherMedicationAdminSettingDesc" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>OTHER MEDICATION ADMINISTRATION SETTING DESCRIPTION</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="255"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="MedicationAdminStatusDesc" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>MEDICATION ADMINISTRATION STATUS DESCRIPTION</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="255"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="MedicationAdminIdentifier" minOccurs="1" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>MEDICATION ADMINISTRATION IDENTIFIER</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="255"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="PrescribedItemIdentifier" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>PRESCRIBED ITEM IDENTIFIER</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="255"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="PrescribedMedicationDoseToBeAdministeredTimestamp" minOccurs="1" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>PRESCRIBED MEDICATION DOSE TO BE ADMINISTERED TIMESTAMP</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:dateTime"/>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="CodedProcedureTimeStamp_MedicationAdmin" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>CODED PROCEDURE TIMESTAMP (MEDICATION ADMINISTRATION)</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:dateTime"/>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="MedicationAdministrationRecordedTimeStamp" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>MEDICATION ADMINISTRATION RECORDED TIMESTAMP</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:dateTime"/>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="PrescribedMedicationDoseNotAdministeredBoolean" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>PRESCRIBED MEDICATION DOSE NOT ADMINISTERED BOOLEAN</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:enumeration value="true"/>
+						<xs:enumeration value="false"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="PrescribedMedicationDoseNotAdministeredReasonDescription" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>PRESCRIBED MEDICATION DOSE NOT ADMINISTERED REASON DESCRIPTION</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="255"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="MedicationAdministrationRecordLastUpdatedTimeStamp" minOccurs="1" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>MEDICATION ADMINISTRATION RECORD LAST UPDATED TIMESTAMP</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:dateTime"/>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="MedicationAdministeredName" minOccurs="1" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>MEDICATION ADMINISTERED NAME</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="255"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="MedicationAdministered_DmD" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>MEDICATION ADMINISTERED (DM+D)</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:integer">
+						<xs:totalDigits value="18"/>
+						<xs:minInclusive value="100000"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="MedicationAdministrationDoseFormDesc" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>MEDICATION ADMINISTRATION DOSE FORM DESCRIPTION</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="255"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="MedicationAdministrationDoseForm_SnomedCt" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>MEDICATION ADMINISTRATION DOSE FORM (SNOMED CT)</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:integer">
+						<xs:totalDigits value="18"/>
+						<xs:minInclusive value="100000"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="MedicationAdministrationDoseActualDesc" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>MEDICATION ADMINISTRATION DOSE ACTUAL DESCRIPTION</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="255"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="BodySiteOfAdministrationActualDesc" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>BODY SITE OF ADMINISTRATION ACTUAL DESCRIPTION</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="255"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="BodySiteOfAdministration_SnomedCt" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>BODY SITE OF ADMINISTRATION ACTUAL (SNOMED CT)</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:integer">
+						<xs:totalDigits value="18"/>
+						<xs:minInclusive value="100000"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="RouteOfAdministrationActualDesc" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>ROUTE OF ADMINISTRATION ACTUAL DESCRIPTION</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="255"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="RouteOfAdministration_SnomedCt" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>ROUTE OF ADMINISTRATION ACTUAL (SNOMED CT)</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:integer">
+						<xs:totalDigits value="18"/>
+						<xs:minInclusive value="100000"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="MethodOfAdministrationActualDesc" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>METHOD OF ADMINISTRATION ACTUAL DESCRIPTION</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="255"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="MethodOfAdministrationActual_SnomedCt" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>METHOD OF ADMINISTRATION ACTUAL (SNOMED CT)</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:integer">
+						<xs:totalDigits value="18"/>
+						<xs:minInclusive value="100000"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="MedicationAdministrationDoseQuantityValue" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>MEDICATION ADMINISTRATION DOSE QUANTITY VALUE</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:decimal">
+						<xs:totalDigits value="16"/>
+						<xs:fractionDigits value="6"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="MedicationAdministrationDoseQuantityValueUnitOfMeasurementDesc" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>MEDICATION ADMINISTRATION DOSE QUANTITY VALUE UNIT OF MEASUREMENT DESCRIPTION</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="255"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="MedicationAdministrationActiveIngredientSubstance" type="MedicationAdministrationActiveIngredientSubstance" minOccurs="0" maxOccurs="unbounded"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:element name="MedicationAdministrationActiveIngredientSubstance" type="MedicationAdministrationActiveIngredientSubstance"/>
+	<xs:complexType name="MedicationAdministrationActiveIngredientSubstance">
+		<xs:sequence>
+			<xs:element name="MedicationAdministeredActiveIngredientSubstanceDesc" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>MEDICATION ADMINISTERED ACTIVE INGREDIENT SUBSTANCE DESCRIPTION</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="255"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="MedicationAdministeredActiveIngredientSubstanceStrengthDesc" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>MEDICATION ADMINISTERED ACTIVE INGREDIENT SUBSTANCE STRENGTH DESCRIPTION</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="255"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+</xs:schema>

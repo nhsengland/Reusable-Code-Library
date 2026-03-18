@@ -1,0 +1,44 @@
+Attributes:
+
+DIDS Attribute	Data Dictionary Attribute	Mandatory	Description
+NHS Number	NHS NUMBER	M*	The patient’s unique NHS code, it is 10 numeric digits in length and an unbroken sequence
+NHS Number Status	NHS NUMBER STATUS INDICATOR CODE	R	Permitted National Codes: 01 - 08
+Date of Birth	PERSON BIRTH DATE	M*	This is the patient’s date of birth Format: CCYY-MM-DD
+Ethnicity	ETHNIC CATEGORY	M*	Ethnic Category is the classification used for the 2001 census.
+Patient Gender	PERSON GENDER CODE CURRENT	M*	Permitted National Codes: 0 = Not known, 1=male, 2=female, 9=not specified
+Patient Home Postcode	POSTCODE OF USUAL ADDRESS	M*	Postcode must be in a valid format
+Patient Registered GP Practice	GENERAL MEDICAL PRACTICE CODE (PATIENT REGISTRATION)	M*	Must be one of the defined national codes, For a GP practice we would expect a 6 digit code e.g. A12345, B78945
+Patient Type	PATIENT SOURCE SETTING TYPE (DIAGNOSTIC IMAGING)	M	Setting that the patient has come from. Eg 01 = Admitted Patient Care - Inpatient (this Health Care Provider) *, 02= Admitted Patient Care - Day case (this Health Care Provider) *
+Referrer	REFERRER CODE	R	This field is the code of the person making the referral.
+Referring Organisation	REFERRING ORGANISATION CODE	R	A 3 digit code for the organisation that is referring the patient, 6 for GP
+Date of Test Request	DIAGNOSTIC TEST REQUEST DATE	R	Date the referrer made the referral request Format: CCYY-MM-DD
+Date Test Request Received	DIAGNOSTIC TEST REQUEST RECEIVED DATE	R	Date that the diagnostic provider received the referral request
+Date of Test	DIAGNOSTIC TEST DATE	M	Date the test took place, Format: CCYY-MM-DD
+Imaging Code (NICIP)     OR	IMAGING CODE (NICIP)	M	NICIP: National Interim Clinical Imaging Procedure code,
+Imaging Code (SNOMED CT)	IMAGING CODE (SNOMED CT)	M	SNOMED CT:
+Date Test Report Issued	SERVICE REPORT ISSUE DATE	R	Date the diagnostic provider issued the test report Format: CCYY-MM-DD
+Provider Site Code	SITE CODE (OF IMAGING)	M	Site code (of imaging) ODS
+RIS Accession Number	RADIOLOGICAL ACCESSION NUMBER	M	Unique RIS record number for the exam.
+
+
+Validations:
+
+ATTRIBUTE	STATUS	VALIDATIONS
+NHS Number	M	Must be 10 numeric digits in length and an unbroken sequence. In line with NHS Number specification it must satisfy the modulus 11 algorithm and is not allowed be 1234567890, 0123456789 or N00000000N, where N is a non-zero number.
+NHS Number Status	R	Must be one of the nationally defined codes^
+Date of Birth	M	Must be given in the format CCYY-MM-DD. It must be: · before or equal to “Date of test”, and · before Today, and · before or equal to “Date test report issued”
+Ethnicity	M	Must be one of the nationally defined codes^. This includes the option “National code Z - Not Stated should be used where the person has been given the opportunity to state their ethnic category but chose not to.”
+Patient Gender	M	Must be one of the defined national codes^, including the options Not Known and Not Specified.
+Patient Home Postcode	M	Must only have 1 space between 2 alphanumeric parts of postcode. This does not check that the postcode provided is a valid postcode.
+Patient Registered GP Practice	M	Must be one of the defined national codes^, including codes for “Not Registered”, “Not Applicable” and “Not Known”
+Patient Type	M	Must be one of the defined national codes^, which includes an option for other, but no option for unknown.
+Referrer	R	Must be in a valid format (8 characters, normally 1 or 2 letters followed by 7 or 6 numbers) or else it is converted to 99, but may not be a defined national value^.
+Referring Organisation	R	Must be from defined national values^, which includes an option for not known and for not applicable
+Date of Test Request	R	Must be given in the format CCYY-MM-DD. It must be: · before or equal to ”Date test request received”
+Date Test Request Received	R	Must be given in the format CCYY-MM-DD. It must be · equal to or after “Date of test request”
+Date of Test	M	Must be given in the format CCYY-MM-DD. It must be: · no earlier than ”Date of test request”, and · no earlier than ”Date test request received”, and · no later than ”Date test report issued. Cannot be more than 3 months before submission month
+Imaging Code (NICIP)     OR	M	Must be from defined national codes^ NICIP may be missing if SNOMED-CT is valid.
+Imaging Code (SNOMED CT)	M	Must be from defined national codes^ SNOMED-CT may be missing if NICIP is valid.
+Date Test Report Issued	R	Must be in the format CCYY-MM-DD. Must be after or equal to “Date of Test”
+Provider Site Code	M	Must be from defined national codes^
+RIS Accession Number	M	Must be an alphanumeric code of up to 20 characters, which must be unique within site code (validated after submission to the DID).

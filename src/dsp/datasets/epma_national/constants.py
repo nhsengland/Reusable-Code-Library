@@ -1,0 +1,412 @@
+class EPMANationalDatabases:
+    EPMA_NATIONAL = "epma_national"
+    EPMA_AUTOCODING = "epma_autocoding"
+    DSS_CORPORATE = "dss_corporate"
+    EPMA_WHITELIST = "epma_national"
+    EPMA_LR_MEDS = "epma_national"
+
+
+class EPMANationalCollection:
+    EPMAP_HEADER = "Header"
+    EPMAP_PRESC = "PrescribedMedication"  # Prescription
+    EPMAP_CHEM = "PrescribedMedicationActiveIngredientSubstance"  # Chemical
+    EPMAP_MEDIND = "PrescribedMedicationTherapeuticIndication"  # Medication_Indication
+    EPMAP_DOSAGE = "PrescribedMedicationDosage"  # Dosage
+    EPMAP_ADD = "PrescribedMedicationAdditionalDosageInstructions"  # Additional
+    EPMAA_HEADER = "Header"
+    EPMAA_ADMIN = "MedicationAdministration"  # Administration
+    EPMAA_ACTIVE_ING = (
+        "MedicationAdministrationActiveIngredientSubstance"  # Active_ingredient
+    )
+
+
+class EPMANationalPrescriptionHeaderColumns:
+    ORGANISATION_SITE_IDENTIFIER_SYSTEM = "OrganisationSiteIdentifierSystemLocation"
+    DATASET_CREATED = "DataSetCreatedTimestamp"
+    PRIMARY_DATA_COLLECTION_SYSTEM_IN_USE = "PrimSystemInUse"
+    REPORTING_PERIOD_START_DATE = "ReportingPeriodStartDate"
+    REPORTING_PERIOD_END_DATE = "ReportingPeriodEndDate"
+
+
+class EPMANationalPrescriptionPrescriptionColumns:
+    NHS_NUMBER = "NHSNumber"
+    NHS_NUMBER_STATUS_INDICATOR_CODE = "NHSNumberStatusIndicatorCode"
+    PERSON_BIRTH_DATE = "PersonBirthDate"
+    ORGANISATION_SITE_IDENTIFIER = "OrganisationSiteIdentifierOfTreatment"
+    HOSPITAL_PROVIDER_SPELL_IDENTIFIER = "HospitalProviderSpellIdentifier"
+    EPISODE_NUMBER = "EpisodeNumber"
+    OUTPATIENT_ATTENDANCE_IDENTIFIER = "OutpatientAttendanceIdentifier"
+    EMERGENCY_CARE_ATTENDANCE_IDENTIFIER = "EmergencyCareAttendanceIdentifier"
+    MEDICATION_ADMINISTRATION_SETTING_TYPE = (
+        "MedicationAdministrationSettingType_Prescribed"
+    )
+    OTHER_MEDICATION_ADMINISTRATION_SETTING = "OtherMedicationAdminSettingDesc"
+    PRESCRIBED_MEDICATION_STATUS = "PrescribedMedicationStatusDesc"
+    PRESCRIBED_ITEM_IDENTIFIER = "PrescribedItemIdentifier"
+    PRESCRIBED_MEDICATION_AUTHORISED_TIMESTAMP = (
+        "PrescribedMedicationAuthorisedTimestamp"
+    )
+    PRESCRIBED_MEDICATION_GP_MANAGED_POST_DISCHARGE_BOOL = (
+        "PrescribedMedicationGPManagedPostDischBoolean"
+    )
+    PRESCRIBED_MEDICATION_RECORD_LAST_UPDATED = (
+        "PrescribedMedicationRecordLastUpdatedTimestamp"
+    )
+    PRESCRIBED_MEDICATION_NAME = "PrescribedMedicationName"
+    PRESCRIBED_MEDICATION_SNOMED_DMD = "PrescribedMedication_DmD"
+    PRESCRIBED_MEDICATION_DOSE_FORM_DESCRIPTION = (
+        "PrescribedMedicationDoseFormDescription"
+    )
+    PRESCRIBED_MEDICATION_DOSE_FORM_SNOMED_CT = "PrescribedMedicationDoseForm_SnomedCt"
+
+
+class EPMANationalPrescriptionChemicalColumns:
+    PRESCRIBED_MEDICATION_ACTIVE_INGREDIENT_SUBSTANCE_DESC = (
+        "PrescribedMedicationActiveIngredientSubstanceDesc"
+    )
+    PRESCRIBED_MEDICATION_ACTIVE_INGREDIENT_SUBTANCE_STRENGTH_DESC = (
+        "PrescribedMedicationActiveIngredientSubstanceStrengthDesc"
+    )
+
+
+class EPMANationalPrescriptionMedicationIndicationColumns:
+    PRESCRIBED_MEDICATION_THERAPEUTIC_INDICATION_DESC = (
+        "PrescribedMedicationTherapeuticIndicationDesc"
+    )
+    THERAPEUTIC_INDICATION_SNOMED_CODE = "TherapeuticIndicationCode_SnomedCt"
+
+
+class EPMANationalPrescriptionDosageColumns:
+    PRESCRIBED_MEDICATION_DOSAGE_INSTRUCTION_SEQUENCE_NO = (
+        "PrescribedMedicationDosageInstrSeqNo"
+    )
+    PRESCRIBED_MEDICATION_DOSAGE_INSTRUCTION_DESC = (
+        "PrescribedMedicationDosageInstrDesc"
+    )
+    BODY_SITE_OF_ADMINISTRATION_PRESCRIBED_DESC = (
+        "BodySiteOfAdministrationPrescribedDesc"
+    )
+    BODY_SITE_OF_ADMINISTRATION_PRESCRIBED_SNOMED_CT = (
+        "BodySiteOfAdministrationPrescribed_SnomedCt"
+    )
+    ROUTE_OF_ADMINISTRATION_PRESCRIBED_DESC = "RouteOfAdministrationPrescribedDesc"
+    ROUTE_OF_ADMINISTRATION_PRESCRIBED_SNOMED_CT = (
+        "RouteOfAdministrationPrescribed_SnomedCt"
+    )
+    METHOD_OF_ADMINISTRATION_PRESCRIBED_DESC = "MethodOfAdministrationPrescribedDesc"
+    METHOD_OF_ADMINISTRATION_PRESCRIBED_SNOMED_CT = (
+        "MethodOfAdministrationPrescribed_SnomedCt"
+    )
+    PRESCRIBED_MEDICATION_DOSE_QUANTITY_VALUE = "PrescribedMedicationDoseQuantityValue"
+    PRESCRIBED_MEDICATION_DOSE_QUANTITY_VALUE_DESC = (
+        "PrescribedMedicationDoseQuantityValueUnitOfMeasurementDesc"
+    )
+    PRESCRIBED_MEDICATION_DOSE_RANGE_LOW_QUANTITY_VALUE = (
+        "PrescribedMedicationDoseRangeLowQuantityValue"
+    )
+    PRESCRIBED_MEDICATION_DOSE_RANGE_LOW_QUANTITY_VALUE_DESC = (
+        "PrescribedMedicationDoseRangeLowQuantityValueUnitOfMeasurementDesc"
+    )
+    PRESCRIBED_MEDICATION_DOSE_RANGE_HIGH_QUANTITY_VALUE = (
+        "PrescribedMedicationDoseRangeHighQuantityValue"
+    )
+    PRESCRIBED_MEDICATION_DOSE_RANGE_HIGH_QUANTITY_VALUE_DESC = (
+        "PrescribedMedicationDoseRangeHighQuantityValueUnitOfMeasurementDesc"
+    )
+    PRESCRIBED_MEDICATION_DOSE_REPEAT_FREQUENCY_VALUE = (
+        "PrescribedMedicationDoseRepeatFrequencyValue"
+    )
+    PRESCRIBED_MEDICATION_DOSE_REPEAT_PERIOD = "PrescribedMedicationDoseRepeatPeriod"
+    PRESCRIBED_MEDICATION_DOSE_REPEAT_PERIOD_UOM = "PrescribedMedicationDoseRepeatPeriodUnitOfMeasurement_FHIRR4"  # UOM - unit of measurement
+    PRESCRIBED_MEDICATION_DOSE_DAY_OF_WEEK = "PrescribedMedicationDoseDayOfWeek_FHIRR4"
+    PRESCRIBED_MEDICATION_DOSE_TIME_OF_DAY = "PrescribedMedicationDoseTimeOfDay"
+    PRESCRIBED_MEDICATION_DOSE_ASSOCIATED_EVENT = (
+        "PrescribedMedicationDoseAssociatedEvent_FHIRR4"
+    )
+    PRESCRIBED_MEDICATION_DOSE_TO_BE_ADMINISTERED_TIMESTAMP = (
+        "PrescribedMedicationDoseToBeAdministeredTimestamp"
+    )
+    PRESCRIBED_MEDICATION_DOSE_ADMINISTERED_BOOL = (
+        "PrescribedMedicationDoseAdministeredAsNeededBoolean"
+    )
+    PRESCRIBED_MEDICATION_VALIDITY_PERIOD_START_TIMESTAMP = (
+        "PrescribedMedicationValidityPeriodStartTimestamp"
+    )
+    PRESCRIBED_MEDICATION_VALIDITY_PERIOD_END_TIMESTAMP = (
+        "PrescribedMedicationValidityPeriodEndTimestamp"
+    )
+
+
+class EPMANationalPrescriptionAdditionalColumns:
+    PRESCRIBED_MEDICATION_ADDITIONAL_DOSAGE_INSTRUCTION_DESC = (
+        "PrescribedMedicationAdditionalDosageInstructionDesc"
+    )
+    PRESCRIBED_MEDICATION_ADDITIONAL_DOSAGE_INSTRUCTION_SNOMED_CT = (
+        "PrescribedMedicationAdditionalDosageInstruction_SnomedCt"
+    )
+
+
+class EPMANationalAdministrationHeaderColumns:
+    ORGANISATION_SITE_IDENTIFIER_SYSTEM = "OrganisationSiteIdentifierSystemLocation"
+    DATASET_CREATED = "DataSetCreatedTimestamp"
+    PRIMARY_DATA_COLLECTION_SYSTEM_IN_USE = "PrimSystemInUse"
+    REPORTING_PERIOD_START_DATE = "ReportingPeriodStartDate"
+    REPORTING_PERIOD_END_DATE = "ReportingPeriodEndDate"
+
+
+class EPMANationalAdministrationMedicationColumns:
+    NHS_NUMBER = "NHSNumber"
+    NHS_NUMBER_STATUS_INDICATOR_CODE = "NHSNumberStatusIndicatorCode"
+    PERSON_BIRTH_DATE = "PersonBirthDate"
+    ORGANISATION_SITE_IDENTIFIER_TREATMENT = "OrganisationSiteIdentifierOfTreatment"
+    HOSPITAL_PROVIDER_SPELL_IDENTIFIER = "HospitalProviderSpellIdentifier"
+    EPISODE_NUMBER = "EpisodeNumber"
+    OUTPATIENT_ATTENDANCE_IDENTIFIER = "OutpatientAttendanceIdentifier"
+    EMERGENCY_CARE_ATTENDANCE_IDENTIFIER = "EmergencyCareAttendanceIdentifier"
+    MEDICATION_ADMINISTRATION_SETTING_TYPE_ACTUAL = (
+        "MedicationAdministrationSettingType_Actual"
+    )
+    OTHER_MEDICATION_ADMINISTRATION_SETTING_DESCRIPTION = (
+        "OtherMedicationAdminSettingDesc"
+    )
+    MEDICATION_ADMINISTRATION_STATUS = "MedicationAdminStatusDesc"
+    MEDICATION_ADMINISTRATION_IDENTIFIER = "MedicationAdminIdentifier"
+    PRESCRIBED_ITEM_IDENTIFIER = "PrescribedItemIdentifier"
+    PRESCRIBED_MEDICATION_DOSE_TO_BE_ADMINISTERED_TIMESTAMP = (
+        "PrescribedMedicationDoseToBeAdministeredTimestamp"
+    )
+    CODED_PROCEDURE_TIMESTAMP_MEDICATION_ADMINISTRATION = (
+        "CodedProcedureTimeStamp_MedicationAdmin"
+    )
+    MEDICATION_ADMINISTRATION_RECORDED_TIMESTAMP = (
+        "MedicationAdministrationRecordedTimeStamp"
+    )
+    PRESCRIBED_MEDICATION_DOSE_NOT_ADMINISTERED_BOOLEAN = (
+        "PrescribedMedicationDoseNotAdministeredBoolean"
+    )
+    PRESCRIBED_MEDICATION_DOSE_NOT_ADMINISTERED_REASON_DESCRIPTION = (
+        "PrescribedMedicationDoseNotAdministeredReasonDescription"
+    )
+    MEDICATION_ADMINISTRATION_RECORD_LAST_UPDATED_TIMESTAMP = (
+        "MedicationAdministrationRecordLastUpdatedTimeStamp"
+    )
+    MEDICATION_ADMINISTERED_NAME = "MedicationAdministeredName"
+    MEDICATION_ADMINISTERED_DMD = "MedicationAdministered_DmD"
+    MEDICATION_ADMINISTRATION_DOSE_FORM_DESCRIPTION = (
+        "MedicationAdministrationDoseFormDesc"
+    )
+    MEDICATION_ADMINISTRATION_DOSE_FORM_SNOMED_CT = (
+        "MedicationAdministrationDoseForm_SnomedCt"
+    )
+    MEDICATION_ADMINISTRATION_DOSE_ACTUAL_DESCRIPTION = (
+        "MedicationAdministrationDoseActualDesc"
+    )
+    BODY_SITE_OF_ADMINISTRATION_ACTUAL_DESCRIPTION = (
+        "BodySiteOfAdministrationActualDesc"
+    )
+    BODY_SITE_OF_ADMINISTRATION_ACTUAL_SNOMED_CT = "BodySiteOfAdministration_SnomedCt"
+    ROUTE_OF_ADMINISTRATION_ACTUAL_DESCRIPTION = "RouteOfAdministrationActualDesc"
+    ROUTE_OF_ADMINISTRATION_ACTUAL_SNOMED_CT = "RouteOfAdministration_SnomedCt"
+    METHOD_OF_ADMINISTRATION_ACTUAL_DESCRIPTION = "MethodOfAdministrationActualDesc"
+    METHOD_OF_ADMINISTRATION_ACTUAL_SNOMED_CT = "MethodOfAdministrationActual_SnomedCt"
+    MEDICATION_ADMINISTRATION_DOSE_QUANTITY_VALUE = (
+        "MedicationAdministrationDoseQuantityValue"
+    )
+    MEDICATION_ADMINISTRATION_DOSE_QUANTITY_VALUE_UNIT_OF_MEASUREMENT_DESCRIPTION = (
+        "MedicationAdministrationDoseQuantityValueUnitOfMeasurementDesc"
+    )
+
+
+class EPMANationalAdministrationMedicationActiveIngredientSubstanceColumns:
+    MEDICATION_ADMINISTERED_ACTIVE_INGREDIENT_SUBSTANCE_DESCRIPTION = (
+        "MedicationAdministeredActiveIngredientSubstanceDesc"
+    )
+    MEDICATION_ADMINISTERED_ACTIVE_INGREDIENT_SUBSTANCE_STRENGTH_DESCRIPTION = (
+        "MedicationAdministeredActiveIngredientSubstanceStrengthDesc"
+    )
+
+
+class EPMANationalPrescriptionDerivedColumns:
+    ADDITIONAL_INSTRUCTION_SNOMED_CT_CHECK = "ADDITIONAL_INSTRUCTION_SNOMED_CT_CHECK"
+    ADDITIONAL_INSTRUCTION_SNOMED_CT_FILTERED = (
+        "ADDITIONAL_INSTRUCTION_SNOMED_CT_FILTERED"
+    )
+    AGE = "AGE"
+    AMP = "AMP"
+    AMP_TERM_TEXT = "AMP_TERM_TEXT"
+    AMPP = "AMPP"
+    AMPP_TERM_TEXT = "AMPP_TERM_TEXT"
+    CCG_OF_REGISTRATION = "CCG_OF_REGISTRATION"
+    CCG_OF_RESIDENCE = "CCG_OF_RESIDENCE"
+    DEPRIVATION_IMD_VERSION = "DEPRIVATION_IMD_VERSION"
+    DOB = "DATE_OF_BIRTH"
+    DOSAGE_ID = "DOSAGE_ID"
+    DOSE_QUANTITY_UNIT_CHECK = "DOSE_QUANTITY_UNIT_CHECK"
+    DOSE_QUANTITY_UNIT_FILTERED = "DOSE_QUANTITY_UNIT_FILTERED"
+    DOSE_QUANTITY_UNIT_FILTERED_CHECK = "DOSE_QUANTITY_UNIT_FILTERED_CHECK"
+    DOSERANGE_HIGH_UNIT_CHECK = "DOSERANGE_HIGH_UNIT_CHECK"
+    DOSERANGE_HIGH_UNIT_FILTERED = "DOSERANGE_HIGH_UNIT_FILTERED"
+    DOSERANGE_HIGH_UNIT_FILTERED_CHECK = "DOSERANGE_HIGH_UNIT_FILTERED_CHECK"
+    DOSERANGE_LOW_UNIT_CHECK = "DOSERANGE_LOW_UNIT_CHECK"
+    DOSERANGE_LOW_UNIT_FILTERED = "DOSERANGE_LOW_UNIT_FILTERED"
+    DOSERANGE_LOW_UNIT_FILTERED_CHECK = "DOSERANGE_LOW_UNIT_FILTERED_CHECK"
+    FORM_FILTERED_CHECK = "FORM_FILTERED_CHECK"
+    FORM_FILTERED = "FORM_FILTERED"
+    FORM_SNOMED_CT_CHECK = "FORM_SNOMED_CT_CHECK"
+    FORM_SNOMED_CT_FILTERED = "FORM_SNOMED_CT_FILTERED"
+    GENDER = "GENDER"
+    IMD_DECILE = "IMD_DECILE"
+    INDICATION_SNOMED_CT_CHECK = "INDICATION_SNOMED_CT_CHECK"
+    INDICATION_SNOMED_CT_FILTERED = "INDICATION_SNOMED_CT_FILTERED"
+    INTEGRATED_CARE_SYSTEM_OF_REGISTRATION = "INTEGRATED_CARE_SYSTEM_OF_REGISTRATION"
+    INTEGRATED_CARE_SYSTEM_OF_RESIDENCE = "INTEGRATED_CARE_SYSTEM_OF_RESIDENCE"
+    LA_DISTRICT_OF_REGISTRATION = "LA_DISTRICT_OF_REGISTRATION"
+    LA_DISTRICT_OF_RESIDENCE = "LA_DISTRICT_OF_RESIDENCE"
+    LSOA_OF_REGISTRATION = "LSOA_OF_REGISTRATION"
+    LSOA_OF_RESIDENCE = "LSOA_OF_RESIDENCE"
+    LSOA_VERSION = "LSOA_VERSION"
+    METHOD_FILTERED = "METHOD_FILTERED"
+    METHOD_FILTERED_CHECK = "METHOD_FILTERED_CHECK"
+    METHOD_SNOMED_CT_CHECK = "METHOD_SNOMED_CT_CHECK"
+    METHOD_SNOMED_CT_FILTERED = "METHOD_SNOMED_CT_FILTERED"
+    MPS_CONFIDENCE = "MPS_CONFIDENCE"
+    NHS_NUMBER_LEGALLY_RESTRICTED = "NHS_NUMBER_LEGALLY_RESTRICTED"
+    NHS_NUMBER_PDS_CHECK = "NHS_NUMBER_PDS_CHECK"
+    AUTOMAPPED_DMD = "AUTOMAPPED_DMD"
+    AUTOMAPPED_DMD_CHECK = "AUTOMAPPED_DMD_CHECK"
+    PATIENT_POSTCODE = "PATIENT_POSTCODE"
+    PERSON_ID = "PERSON_ID"
+    PRIMARY_DMD = "PRIMARY_DMD"
+    PRIMARY_DMD_CHECK = "PRIMARY_DMD_CHECK"
+    PRIMARY_DMD_LEVEL = "PRIMARY_DMD_LEVEL"
+    PRIMARY_DMD_NAME = "PRIMARY_DMD_NAME"
+    PRIMARY_DMD_SOURCE = "PRIMARY_DMD_SOURCE"
+    RP_START_MONTH = "RP_START_MONTH"
+    REGISTERED_GP_PRACTICE = "REGISTERED_GP_PRACTICE"
+    ROUTE_FILTERED = "ROUTE_FILTERED"
+    ROUTE_FILTERED_CHECK = "ROUTE_FILTERED_CHECK"
+    ROUTE_SNOMED_CT_CHECK = "ROUTE_SNOMED_CT_CHECK"
+    ROUTE_SNOMED_CT_FILTERED = "ROUTE_SNOMED_CT_FILTERED"
+    SITE_FILTERED = "SITE_FILTERED"
+    SITE_FILTERED_CHECK = "SITE_FILTERED_CHECK"
+    SITE_SNOMED_CT_CHECK = "SITE_SNOMED_CT_CHECK"
+    SITE_SNOMED_CT_FILTERED = "SITE_SNOMED_CT_FILTERED"
+    SOURCE_SYSTEM_TRUST_ODS_CODE = "SOURCE_SYSTEM_TRUST_ODS_CODE"
+    TREATMENT_SITE_ODS_CODE_CHECK = "TREATMENT_SITE_ODS_CODE_CHECK"
+    TREATMENT_SITE_ODS_CODE_FILTERED = "TREATMENT_SITE_ODS_CODE_FILTERED"
+    TREATMENT_TRUST_ODS_CODE = "TREATMENT_TRUST_ODS_CODE"
+    TRUST_DMD_CHECK = "TRUST_DMD_CHECK"
+    VMP = "VMP"
+    VMP_TERM_TEXT = "VMP_TERM_TEXT"
+    VMPP = "VMPP"
+    VMPP_TERM_TEXT = "VMPP_TERM_TEXT"
+    VTM = "VTM"
+    VTM_TERM_TEXT = "VTM_TERM_TEXT"
+    WHEN_CHECK = "WHEN_CHECK"
+    WHEN_FILTERED = "WHEN_FILTERED"
+    WHEN_FILTERED_CHECK = "WHEN_FILTERED_CHECK"
+
+
+class EPMANationalAdministrationDerivedColumns:
+    SOURCE_SYSTEM_TRUST_ODS_CODE = "SOURCE_SYSTEM_TRUST_ODS_CODE"
+    NHS_NUMBER_PDS_CHECK = "NHS_NUMBER_PDS_CHECK"
+    TREATMENT_SITE_ODS_CODE_CHECK = "TREATMENT_SITE_ODS_CODE_CHECK"
+    TREATMENT_SITE_ODS_CODE_FILTERED = "TREATMENT_SITE_ODS_CODE_FILTERED"
+    TREATMENT_TRUST_ODS_CODE = "TREATMENT_TRUST_ODS_CODE"
+    AGE = "AGE"
+    GENDER = "GENDER"
+    IMD_DECILE = "IMD_DECILE"
+    DEPRIVATION_IMD_VERSION = "DEPRIVATION_IMD_VERSION"
+    CCG_OF_RESIDENCE = "CCG_OF_RESIDENCE"
+    CCG_OF_REGISTRATION = "CCG_OF_REGISTRATION"
+    LA_DISTRICT_OF_RESIDENCE = "LA_DISTRICT_OF_RESIDENCE"
+    LA_DISTRICT_OF_REGISTRATION = "LA_DISTRICT_OF_REGISTRATION"
+    INTEGRATED_CARE_SYSTEM_OF_RESIDENCE = "INTEGRATED_CARE_SYSTEM_OF_RESIDENCE"
+    INTEGRATED_CARE_SYSTEM_OF_REGISTRATION = "INTEGRATED_CARE_SYSTEM_OF_REGISTRATION"
+    LSOA_OF_REGISTRATION = "LSOA_OF_REGISTRATION"
+    LSOA_OF_RESIDENCE = "LSOA_OF_RESIDENCE"
+    LSOA_VERSION = "LSOA_VERSION"
+    REGISTERED_GP_PRACTICE = "REGISTERED_GP_PRACTICE"
+    TRUST_DMD_CHECK = "TRUST_DMD_CHECK"
+    AUTOMAPPED_DMD = "AUTOMAPPED_DMD"
+    AUTOMAPPED_DMD_CHECK = "AUTOMAPPED_DMD_CHECK"
+    PRIMARY_DMD = "PRIMARY_DMD"
+    PRIMARY_DMD_CHECK = "PRIMARY_DMD_CHECK"
+    PRIMARY_DMD_LEVEL = "PRIMARY_DMD_LEVEL"
+    PRIMARY_DMD_NAME = "PRIMARY_DMD_NAME"
+    PRIMARY_DMD_SOURCE = "PRIMARY_DMD_SOURCE"
+    VTM = "VTM"
+    VTM_TERM_TEXT = "VTM_TERM_TEXT"
+    VMP = "VMP"
+    VMP_TERM_TEXT = "VMP_TERM_TEXT"
+    AMP = "AMP"
+    AMP_TERM_TEXT = "AMP_TERM_TEXT"
+    VMPP = "VMPP"
+    VMPP_TERM_TEXT = "VMPP_TERM_TEXT"
+    AMPP = "AMPP"
+    AMPP_TERM_TEXT = "AMPP_TERM_TEXT"
+    FORM_FILTERED = "FORM_FILTERED"
+    FORM_FILTERED_CHECK = "FORM_FILTERED_CHECK"
+    FORM_SNOMED_CT_CHECK = "FORM_SNOMED_CT_CHECK"
+    FORM_SNOMED_CT_FILTERED = "FORM_SNOMED_CT_FILTERED"
+    SITE_FILTERED = "SITE_FILTERED"
+    SITE_FILTERED_CHECK = "SITE_FILTERED_CHECK"
+    SITE_SNOMED_CT_CHECK = "SITE_SNOMED_CT_CHECK"
+    SITE_SNOMED_CT_FILTERED = "SITE_SNOMED_CT_FILTERED"
+    ROUTE_FILTERED = "ROUTE_FILTERED"
+    ROUTE_FILTERED_CHECK = "ROUTE_FILTERED_CHECK"
+    ROUTE_SNOMED_CT_CHECK = "ROUTE_SNOMED_CT_CHECK"
+    ROUTE_SNOMED_CT_FILTERED = "ROUTE_SNOMED_CT_FILTERED"
+    METHOD_FILTERED = "METHOD_FILTERED"
+    METHOD_FILTERED_CHECK = "METHOD_FILTERED_CHECK"
+    METHOD_SNOMED_CT_CHECK = "METHOD_SNOMED_CT_CHECK"
+    METHOD_SNOMED_CT_FILTERED = "METHOD_SNOMED_CT_FILTERED"
+    DOSE_QUANTITY_UNIT_CHECK = "DOSE_QUANTITY_UNIT_CHECK"
+    DOSE_QUANTITY_UNIT_FILTERED = "DOSE_QUANTITY_UNIT_FILTERED"
+    DOSE_QUANTITY_UNIT_FILTERED_CHECK = "DOSE_QUANTITY_UNIT_FILTERED_CHECK"
+    NHS_NUMBER_LEGALLY_RESTRICTED = "NHS_NUMBER_LEGALLY_RESTRICTED"
+    PERSON_ID = "PERSON_ID"
+    DATE_OF_BIRTH = "DATE_OF_BIRTH"
+    PATIENT_POSTCODE = "PATIENT_POSTCODE"
+    MPS_CONFIDENCE = "MPS_CONFIDENCE"
+    RP_START_MONTH = "RP_START_MONTH"
+
+
+class SnomedReferenceColumns:
+    DSS_KEY = "DSS_KEY"
+    DSS_SYSTEM_CREATED_DATE = "DSS_SYSTEM_CREATED_DATE"
+    EFFECTIVE_TIME = "effectiveTime"
+    MODULE_ID = "moduleId"
+    ACTIVE = "active"
+    ID = "id"
+    REFSET_ID = "refsetId"
+    REFERENCED_COMPONENT_ID = "referencedComponentID"
+    CONCEPT_ID = "conceptId"
+    TERM = "term"
+    DEFINITION_STATUS_ID = "definitionStatusId"
+    LANGUAGE_CODE = "languageCode"
+    TYPE_ID = "typeID"
+    CASE_SIGNIFICANCE_ID = "caseSignificanceId"
+    MODULE_ID = "moduleId"
+    SUPERTYPE_ID = "SupertypeID"
+    SUBTYPE_ID = "SubtypeID"
+
+
+class EPMARedactionValues:
+    REMOVED = "Removed"
+
+
+class ExcludedColumns:
+    PRESC_COLS = [
+        EPMANationalPrescriptionPrescriptionColumns.NHS_NUMBER,
+        EPMANationalPrescriptionPrescriptionColumns.PERSON_BIRTH_DATE,
+    ]
+    ADMIN_COLS = [
+        EPMANationalAdministrationMedicationColumns.NHS_NUMBER,
+        EPMANationalAdministrationMedicationColumns.PERSON_BIRTH_DATE,
+    ]
+
+
+class EPMAPipelineContextConstants:
+    XML_PARSE_CHECK_RESULT = "xml_parse_check_result"
+    XML_VALIDATION_RESULTS_FILE = "xml_validation_results_file"

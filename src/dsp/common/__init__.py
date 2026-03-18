@@ -7,8 +7,8 @@ from typing import Callable
 import pip
 
 from dsp.common import enum
-from nhs_reusable_code_library.resuable_codes.shared.aws import local_mode
-from nhs_reusable_code_library.resuable_codes.shared.logger import add_temporary_global_fields
+from dsp.shared.aws import local_mode
+from dsp.shared.logger import add_temporary_global_fields
 
 _re_replaces = [
     (re.compile('^ns:', re.IGNORECASE), ''),

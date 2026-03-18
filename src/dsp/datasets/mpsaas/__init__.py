@@ -1,0 +1,27 @@
+from dsp.datasets.mpsaas.submitted import Fields as Submitted
+
+STRIP_FIELDS = [
+    Submitted.UNIQUE_REFERENCE,
+    Submitted.NHS_NO,
+    Submitted.FAMILY_NAME,
+    Submitted.GIVEN_NAME,
+    Submitted.OTHER_GIVEN_NAME,
+    Submitted.GENDER,
+    Submitted.DATE_OF_BIRTH,
+    Submitted.POSTCODE,
+    Submitted.DATE_OF_DEATH,
+    Submitted.ADDRESS_LINE1,
+    Submitted.ADDRESS_LINE2,
+    Submitted.ADDRESS_LINE3,
+    Submitted.ADDRESS_LINE4,
+    Submitted.ADDRESS_LINE5,
+    Submitted.ADDRESS_DATE,
+    Submitted.GP_PRACTICE_CODE,
+    Submitted.NHAIS_POSTING_ID,
+    Submitted.AS_AT_DATE,
+    Submitted.LOCAL_PATIENT_ID,
+    Submitted.INTERNAL_ID,
+    Submitted.TELEPHONE_NUMBER,
+    Submitted.MOBILE_NUMBER,
+    Submitted.EMAIL_ADDRESS,
+]
