@@ -1,0 +1,115 @@
+from dsp.validations.iapt.person_score_validators import (
+    PersonScoreInSetValidator, PersonScoreWithinRangeValidator
+)
+from dsp.validations.common import AssessmentToolName
+
+
+_MAX_N1_REGEX = "^[0-9]$"
+_MAX_N2_REGEX = "^[0-9]{1,2}$"
+_MAX_N3_REGEX = "^[0-9]{1,3}$"
+_MAX_A1_REGEX = "^[A-Za-z]$"
+_MAX_A2_REGEX = "^[A-Za-z]{1,2}$"
+_N1_MAX_N2_REGEX = r"^[0-9]\.[0-9]{1,2}$"
+
+ASSESSMENT_SCALES = {
+    '1128221000000100': PersonScoreWithinRangeValidator(
+        lower_bound=0.0, upper_bound=72.0, assessment_tool_name=AssessmentToolName.BIQ, format_pattern=_MAX_N2_REGEX),
+    '443223005': PersonScoreWithinRangeValidator(
+        lower_bound=0.0, upper_bound=70.0, assessment_tool_name=AssessmentToolName.BPI, format_pattern=_MAX_N2_REGEX),
+    '446660005': PersonScoreWithinRangeValidator(
+        lower_bound=0.0, upper_bound=40.0, assessment_tool_name=AssessmentToolName.CAT, format_pattern=_MAX_N2_REGEX),
+    '910931000000101': PersonScoreWithinRangeValidator(
+        lower_bound=17.0, upper_bound=102.0, assessment_tool_name=AssessmentToolName.DDS,
+        format_pattern=_MAX_N3_REGEX),
+    '445455005': PersonScoreWithinRangeValidator(
+        lower_bound=0.0, upper_bound=21.0, assessment_tool_name=AssessmentToolName.GAD7, format_pattern=_MAX_N2_REGEX),
+    '446793008': PersonScoreWithinRangeValidator(
+        lower_bound=0.0, upper_bound=54.0, assessment_tool_name=AssessmentToolName.HAI, format_pattern=_MAX_N2_REGEX),
+    '747901000000107': PersonScoreWithinRangeValidator(lower_bound=0.0, upper_bound=4.0,
+                                                       assessment_tool_name=AssessmentToolName.T_PEQ,
+                                                       format_pattern=_MAX_N1_REGEX),
+    '747911000000109': PersonScoreWithinRangeValidator(lower_bound=0.0, upper_bound=4.0,
+                                                       assessment_tool_name=AssessmentToolName.T_PEQ,
+                                                       format_pattern=_MAX_N1_REGEX),
+    '747921000000103': PersonScoreWithinRangeValidator(lower_bound=0.0, upper_bound=4.0,
+                                                       assessment_tool_name=AssessmentToolName.T_PEQ,
+                                                       format_pattern=_MAX_N1_REGEX),
+    '747931000000101': PersonScoreWithinRangeValidator(lower_bound=0.0, upper_bound=4.0,
+                                                       assessment_tool_name=AssessmentToolName.T_PEQ,
+                                                       format_pattern=_MAX_N1_REGEX),
+    '747941000000105': PersonScoreWithinRangeValidator(lower_bound=0.0, upper_bound=4.0,
+                                                       assessment_tool_name=AssessmentToolName.T_PEQ,
+                                                       format_pattern=_MAX_N1_REGEX),
+    '747951000000108': PersonScoreWithinRangeValidator(lower_bound=0.0, upper_bound=4.0,
+                                                       assessment_tool_name=AssessmentToolName.T_PEQ,
+                                                       format_pattern=_MAX_N1_REGEX),
+    '747861000000100': PersonScoreInSetValidator(acceptable_values={'Y', 'N'},
+                                                 assessment_tool_name=AssessmentToolName.A_PEQ,
+                                                 format_pattern=_MAX_A1_REGEX),
+    '747871000000107': PersonScoreInSetValidator(acceptable_values={'Y', 'N'},
+                                                 assessment_tool_name=AssessmentToolName.A_PEQ,
+                                                 format_pattern=_MAX_A1_REGEX),
+    '747881000000109': PersonScoreInSetValidator(acceptable_values={'NA', 'Y', 'N'},
+                                                 assessment_tool_name=AssessmentToolName.A_PEQ,
+                                                 format_pattern=_MAX_A2_REGEX),
+    '904691000000103': PersonScoreInSetValidator(acceptable_values={'NA', 'Y', 'N'},
+                                                 assessment_tool_name=AssessmentToolName.A_PEQ,
+                                                 format_pattern=_MAX_A2_REGEX),
+    '747891000000106': PersonScoreWithinRangeValidator(lower_bound=0.0, upper_bound=4.0,
+                                                       assessment_tool_name=AssessmentToolName.A_PEQ,
+                                                       format_pattern=_MAX_N1_REGEX),
+    '748161000000109': PersonScoreInSetValidator(acceptable_values={'N', 'Y'},
+                                                 assessment_tool_name=AssessmentToolName.IPCQ,
+                                                 format_pattern=_MAX_A1_REGEX),
+    '760741000000102': PersonScoreWithinRangeValidator(lower_bound=0.0, upper_bound=28.0,
+                                                       assessment_tool_name=AssessmentToolName.IPCQ,
+                                                       format_pattern=_MAX_N2_REGEX),
+    '761051000000105': PersonScoreWithinRangeValidator(lower_bound=0.0, upper_bound=10.0,
+                                                       assessment_tool_name=AssessmentToolName.IPCQ,
+                                                       format_pattern=_MAX_N2_REGEX),
+    '1083671000000108': PersonScoreWithinRangeValidator(lower_bound=0.0, upper_bound=500.0,
+                                                        assessment_tool_name=AssessmentToolName.IBS_SSS,
+                                                        format_pattern=_MAX_N3_REGEX),
+    '473354003': PersonScoreWithinRangeValidator(lower_bound=0.0, upper_bound=5.0,
+                                                 assessment_tool_name=AssessmentToolName.MI,
+                                                 format_pattern=_N1_MAX_N2_REGEX),
+    '473355002': PersonScoreWithinRangeValidator(lower_bound=0.0, upper_bound=5.0,
+                                                 assessment_tool_name=AssessmentToolName.MI,
+                                                 format_pattern=_N1_MAX_N2_REGEX),
+    '450324005': PersonScoreWithinRangeValidator(lower_bound=0.0, upper_bound=168.0,
+                                                 assessment_tool_name=AssessmentToolName.OCI,
+                                                 format_pattern=_MAX_N3_REGEX),
+    '450326007': PersonScoreWithinRangeValidator(lower_bound=0.0, upper_bound=28.0,
+                                                 assessment_tool_name=AssessmentToolName.PDSS,
+                                                 format_pattern=_MAX_N2_REGEX),
+    '720433000': PersonScoreWithinRangeValidator(lower_bound=0.0, upper_bound=27.0,
+                                                 assessment_tool_name=AssessmentToolName.PHQ9,
+                                                 format_pattern=_MAX_N2_REGEX),
+    '1065441000000103': PersonScoreWithinRangeValidator(lower_bound=0.0, upper_bound=30.0,
+                                                        assessment_tool_name=AssessmentToolName.PHQ15,
+                                                        format_pattern=_MAX_N2_REGEX),
+    '446517006': PersonScoreWithinRangeValidator(lower_bound=16.0, upper_bound=80.0,
+                                                 assessment_tool_name=AssessmentToolName.PSWQ,
+                                                 format_pattern=_MAX_N2_REGEX),
+    '491581000000104': PersonScoreWithinRangeValidator(lower_bound=0.0, upper_bound=80.0,
+                                                       assessment_tool_name=AssessmentToolName.PCL5,
+                                                       format_pattern=_MAX_N2_REGEX),
+    '445552006': PersonScoreWithinRangeValidator(lower_bound=0.0, upper_bound=68.0,
+                                                 assessment_tool_name=AssessmentToolName.SPIN,
+                                                 format_pattern=_MAX_N2_REGEX),
+    '932621000000100': PersonScoreWithinRangeValidator(lower_bound=0.0, upper_bound=9.0,
+                                                       assessment_tool_name=AssessmentToolName.WSAS,
+                                                       format_pattern=_MAX_N1_REGEX),
+    '932581000000100': PersonScoreWithinRangeValidator(lower_bound=0.0, upper_bound=8.0,
+                                                       assessment_tool_name=AssessmentToolName.WSAS,
+                                                       format_pattern=_MAX_N1_REGEX),
+    '932611000000106': PersonScoreWithinRangeValidator(lower_bound=0.0, upper_bound=8.0,
+                                                       assessment_tool_name=AssessmentToolName.WSAS,
+                                                       format_pattern=_MAX_N1_REGEX),
+    '932591000000103': PersonScoreWithinRangeValidator(lower_bound=0.0, upper_bound=8.0,
+                                                       assessment_tool_name=AssessmentToolName.WSAS,
+                                                       format_pattern=_MAX_N1_REGEX),
+    '932601000000109': PersonScoreWithinRangeValidator(lower_bound=0.0, upper_bound=8.0,
+                                                       assessment_tool_name=AssessmentToolName.WSAS,
+                                                       format_pattern=_MAX_N1_REGEX)
+}

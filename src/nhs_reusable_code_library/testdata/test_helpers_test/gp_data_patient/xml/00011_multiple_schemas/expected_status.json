@@ -1,0 +1,7 @@
+{
+  "input0.71.xml": "success",
+  "input0.75.xml": "success",
+  "input0.76.xml": "success",
+  "input0.77.xml": "success",
+  "input_unsupported.xml": "rejected"
+}

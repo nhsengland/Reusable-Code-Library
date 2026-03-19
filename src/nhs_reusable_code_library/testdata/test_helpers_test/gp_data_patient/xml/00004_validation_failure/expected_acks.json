@@ -1,0 +1,79 @@
+{
+  "input_valid.xml": {
+    "response_to": "b0ee154c-990a-461c-95e5-d861b6fcdb7c",
+    "status": "ok",
+    "details": []
+  },
+  "input_xsd_failure.xml": {
+    "response_to": "9c2d1dbd-c6ad-4e89-b0fa-5b36d8d4b3f2",
+    "status": "fatal-error",
+    "details": [
+      {
+        "id": 1,
+        "code": 4,
+        "title": "XSD Validation Failure",
+        "description": "Failure in Element '{http://www.nhsdigital.nhs.uk/GPDFSU/XMLSchema/GPDataExtract/ns}patient-extract-snapshot', attribute 'id'"
+      }
+    ]
+  },
+  "input_uniqueness_failure.xml": {
+    "response_to": "147e2884-7dbb-485c-95c0-d67202f0a79f",
+    "status": "fatal-error",
+    "details": [
+      {
+        "id": 1,
+        "code": 4,
+        "title": "Uniqueness Check Failure",
+        "description": "Uniqueness Error: Repeated attribute value for uniqueness group 'GlobalUniquePatientIDs'."
+      }
+    ]
+  },
+  "input_ref_integrity_failure_1.xml": {
+    "response_to": "aee0c6a9-7a17-4c77-87ff-e48824ab81a2",
+    "status": "fatal-error",
+    "details": [
+      {
+        "id": 1,
+        "code": 4,
+        "title": "Referential Integrity Check Failure",
+        "description": "Referential Integrity Error: Attribute 'eid' of element 'rt' with ID '5525ce47-4c20-46f9-a681-233827285efb' references a key which does not exist as attribute 'id' of elements 'et'."
+      }
+    ]
+  },
+  "input_ref_integrity_failure_2.xml": {
+    "response_to": "6c682ebc-2910-4c9e-9a67-ad47d2207734",
+    "status": "fatal-error",
+    "details": [
+      {
+        "id": 1,
+        "code": 4,
+        "title": "Referential Integrity Check Failure",
+        "description": "Referential Integrity Error: Attribute 'to' of element 'rft' with ID '01022d8a-f391-4f52-bfa8-41ab20acd8ff' references a key which does not exist as attribute 'id' of elements 'ort'."
+      }
+    ]
+  },
+  "input_business_rule_failure.xml": {
+    "response_to": "b7bdd116-bff1-4cfc-8b12-aa8ae299702b",
+    "status": "fatal-error",
+    "details": [
+      {
+        "id": 1,
+        "code": 4,
+        "title": "Schematron Validation Failure",
+        "description": "Business Rule Error: Element 'at' with ID '5f9b54c1-92ee-414e-a01a-f52c3c997952' failed rule: Main Codeable Concept: 2 User selected points to a code that does not exist."
+      }
+    ]
+  },
+  "input_not_compressed.xml": {
+    "response_to": "8a9c2edb-60fe-4620-a3c8-edb69592e3bc",
+    "status": "fatal-error",
+    "details": [
+      {
+        "id": 1,
+        "code": 4,
+        "title": "File Read Error",
+        "description": "Not a gzipped file (b'<?')"
+      }
+    ]
+  }
+}

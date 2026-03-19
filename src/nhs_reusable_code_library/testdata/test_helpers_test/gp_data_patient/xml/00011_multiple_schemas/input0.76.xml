@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gpdata-extract xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                xsi:schemaLocation="http://www.nhsdigital.nhs.uk/GPDFSU/XMLSchema/GPDataExtract/ns GPDataExtract-0.76.xsd"
+                xmlns="http://www.nhsdigital.nhs.uk/GPDFSU/XMLSchema/GPDataExtract/ns"
+                id="257e6912-708f-43ce-a36c-1b47837736d9" gpdata-version="0.76"
+                issue-date-time="2012-12-01T23:12:00.000Z" channel-id="e922cab3-17c7-4468-aacd-f8ed7e599630"
+                channel-sequence="1" source="hjjhbjhbjhbjhbjb" source-system="Blah" source-version="Bluuurgh"
+                source-message-address="766t7677676">
+    <practice-extract id="e922cab3-17c7-4468-aacd-f8ed7e555630" source-system="a"
+                      issue-date-time="2012-12-01T23:12:00.000Z" source-version="a" supplier-provider-id="a"
+                      provider-id="A81076">
+        <practice-directory>
+            <ort id="e922cab3-17c7-4467-bacd-f8ed7e599632" oc="A10029"/>
+            <prct id="e922cab3-17c7-4468-aacd-f8ed7e599630" oid="e922cab3-17c7-4467-bacd-f8ed7e599632" sc="R2012"
+                  sr="1234" su="12578888" li="A4444" sp="600" lr="1234Blah" ht="D10" gn="Z1234567" ib="02" pi="G1234567"
+                  fn="John" sn="Somebody" t="Dr"/>
+        </practice-directory>
+        <practice-patient-extracts>
+            <patient-extract-snapshot id="e922cab3-17c7-4468-aacd-f8ed7e599630"
+                                      issue-date-time="2012-12-01T23:12:00.000Z"
+                                      registration-id="e922cab3-17c7-4468-aacd-f8ed7e599630" sequence="1"
+                                      continuity-hint="true"
+                                      patient-id-deid="CiEDhLPeC+cTCaEucMWF+Lni6wx5BAW/2UcCU6+JcdXKYSMSIQIVT2RNKO0gFT6JOVqTqNlola/a3/kYgHxdqjeat/tDGBgBIiQxNjNiNzdjNi0xNDMxLTNmNGUtOGU3YS01YzNjNjBmZDQwNjIqJDg3NGM1Y2U2LWMzOWEtM2M4MS1iYmFmLWRkM2U1NmNmN2M0Yw=="
+                                      local-id-deid="CiECWGFvrqLcTLkwBldMdTMu1wfPBbTvTbhgD3HrzFwMyzsSIQOa8UU70V4aJIIjNNYPwpAz+c5AJ4LDuQfslh+DRh+enxgBIiQxNjNiNzdjNi0xNDMxLTNmNGUtOGU3YS01YzNjNjBmZDQwNjIqJDg3NGM1Y2U2LWMzOWEtM2M4MS1iYmFmLWRkM2U1NmNmN2M0Yw==">
+                <pt id="e922cab3-17c7-4468-aacd-f8ed7e599630"
+                    pidd="CiEDhLPeC+cTCaEucMWF+Lni6wx5BAW/2UcCU6+JcdXKYSMSIQIVT2RNKO0gFT6JOVqTqNlola/a3/kYgHxdqjeat/tDGBgBIiQxNjNiNzdjNi0xNDMxLTNmNGUtOGU3YS01YzNjNjBmZDQwNjIqJDg3NGM1Y2U2LWMzOWEtM2M4MS1iYmFmLWRkM2U1NmNmN2M0Yw=="
+                    lid="CiECWGFvrqLcTLkwBldMdTMu1wfPBbTvTbhgD3HrzFwMyzsSIQOa8UU70V4aJIIjNNYPwpAz+c5AJ4LDuQfslh+DRh+enxgBIiQxNjNiNzdjNi0xNDMxLTNmNGUtOGU3YS01YzNjNjBmZDQwNjIqJDg3NGM1Y2U2LWMzOWEtM2M4MS1iYmFmLWRkM2U1NmNmN2M0Yw=="
+                    rd="2012-12-01T23:12:00.000Z"
+                    pd="CiECbVhU1ZfJZ7Dz8DweJHMM6oQYv0lkRBmhNurF3tLBB3YSIQJ3NPhX8vLBZEnxk5aeJ6tCdyUq/neZPDAV6j6FND5P6BgBIiQxNjNiNzdjNi0xNDMxLTNmNGUtOGU3YS01YzNjNjBmZDQwNjIqJDg3NGM1Y2U2LWMzOWEtM2M4MS1iYmFmLWRkM2U1NmNmN2M0Yw=="
+                    ps="G41 2" lsoa="A12345678"
+                    ddd="CiED8jc8n64Ng3gFAu/YZCnL69z9VpvfuSPrFTEgrxcvZQ8SIQOyxTky53dADNi03dZlP0VMpkA8XrIuHdfiEEOQ8wj6dBgBIiQxNjNiNzdjNi0xNDMxLTNmNGUtOGU3YS01YzNjNjBmZDQwNjIqJDg3NGM1Y2U2LWMzOWEtM2M4MS1iYmFmLWRkM2U1NmNmN2M0Yw=="
+                    wd="011952" rgd="2012-02-01T00:00:00.000Z" red="2012-02-01T00:00:00.000Z" rt="E" srt="Contraceptive"
+                    rs="true"
+                    dbd="CiEDe9ta62zfREawVjkjjt4wRZePVGa2QFtzbuOW1DkB56kSIQImPjhGT5QUcXLO4FpUlf8gZLeK1H+9jJk/hpF5T+hvbRgBIiQxNjNiNzdjNi0xNDMxLTNmNGUtOGU3YS01YzNjNjBmZDQwNjIqJDg3NGM1Y2U2LWMzOWEtM2M4MS1iYmFmLWRkM2U1NmNmN2M0Yw=="
+                    wb="011952" g="1" so="1" ec="494161000000100" lp="315584008" ir="true"
+                    ng="e922cab3-17c7-4468-aacd-f8ed7e599630" p="e922cab3-17c7-4467-bacd-f8ed7e599632" oas="true"
+                    ops="false" ors="true"/>
+
+                <ot id="39c37629-882f-42c8-b8e5-a1ca30b24c7a" ed="2012-12-01T23:12:00.000Z"
+                    rd="2012-12-01T23:12:00.000Z" eid="39c37629-882f-42c8-a9f6-a1ca30b34c7f" ep="first"
+                    pid="e922cab3-17c7-4468-aacd-f8ed7e599630" rid="e922cab3-17c7-4468-aacd-f8ed7e599630" df="true"
+                    v1="1.1" v2="2.0" end="2012-12-01T23:12:00.000Z"
+                    um="g/l" uu="g/L" rct="141..00" ctv3="12345" cid="13344455" did="13455555" oc="55666" ocs="blah"
+                    od="BlahDiBlah" rb="Thisistherealthing" us="ctv3" co="&gt;=" rl="2.0" ru="300" ic="H"/>
+
+                <ot id="19c37629-882f-42c8-a9f6-a1ca30b34c7a" ed="2012-12-01T23:12:00.000Z"
+                    rd="2012-12-01T23:12:00.000Z" eid="39c37629-882f-42c8-a9f6-a1ca30b34c7f"
+                    pid="e922cab3-17c7-4468-aacd-f8ed7e599630" rid="e922cab3-17c7-4468-aacd-f8ed7e599630" df="true"
+                    v1="1.1" v2="2.0" end="2012-12-01T23:12:00.000Z"
+                    um="g/l" uu="g/L" rct="141..00" ctv3="12345" cid="13344455" did="13455555" oc="55666" ocs="blah"
+                    od="BlahDiBlah" rb="Thisistherealthing" us="ctv3"
+                    sce="182201002: 272741003 = 24028007" ote="1:22:222" co="&gt;=" rl="2.0" ru="300" ic="H"/>
+                <ot vs="StringValue" vd="2012-12-01T23:12:00.000Z" id="59c37629-882f-42c8-a9f6-a1ca30b34c7a"
+                    ed="2012-12-01T23:12:00.000Z" rd="2012-12-01T23:12:00.000Z"
+                    eid="39c37629-882f-42c8-a9f6-a1ca30b34c7f" pid="e922cab3-17c7-4468-aacd-f8ed7e599630"
+                    rid="e922cab3-17c7-4468-aacd-f8ed7e599630" v1="1.1" df="true" v2="2.0"
+                    end="2012-12-01T23:12:00.000Z" tid="19c37629-882f-42c8-a9f6-a1ca30b34c7a" um="g/l" uu="g/L"
+                    ctv3="12345" cid="13344455" did="13455555" oc="12345" ocs="blah" od="BlahDiBlah"
+                    rb="Thisistherealthing" us="sct" co="&gt;=" rl="2.0" ru="300" ic="L" v-ctv3="12345" v-rct="1234500"
+                    v-cid="13344455" v-did="13455555" v-oc="3333" v-ocs="blah" v-od="BlahDiBlah"
+                    v-rb="Thisistherealthing" v-us="other"/>
+                <it id="39c37629-882f-42c8-a9f6-a1ca30b34c7a" rid="e922cab3-17c7-4468-aacd-f8ed7e599630"
+                    pid="e922cab3-17c7-4468-aacd-f8ed7e599630" eid="39c37629-882f-42c8-a9f6-a1ca30b34c7f"
+                    rd="2012-12-01T23:12:00.000Z" rct="141..00" cid="13344455" did="13455555" ctv3="14L.." oc="55666"
+                    ocs="blah" od="BlahDiBlah" rb="Thisistherealthing" us="rvt" bt="123456"
+                    s-rct="141..00" s-cid="13344455" s-did="13455555" s-ctv3="14L.." s-oc="55666" s-ocs="blah"
+                    s-od="BlahDiBlah" s-rb="Thisistherealthing" s-us="sct"
+                    rs="161096004" st="123456" rt="123456" mf="fgfghg" xd="2012-12-01T23:12:00.000Z" qt="25" um="ml"
+                    ud="123456" tid="19c37629-882f-42c8-a9f6-a1ca30b34c7a" ed="2012-01-01T23:59:00.000+00:00"
+                    df="true"/>
+
+                <rt id="39d37629-882f-42c8-a9f6-a1ca30b34c7a" rd="2012-12-01T23:12:00.000Z"
+                    ed="2012-12-01T23:12:00.000Z" eid="39c37629-882f-42c8-a9f6-a1ca30b34c7f"
+                    pid="e922cab3-17c7-4468-aacd-f8ed7e599630" rid="e922cab3-17c7-4468-aacd-f8ed7e599630" rct="141..00"
+                    cid="13344455" did="13455555" ctv3="14L.." oc="55666" ocs="blah" od="BlahDiBlah"
+                    rb="Thisistherealthing" us="sct"/>
+                <at id="39c37529-882f-42c8-a9f6-a1ca30b34c7a" rd="2012-12-01T23:12:00.000Z"
+                    ed="2012-12-01T23:12:00.000Z" eid="39c37629-882f-42c8-a9f6-a1ca30b34c7f"
+                    pid="e922cab3-17c7-4468-aacd-f8ed7e599630" rid="e922cab3-17c7-4468-aacd-f8ed7e599630"
+                    end="2012-12-01T23:12:00.000Z" st="active" ct="medication" tp="allergy" sv="severe" cr="low"
+                    rct="141..00" cid="13344455" did="13455555" ctv3="14L.." oc="55666" ocs="blah" od="BlahDiBlah"
+                    rb="Thisistherealthing" us="sct" r-rct="141..00" r-cid="13344455" r-did="13455555" r-ctv3="14L.."
+                    r-oc="55666" r-ocs="blah" r-od="BlahDiBlah" r-rb="Thisistherealthing" r-us="sct"
+                    tid="19c37629-882f-42c8-a9f6-a1ca30b34c7a"/>
+                <at id="29c37629-882f-42c8-a9f6-a1ca30b34c7a" rd="2012-12-01T23:12:00.000Z"
+                    ed="2012-12-01T23:12:00.000Z" eid="39c37629-882f-42c8-a9f6-a1ca30b34c7f"
+                    pid="e922cab3-17c7-4468-aacd-f8ed7e599630" rid="e922cab3-17c7-4468-aacd-f8ed7e599630"
+                    end="2012-12-01T23:12:00.000Z" st="active" ct="medication" tp="allergy" sv="severe" cr="low"
+                    rct="141..00" cid="13344455" did="13455555" ctv3="14L.." oc="55666" ocs="blah" od="BlahDiBlah"
+                    rb="Thisistherealthing" us="sct" r-rct="141..00" r-cid="13344455" r-did="13455555" r-ctv3="14L.."
+                    r-oc="55666" r-ocs="blah" r-od="BlahDiBlah" r-rb="Thisistherealthing" r-us="sct"
+                    tid="19c37629-882f-42c8-a9f6-a1ca30b34c7a"/>
+                <mt id="39c37629-882f-42c8-a9f7-a1ca30b34c7a" rd="2012-12-01T23:12:00.000Z"
+                    ed="2012-12-01T23:12:00.000Z" eid="39c37629-882f-42c8-a9f6-a1ca30b34c7f"
+                    pid="e922cab3-17c7-4468-aacd-f8ed7e599630" rid="e922cab3-17c7-4468-aacd-f8ed7e599630" tp="repeat"
+                    st="completed" aid="39c37628-082f-42c8-a9f7-a1ca30b34c7a" in="order" ag="prescribed-at-gp-practice"
+                    rct="141..00" cid="13344455" did="13455555" ctv3="14L.." oc="55666" ocs="blah" od="BlahDiBlah"
+                    rb="Thisistherealthing" us="sct" qt="28" um="tablet(s)" ud="123456" ds="TAKE TWO TWICE A DAY"
+                    dst="BlahDiBlah" rt="123456" na="5" epi="39c37629-882f-42c8-a9f6-a1ca30b34c7a"
+                    sd="2012-12-01T23:12:00.000Z" st-rct="141..00" st-cid="13344455" st-did="13455555" st-ctv3="14L.."
+                    st-oc="55666" st-ocs="blah" st-od="BlahDiBlah" st-rb="Thisistherealthing" st-us="sct" dr="28"
+                    dru="days" rvd="2012-12-01T23:12:00.000Z"/>
+                <mt id="39c37628-082f-42c8-a9f7-a1ca30b34c7a" rd="2012-12-01T23:12:00.000Z"
+                    ed="2012-12-01T23:12:00.000Z" eid="39c37629-882f-42c8-a9f6-a1ca30b34c7f"
+                    pid="e922cab3-17c7-4468-aacd-f8ed7e599630" rid="e922cab3-17c7-4468-aacd-f8ed7e599630" tp="repeat"
+                    st="completed" aid="39c37629-882f-42c8-a9f7-a1ca30b34c7a" in="order" ag="prescribed-at-gp-practice"
+                    rct="141..00" cid="13344455" did="13455555" ctv3="14L.." oc="55666" ocs="blah" od="BlahDiBlah"
+                    rb="Thisistherealthing" us="sct" qt="28" um="tablet(s)" ud="123456" ds="TAKE TWO TWICE A DAY"
+                    dst="BlahDiBlah" rt="123456" na="5" epi="39c37629-882f-42c8-a9f6-a1ca30b34c7a"
+                    sd="2012-12-01T23:12:00.000Z" st-rct="141..00" st-cid="13344455" st-did="13455555" st-ctv3="14L.."
+                    st-oc="55666" st-ocs="blah" st-od="BlahDiBlah" st-rb="Thisistherealthing" st-us="sct" dr="28"
+                    dru="days" rvd="2012-12-01T23:12:00.000Z"/>
+                <prt id="39c37629-882f-42c8-a9f8-a1ca30b34c7a" pi="39c37629-881f-42c8-a9f6-a1ca30b35c6a"
+                     rd="2012-12-01T23:12:00.000Z" ed="2012-12-01T23:12:00.000Z"
+                     eid="39c37629-882f-42c8-a9f6-a1ca30b34c7f" pid="e922cab3-17c7-4468-aacd-f8ed7e599630"
+                     rid="e922cab3-17c7-4468-aacd-f8ed7e599630" sg="major" st="active" rct="141..00" cid="13344455"
+                     did="13455555" ctv3="14L.." oc="55666" ocs="blah" od="BlahDiBlah" rb="Thisistherealthing" us="sct"
+                     ap="39c37629-882f-42c8-a9f6-a1ca30b34c7a" rl="nesting" end="2012-12-01T23:12:00.000Z"/>
+                <et id="39c37629-882f-42c8-a9f6-a1ca30b34c7f" dr="23" rd="2015-05-01T16:18:33.257Z"
+                    ed="2012-12-01T23:12:00.000Z" pid="e922cab3-17c7-4468-aacd-f8ed7e599630"
+                    rid="e922cab3-17c7-4468-aacd-f8ed7e599630" rct="141..00" cid="13344455" did="13455555" ctv3="14L.."
+                    oc="55666" ocs="blah" od="BlahDiBlah" rb="Thisistherealthing" us="sct"
+                    end="2012-12-01T23:12:00.000Z" aid="39c37629-882f-42c8-a9f6-a1ca30b34c7a"
+                    lc="264358009"/>
+                <et id="39c37629-992f-42c8-a9f6-a1ca30b34c7f" dr="23" rd="2012-12-01T23:12:00.000Z"
+                    ed="2012-12-01T23:12:00.000Z" pid="e922cab3-17c7-4468-aacd-f8ed7e599630"
+                    rid="e922cab3-17c7-4468-aacd-f8ed7e599630" rct="141..00" cid="13344455" did="13455555" ctv3="14L.."
+                    oc="55666" ocs="blah" od="BlahDiBlah" rb="Thisistherealthing" us="sct"
+                    end="2012-12-01T23:12:00.000Z" aid="39c37629-882f-42c8-a9f6-a1ca30b34c7a"
+                    lc="264358009"/>
+                <rft id="39c37629-882f-42c8-a9f6-a1ca30b35c7a" rd="2012-12-01T23:12:00.000Z"
+                     ed="2012-12-01T23:12:00.000Z" eid="39c37629-882f-42c8-a9f6-a1ca30b34c7f"
+                     pid="e922cab3-17c7-4468-aacd-f8ed7e599630" rid="e922cab3-17c7-4468-aacd-f8ed7e599630"
+                     ub="123456789012" ad="2012-12-01T23:12:00.000Z" rct="141..00" cid="13344455" did="13455555"
+                     ctv3="14L.." oc="55666" ocs="blah" od="BlahDiBlah" rb="Thisistherealthing" us="sct" pr="3" src="01"
+                     svc="1234567" dir="out" sp="290" tp="e922cab3-17c7-4468-aacd-f8ed7e599630"
+                     to="e922cab3-17c7-4467-bacd-f8ed7e599632"/>
+                <rft id="29c36629-882f-42c8-a9f6-a1ca30b35c7a" rd="2012-12-01T23:12:00.000Z"
+                     ed="2012-12-01T23:12:00.000Z" pid="e922cab3-17c7-4468-aacd-f8ed7e599630"
+                     rid="e922cab3-17c7-4468-aacd-f8ed7e599630" ub="123456789012" ad="2012-12-01T23:12:00.000Z"
+                     rct="141..00" cid="13344455" did="13455555" ctv3="14L.." oc="55666" ocs="blah" od="BlahDiBlah"
+                     rb="Thisistherealthing" us="sct" pr="3" src="01" svc="1234567" dir="out" sp="290"
+                     tp="e922cab3-17c7-4468-aacd-f8ed7e599630" to="e922cab3-17c7-4467-bacd-f8ed7e599632"/>
+
+                <prt id="39c37629-882f-42c8-a9f6-a1ca30b35c6a" rid="e922cab3-17c7-4468-aacd-f8ed7e599630"
+                     pid="e922cab3-17c7-4468-aacd-f8ed7e599630" eid="39c37629-882f-42c8-a9f6-a1ca30b34c7f"
+                     rd="2012-12-01T23:12:00.000Z" st="active" rct="141..00" cid="13344455" did="13455555" ctv3="14L.."
+                     oc="55666" ocs="blah" od="BlahDiBlah" rb="Thisistherealthing" us="sct"/>
+                <prt id="39c37629-881f-42c8-a9f6-a1ca30b35c6a" rid="e922cab3-17c7-4468-aacd-f8ed7e599630"
+                     pid="e922cab3-17c7-4468-aacd-f8ed7e599630" rd="2012-12-01T23:12:00.000Z" st="active" rct="141..00"
+                     cid="13344455" did="13455555" ctv3="14L.." oc="55666" ocs="blah" od="BlahDiBlah"
+                     rb="Thisistherealthing" us="sct"/>
+                <plt id="39c26518-882f-42c8-a9f6-a1ca30b45c7f" rid="e922cab3-17c7-4468-aacd-f8ed7e599630"
+                     rd="2012-12-01T23:12:00.000Z" pid="39c37629-881f-42c8-a9f6-a1ca30b35c6a"
+                     eid="40c37629-882f-42c8-a9f6-a1ca30b45c7f"/>
+
+            </patient-extract-snapshot>
+            <patient-extract-snapshot id="e922cab3-17c7-4468-cccc-f8ed7e599630"
+                                      issue-date-time="2012-12-01T23:12:00.000Z"
+                                      registration-id="f922cab3-17c7-4468-aacd-f8ed7e599630" sequence="1"
+                                      continuity-hint="true"
+                                      patient-id-deid="CiECWy6EqwsXolPuxXZwRzavk/EwANt5xMzTGAL2x1vA90oSIQPOvK9DLzgnX9kS5mSBOMisEZxGBNjI+inQnimJKvRHjBgBIiQxNjNiNzdjNi0xNDMxLTNmNGUtOGU3YS01YzNjNjBmZDQwNjIqJDg3NGM1Y2U2LWMzOWEtM2M4MS1iYmFmLWRkM2U1NmNmN2M0Yw=="
+                                      local-id-deid="CiECj2WxwF+KJVS95YTFqIHQBGTHIA1M4dwf0bHhKv5vwmQSIQMw9AUvI/IAT2oHfWZOkIasUtrPTW3wOZQnr9HIYOwWwxgBIiQxNjNiNzdjNi0xNDMxLTNmNGUtOGU3YS01YzNjNjBmZDQwNjIqJDg3NGM1Y2U2LWMzOWEtM2M4MS1iYmFmLWRkM2U1NmNmN2M0Yw==">
+                <pt id="f922cab3-17c7-4468-aacd-f8ed7e599630"
+                    pidd="CiECWy6EqwsXolPuxXZwRzavk/EwANt5xMzTGAL2x1vA90oSIQPOvK9DLzgnX9kS5mSBOMisEZxGBNjI+inQnimJKvRHjBgBIiQxNjNiNzdjNi0xNDMxLTNmNGUtOGU3YS01YzNjNjBmZDQwNjIqJDg3NGM1Y2U2LWMzOWEtM2M4MS1iYmFmLWRkM2U1NmNmN2M0Yw=="
+                    lid="CiECj2WxwF+KJVS95YTFqIHQBGTHIA1M4dwf0bHhKv5vwmQSIQMw9AUvI/IAT2oHfWZOkIasUtrPTW3wOZQnr9HIYOwWwxgBIiQxNjNiNzdjNi0xNDMxLTNmNGUtOGU3YS01YzNjNjBmZDQwNjIqJDg3NGM1Y2U2LWMzOWEtM2M4MS1iYmFmLWRkM2U1NmNmN2M0Yw=="
+                    rd="2012-12-01T23:12:00.000Z"
+                    pd="CiEDQ6dTwmoL5iVSjxSYuNnN5uI+yNo71vOouq5Ey6Mi97MSIQLz5lWEi+Dh/qRfqU9mCokkIjdXdF/S1dChDPpMS6MHzhgBIiQxNjNiNzdjNi0xNDMxLTNmNGUtOGU3YS01YzNjNjBmZDQwNjIqJDg3NGM1Y2U2LWMzOWEtM2M4MS1iYmFmLWRkM2U1NmNmN2M0Yw=="
+                    ps="G41 2" lsoa="A12345678"
+                    ddd="CiECnEqOEoZnMogFoaU9cqRbbFzjnHQ5/pVpkzhjFH5bhTcSIQK3k/7HT9FLpCSKXOSNEBplB/7nvWiWYM+XLbtjUGmgCxgBIiQxNjNiNzdjNi0xNDMxLTNmNGUtOGU3YS01YzNjNjBmZDQwNjIqJDg3NGM1Y2U2LWMzOWEtM2M4MS1iYmFmLWRkM2U1NmNmN2M0Yw=="
+                    wd="011952" rgd="2012-02-01T00:00:00.000Z" red="2012-02-01T00:00:00.000Z" rt="E" srt="Regular"
+                    rs="true"
+                    dbd="CiECtB7NEyXb76JCB1o8KNOfHlMaf9Yk71RzLBsdCWBklwESIQIhMOXuMYM7wee4pjzOkkZKMb5yuMiNYv9F261IJDr1whgBIiQxNjNiNzdjNi0xNDMxLTNmNGUtOGU3YS01YzNjNjBmZDQwNjIqJDg3NGM1Y2U2LWMzOWEtM2M4MS1iYmFmLWRkM2U1NmNmN2M0Yw=="
+                    wb="011952" g="1" so="1" ec="494161000000100" lp="315584008" ir="true"
+                    ng="e922cab3-17c7-4468-aacd-f8ed7e599630" p="e922cab3-17c7-4467-bacd-f8ed7e599632" oas="true"
+                    ops="false" ors="true"/>
+
+
+                <ot id="39c37629-882f-42c8-b8e5-a1ca30b24c7b" ed="2012-12-01T23:12:00.000Z"
+                    rd="2012-12-01T23:12:00.000Z" eid="39c35529-882f-42c8-a9f6-a1ca30b34c7f" ep="first"
+                    pid="e922cab3-17c7-4468-aacd-f8ed7e599630" rid="f922cab3-17c7-4468-aacd-f8ed7e599630" df="true"
+                    v1="1.1" v2="2.0" end="2012-12-01T23:12:00.000Z"
+                    um="g/l" uu="g/L" rct="141..00" ctv3="12345" cid="13344455" did="13455555" oc="55666" ocs="blah"
+                    od="BlahDiBlah" rb="Thisistherealthing" us="ctv3" co="&gt;=" rl="2.0" ru="300" ic="H"/>
+                <ot id="39c37629-882f-42c8-a9f6-a1ca30b24c7a" ed="2012-12-01T23:12:00.000Z"
+                    rd="2012-12-01T23:12:00.000Z" eid="39c35529-882f-42c8-a9f6-a1ca30b34c7f"
+                    pid="e922cab3-17c7-4468-aacd-f8ed7e599630" rid="f922cab3-17c7-4468-aacd-f8ed7e599630" df="true"
+                    v1="1.1" v2="2.0" end="2012-12-01T23:12:00.000Z"
+                    tid="39c37629-882f-42c8-b8e5-a1ca30b24c7b" um="g/l" uu="g/L" rct="141..00" ctv3="12345"
+                    cid="13344455" did="13455555" oc="55666" ocs="blah" od="BlahDiBlah" rb="Thisistherealthing"
+                    us="ctv3" co="&gt;=" rl="2.0" ru="300" ic="L"/>
+                <et id="39c35529-882f-42c8-a9f6-a1ca30b34c7f" dr="23" rd="2012-12-01T23:12:00.000Z"
+                    ed="2012-12-01T23:12:00.000Z" pid="e922cab3-17c7-4468-aacd-f8ed7e599630"
+                    rid="f922cab3-17c7-4468-aacd-f8ed7e599630" rct="141..00" cid="13344455" did="13455555" ctv3="14L.."
+                    oc="55666" ocs="blah" od="BlahDiBlah" rb="Thisistherealthing" us="sct"
+                    end="2012-12-01T23:12:00.000Z" aid="39c37629-882f-42c8-a9f6-a1ca30b34c7a"
+                    lc="264358009"/>
+                <prt id="39c37629-882f-42c8-a9f6-a1ca30b46c6a" rid="f922cab3-17c7-4468-aacd-f8ed7e599630"
+                     pid="e922cab3-17c7-4468-aacd-f8ed7e599630" eid="39c37629-882f-42c8-a9f6-a1ca30b45c7f"
+                     rd="2012-12-01T23:12:00.000Z" st="active" rct="141..00" cid="13344455" did="13455555" ctv3="14L.."
+                     oc="55666" ocs="blah" od="BlahDiBlah" rb="Thisistherealthing" us="sct"/>
+                <it id="29c34629-882f-42c8-a9f6-a1ca30b34c7a" rid="f922cab3-17c7-4468-aacd-f8ed7e599630"
+                    pid="e922cab3-17c7-4468-aacd-f8ed7e599630"
+                    eid="39c35529-882f-42c8-a9f6-a1ca30b34c7f" rd="2012-12-01T23:12:00.000Z" rct="141..00"
+                    cid="13344455" did="13455555" ctv3="14L.." oc="55666" ocs="blah" od="BlahDiBlah"
+                    rb="Thisistherealthing" us="sct" bt="123456" s-rct="141..00" s-cid="13344455" s-did="13455555"
+                    s-ctv3="14L.." s-oc="55666" s-ocs="blah" s-od="BlahDiBlah" s-rb="Thisistherealthing" s-us="sct"
+                    pp="true" st="123456" rt="123456" mf="fgfghg" xd="2012-12-01T23:12:00.000Z" qt="25" um="ml"
+                    ud="123456" tid="39c37629-882f-42c8-a9f6-a1ca30b24c7a" ed="2012-12-01T23:12:00.000Z"/>
+                <at id="99d37629-882f-42c8-a9f6-a1ca30b34c7a" rd="2012-12-01T23:12:00.000Z"
+                    ed="2012-12-01T23:12:00.000Z" eid="39c35529-882f-42c8-a9f6-a1ca30b34c7f"
+                    pid="e922cab3-17c7-4468-aacd-f8ed7e599630" rid="f922cab3-17c7-4468-aacd-f8ed7e599630"
+                    end="2012-12-01T23:12:00.000Z" st="active" ct="medication" tp="allergy" sv="severe" cr="low"
+                    rct="141..00" cid="13344455" did="13455555" ctv3="14L.." oc="55666" ocs="blah" od="BlahDiBlah"
+                    rb="Thisistherealthing" us="sct" r-rct="141..00" r-cid="13344455" r-did="13455555" r-ctv3="14L.."
+                    r-oc="55666" r-ocs="blah" r-od="BlahDiBlah" r-rb="Thisistherealthing" r-us="sct"
+                    tid="39c37629-882f-42c8-a9f6-a1ca30b24c7a"/>
+                <rt id="39e37629-882f-42c8-a9f6-a1ca30b34c7a" rd="2012-12-01T23:12:00.000Z"
+                    ed="2012-12-01T23:12:00.000Z" eid="39c35529-882f-42c8-a9f6-a1ca30b34c7f"
+                    pid="e922cab3-17c7-4468-aacd-f8ed7e599630" rid="f922cab3-17c7-4468-aacd-f8ed7e599630" rct="141..00"
+                    cid="13344455" did="13455555" ctv3="14L.." oc="55666" ocs="blah" od="BlahDiBlah"
+                    rb="Thisistherealthing" us="sct" tid="39c37629-882f-42c8-b8e5-a1ca30b24c7b"/>
+                <et id="39c34429-882f-42c8-a9f6-a1ca30b34c7f" dr="23" rd="2012-12-01T23:12:00.000Z"
+                    ed="2012-12-01T23:12:00.000Z" pid="e922cab3-17c7-4468-aacd-f8ed7e599630"
+                    rid="f922cab3-17c7-4468-aacd-f8ed7e599630" rct="141..00" cid="13344455" did="13455555" ctv3="14L.."
+                    oc="55666" ocs="blah" od="BlahDiBlah" rb="Thisistherealthing" us="sct"
+                    end="2012-12-01T23:12:00.000Z" aid="39c37629-882f-42c8-a9f6-a1ca30b34c7a"
+                    lc="264358009"/>
+                <et id="39c37629-882f-42c8-a9f6-a1ca30b45c7f" dr="23" rd="2012-12-01T23:12:00.000Z"
+                    ed="2012-12-01T23:12:00.000Z" pid="e922cab3-17c7-4468-aacd-f8ed7e599630"
+                    rid="f922cab3-17c7-4468-aacd-f8ed7e599630" rct="141..00" cid="13344455" did="13455555" ctv3="14L.."
+                    oc="55666" ocs="blah" od="BlahDiBlah" rb="Thisistherealthing" us="sct"
+                    end="2012-12-01T23:12:00.000-08:00" aid="39c37629-882f-42c8-a9f6-a1ca30b34c7a"/>
+                <mt id="39c37629-882f-42c8-a9f7-a1db30b34c7a" rd="2012-12-01T23:12:00.000Z"
+                    ed="2012-12-01T23:12:00.000Z" eid="39c35529-882f-42c8-a9f6-a1ca30b34c7f"
+                    pid="e922cab3-17c7-4468-aacd-f8ed7e599630" rid="f922cab3-17c7-4468-aacd-f8ed7e599630" tp="repeat"
+                    st="completed"
+                    aid="39c37628-082f-42c8-a9f7-a2db30b34c7a" in="order" ag="prescribed-at-gp-practice" rct="141..00"
+                    cid="13344455" did="13455555" ctv3="14L.." oc="55666" ocs="blah" od="BlahDiBlah"
+                    rb="Thisistherealthing" us="sct" qt="28" um="tablet(s)" ud="123456" ds="TAKE TWO TWICE A DAY"
+                    dst="BlahDiBlah" rt="123456" na="5" epi="39c37629-882f-42c8-a9f6-a1ca30b34c7a"
+                    sd="2012-12-01T23:12:00.000-08:00" st-rct="141..00" st-cid="13344455" st-did="13455555"
+                    st-ctv3="14L.." st-oc="55666" st-ocs="blah" st-od="BlahDiBlah" st-rb="Thisistherealthing"
+                    st-us="sct" dr="28" dru="days" rvd="2012-12-01T23:12:00.000Z"/>
+                <mt rr="39c37629-882f-42c8-b8e5-a1ca30b24c7b" id="39c37628-082f-42c8-a9f7-a2db30b34c7a"
+                    tid="39c37629-882f-42c8-a9f6-a1ca30b24c7a" rd="2012-12-01T23:12:00.000+00:00"
+                    ed="2012-12-01T23:12:00.000Z" eid="39c35529-882f-42c8-a9f6-a1ca30b34c7f"
+                    pid="e922cab3-17c7-4468-aacd-f8ed7e599630" rid="f922cab3-17c7-4468-aacd-f8ed7e599630" tp="repeat"
+                    st="completed"
+                    in="plan" ag="prescribed-at-gp-practice" rct="141..00" cid="13344455" did="13455555" ctv3="14L.."
+                    oc="55666" ocs="blah" od="BlahDiBlah" rb="Thisistherealthing" us="sct" qt="28" um="tablet(s)"
+                    ud="123456" ds="TAKE TWO TWICE A DAY" dst="BlahDiBlah" rt="123456" na="5"
+                    epi="39c37629-882f-42c8-a9f6-a1ca30b34c7a" sd="2012-12-01T23:12:00.000Z" st-rct="141..00"
+                    st-cid="13344455" st-did="13455555" st-ctv3="14L.." st-oc="55666" st-ocs="blah" st-od="BlahDiBlah"
+                    st-rb="Thisistherealthing" st-us="sct" dr="28" dru="days" rvd="2012-12-01T23:12:00.000Z"/>
+                <rft orsn="Symptom Management" osvc="Harm Reduction" otyp="Community Care" typ="1066111000000103"
+                     otc="39c37629-882f-42c8-a9f6-a1ca30b24c7a" opr="Soon" id="39c37629-882f-45d8-a9f6-a1ca30b35c7a"
+                     rd="2012-12-01T23:12:00.000Z" ed="2012-12-01T23:12:00.000Z"
+                     eid="39c35529-882f-42c8-a9f6-a1ca30b34c7f" pid="e922cab3-17c7-4468-aacd-f8ed7e599630"
+                     rid="f922cab3-17c7-4468-aacd-f8ed7e599630" ub="123456789012" ad="2012-12-01T23:12:00.000"
+                     rct="141..00" cid="13344455" did="13455555" ctv3="14L.." oc="55666" ocs="blah" od="BlahDiBlah"
+                     rb="Thisistherealthing" us="sct" pr="3" src="01" svc="1234567" dir="out" sp="290"
+                     tp="e922cab3-17c7-4468-aacd-f8ed7e599630" tid="39c37629-882f-42c8-a9f6-a1ca30b24c7a"
+                     to="e922cab3-17c7-4467-bacd-f8ed7e599632"/>
+                <prt id="39c37629-770a-42c8-a9f6-a1ca30b35c6a" rid="f922cab3-17c7-4468-aacd-f8ed7e599630"
+                     pid="e922cab3-17c7-4468-aacd-f8ed7e599630" eid="39c35529-882f-42c8-a9f6-a1ca30b34c7f"
+                     rd="2012-12-01T23:12:00.000Z" st="active" tid="39c37629-882f-42c8-a9f6-a1ca30b24c7a"
+                     ap="29c34629-882f-42c8-a9f6-a1ca30b34c7a" rl="evolve" sg="major"
+                     pi="39c37629-882f-42c8-a9f6-a1ca30b46c6a" rct="141..00" cid="13344455" did="13455555" ctv3="14L.."
+                     oc="55666" ocs="blah" od="BlahDiBlah" rb="Thisistherealthing" us="sct"/>
+                <plt id="79c26518-882f-42c8-a9f6-a1ca30b45c7f" rid="f922cab3-17c7-4468-aacd-f8ed7e599630"
+                     rd="2012-12-01T23:12:00.000Z" pid="39c37629-770a-42c8-a9f6-a1ca30b35c6a"
+                     eid="20c37629-882f-42c8-a9f6-a1ca30b45c7f"/>
+                <plt id="39c26518-882f-43d7-a9f6-a1ca30b45c7f" rid="f922cab3-17c7-4468-aacd-f8ed7e599630"
+                     rd="2012-12-01T23:12:00.000Z" pid="39c37629-770a-42c8-a9f6-a1ca30b35c6a"
+                     eid="39c37629-882f-42c8-a9f6-a1ca30b45c7f"/>
+                <plt id="39c26518-882f-44f8-a9f6-a1ca30b45c7f" rid="f922cab3-17c7-4468-aacd-f8ed7e599630"
+                     rd="2012-12-01T23:12:00.000Z" pid="39c37629-770a-42c8-a9f6-a1ca30b35c6a"
+                     eid="39c37629-882f-42c8-a9f6-a1ca30b45c7f"/>
+            </patient-extract-snapshot>
+        </practice-patient-extracts>
+    </practice-extract>
+
+</gpdata-extract>

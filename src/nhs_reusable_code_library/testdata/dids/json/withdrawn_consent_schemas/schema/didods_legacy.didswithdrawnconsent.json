@@ -1,0 +1,22 @@
+{
+  "fields": [
+    {
+      "name": "AnonymisedNhsNumber",
+      "type": "string",
+      "nullable": true,
+      "metadata": {}
+    },
+    {
+      "name": "CreatedDate",
+      "type": "timestamp",
+      "nullable": true,
+      "metadata": {}
+    },
+    {
+      "name": "ProcessedDate",
+      "type": "timestamp",
+      "nullable": true,
+      "metadata": {}
+    }
+  ]
+}

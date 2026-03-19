@@ -1,0 +1,75 @@
+{
+    "fields": [
+        {
+            "metadata": {},
+            "name": "META",
+            "nullable": true,
+            "type": {
+                "fields": [
+                    {
+                        "metadata": {},
+                        "name": "DATASET_VERSION",
+                        "nullable": true,
+                        "type": "string"
+                    },
+                    {
+                        "metadata": {},
+                        "name": "EVENT_ID",
+                        "nullable": true,
+                        "type": "string"
+                    },
+                    {
+                        "metadata": {},
+                        "name": "EVENT_RECEIVED_TS",
+                        "nullable": true,
+                        "type": "timestamp"
+                    },
+                    {
+                        "metadata": {},
+                        "name": "RECORD_INDEX",
+                        "nullable": true,
+                        "type": "integer"
+                    },
+                    {
+                        "metadata": {},
+                        "name": "RECORD_VERSION",
+                        "nullable": true,
+                        "type": "integer"
+                    }
+                ],
+                "type": "struct"
+            }
+        },
+        {
+            "metadata": {},
+            "name": "PATIENT_ID",
+            "nullable": true,
+            "type": "string"
+        },
+        {
+            "metadata": {},
+            "name": "NHS_NUMBER",
+            "nullable": true,
+            "type": "string"
+        },
+        {
+            "metadata": {},
+            "name": "BIRTH_DATE",
+            "nullable": true,
+            "type": "date"
+        },
+        {
+            "metadata": {},
+            "name": "LAST_PROCESSED_DATE",
+            "nullable": true,
+            "type": "timestamp"
+        },
+        {
+            "metadata": {},
+            "name": "REMOVED_FROM_COHORT_DATE",
+            "nullable": true,
+            "type": "timestamp"
+        }
+    ],
+    "type": "struct"
+}

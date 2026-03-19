@@ -1,0 +1,166 @@
+{
+  "fields": [
+    {
+      "name": "DSS_KEY",
+      "type": "integer",
+      "nullable": true,
+      "metadata": {}
+    },
+    {
+      "name": "SCT_ID",
+      "type": "string",
+      "nullable": true,
+      "metadata": {}
+    },
+    {
+      "name": "MODALITY_ID",
+      "type": "string",
+      "nullable": true,
+      "metadata": {}
+    },
+    {
+      "name": "MODALITY",
+      "type": "string",
+      "nullable": true,
+      "metadata": {}
+    },
+    {
+      "name": "SUB_MODALITY_ID",
+    "type": "string",
+    "nullable": true,
+    "metadata": {}
+    },
+    {
+      "name": "SUB_MODALITY",
+      "type": "string",
+      "nullable": true,
+      "metadata": {}
+    },
+    {
+      "name": "REGION_ID",
+      "type": "string",
+      "nullable": true,
+      "metadata": {}
+    },
+    {
+      "name": "REGION",
+    "type": "string",
+    "nullable": true,
+    "metadata": {}
+    },
+    {
+      "name": "SUB_REGION_ID",
+    "type": "string",
+    "nullable": true,
+    "metadata": {}
+    },
+    {
+      "name": "SUB_REGION",
+    "type": "string",
+    "nullable": true,
+    "metadata": {}
+    },
+    {
+      "name": "SYSTEM_ID",
+      "type": "string",
+      "nullable": true,
+      "metadata": {}
+    },
+    {
+      "name": "SYSTEM",
+    "type": "string",
+    "nullable": true,
+    "metadata": {}
+    },
+    {
+      "name": "SUB_SYSTEM_ID",
+      "type": "string",
+      "nullable": true,
+      "metadata": {}
+    },
+    {
+      "name": "SUB_SYSTEM",
+    "type": "string",
+    "nullable": true,
+    "metadata": {}
+    },
+    {
+      "name": "SUB_SYSTEM_COMPONENT_ID",
+      "type": "string",
+      "nullable": true,
+      "metadata": {}
+    },
+    {
+      "name": "SUB_SYSTEM_COMPONENT",
+      "type": "string",
+      "nullable": true,
+      "metadata": {}
+    },
+    {
+      "name": "MORPHOLOGY_ID",
+      "type": "string",
+      "nullable": true,
+      "metadata": {}
+    },
+    {
+      "name": "MORPHOLOGY",
+      "type": "string",
+      "nullable": true,
+      "metadata": {}
+    },
+    {
+      "name": "FETAL_ID",
+      "type": "string",
+      "nullable": true,
+      "metadata": {}
+    },
+    {
+      "name": "FETAL",
+    "type": "string",
+    "nullable": true,
+    "metadata": {}
+    },
+    {
+      "name": "EARLY_DIAGNOSIS_OF_CANCER",
+    "type": "string",
+    "nullable": true,
+    "metadata": {}
+    },
+    {
+      "name": "SUB_EARLY_DIAGNOSIS_OF_CANCER",
+    "type": "string",
+    "nullable": true,
+    "metadata": {}
+    },
+    {
+      "name": "RECORD_START_DATE",
+    "type": "date",
+    "nullable": true,
+    "metadata": {}
+    },
+    {
+      "name": "RECORD_END_DATE",
+    "type": "date",
+    "nullable": true,
+    "metadata": {}
+    },
+    {
+      "name": "LOOKUP_IS_CURRENT",
+    "type": "integer",
+    "nullable": true,
+    "metadata": {}
+    },
+    {
+      "name": "SYSTEM_CREATED_DATE",
+    "type": "date",
+    "nullable": true,
+    "metadata": {}
+    },
+    {
+      "name": "SYSTEM_UPDATED_DATE",
+    "type": "date",
+    "nullable": true,
+    "metadata": {}
+    }
+  ]
+}

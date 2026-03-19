@@ -1,0 +1,601 @@
+{
+    "fields": [
+        {
+            "metadata": {},
+            "name": "META",
+            "nullable": true,
+            "type": {
+                "fields": [
+                    {
+                        "metadata": {},
+                        "name": "DATASET_VERSION",
+                        "nullable": true,
+                        "type": "string"
+                    },
+                    {
+                        "metadata": {},
+                        "name": "EVENT_ID",
+                        "nullable": true,
+                        "type": "string"
+                    },
+                    {
+                        "metadata": {},
+                        "name": "EVENT_RECEIVED_TS",
+                        "nullable": true,
+                        "type": "timestamp"
+                    },
+                    {
+                        "metadata": {},
+                        "name": "RECORD_INDEX",
+                        "nullable": true,
+                        "type": "long"
+                    },
+                    {
+                        "metadata": {},
+                        "name": "RECORD_VERSION",
+                        "nullable": true,
+                        "type": "long"
+                    }
+                ],
+                "type": "struct"
+            }
+        },
+        {
+            "metadata": {},
+            "name": "RADIOLOGICAL_ACCESSION_NUMBER",
+            "nullable": true,
+            "type": "string"
+        },
+        {
+            "metadata": {},
+            "name": "NHS_NUMBER",
+            "nullable": true,
+            "type": "string"
+        },
+        {
+            "metadata": {},
+            "name": "NHS_NUMBER_STATUS",
+            "nullable": true,
+            "type": "string"
+        },
+        {
+            "metadata": {},
+            "name": "NHS_NUMBER_STATUS_DESCRIPTION",
+            "nullable": true,
+            "type": "string"
+        },
+        {
+            "metadata": {},
+            "name": "NHS_NUMBER_SUPPLIED",
+            "nullable": true,
+            "type": "integer"
+        },
+        {
+            "metadata": {},
+            "name": "DATE_OF_BIRTH",
+            "nullable": true,
+            "type": "date"
+        },
+        {
+            "metadata": {},
+            "name": "AGE_BAND_5_YEARS",
+            "nullable": true,
+            "type": "string"
+        },
+        {
+            "metadata": {},
+            "name": "AGE_BAND_10_YEARS",
+            "nullable": true,
+            "type": "string"
+        },
+        {
+            "metadata": {},
+            "name": "AGE_BAND_CHILDREN_INC_0_YEARS",
+            "nullable": true,
+            "type": "string"
+        },
+        {
+            "metadata": {},
+            "name": "AGE_BAND_INC_50_TO_74",
+            "nullable": true,
+            "type": "string"
+        },
+        {
+            "metadata": {},
+            "name": "AGE_BAND_INC_WORKING_AGE_16_TO_60",
+            "nullable": true,
+            "type": "string"
+        },
+        {
+            "metadata": {},
+            "name": "AGE_BAND_INC_WORKING_AGE_16_TO_64",
+            "nullable": true,
+            "type": "string"
+        },
+        {
+            "metadata": {},
+            "name": "ETHNIC_CATEGORY_CODE",
+            "nullable": true,
+            "type": "string"
+        },
+        {
+            "metadata": {},
+            "name": "ETHNIC_CATEGORY_DESCRIPTION",
+            "nullable": true,
+            "type": "string"
+        },
+        {
+            "metadata": {},
+            "name": "ETHNIC_CATEGORY_GROUP",
+            "nullable": true,
+            "type": "string"
+        },
+        {
+            "metadata": {},
+            "name": "GENDER_CODE",
+            "nullable": true,
+            "type": "byte"
+        },
+        {
+            "metadata": {},
+            "name": "GENDER_DESCRIPTION",
+            "nullable": true,
+            "type": "string"
+        },
+        {
+            "metadata": {},
+            "name": "POSTCODE",
+            "nullable": true,
+            "type": "string"
+        },
+        {
+            "metadata": {},
+            "name": "LOCATION_LSOA",
+            "nullable": true,
+            "type": "string"
+        },
+        {
+            "metadata": {},
+            "name": "LOCATION_MSOA",
+            "nullable": true,
+            "type": "string"
+        },
+        {
+            "metadata": {},
+            "name": "GP_CODE",
+            "nullable": true,
+            "type": "string"
+        },
+        {
+            "metadata": {},
+            "name": "GP_DESCRIPTION",
+            "nullable": true,
+            "type": "string"
+        },
+        {
+            "metadata": {},
+            "name": "CCG_CODE",
+            "nullable": true,
+            "type": "string"
+        },
+        {
+            "metadata": {},
+            "name": "CCG_NAME",
+            "nullable": true,
+            "type": "string"
+        },
+        {
+            "metadata": {},
+            "name": "PATIENT_SOURCE_SETTING",
+            "nullable": true,
+            "type": "string"
+        },
+        {
+            "metadata": {},
+            "name": "PATIENT_SOURCE_SETTING_DESCRIPTION",
+            "nullable": true,
+            "type": "string"
+        },
+        {
+            "metadata": {},
+            "name": "REFERRER_CODE",
+            "nullable": true,
+            "type": "string"
+        },
+        {
+            "metadata": {},
+            "name": "DERIVED_REFERRER_TYPE",
+            "nullable": true,
+            "type": "string"
+        },
+        {
+            "metadata": {},
+            "name": "REFERRER_ORGANISATION_CODE",
+            "nullable": true,
+            "type": "string"
+        },
+        {
+            "metadata": {},
+            "name": "REFERRER_ORGANISATION_DESCRIPTION",
+            "nullable": true,
+            "type": "string"
+        },
+        {
+            "metadata": {},
+            "name": "DIAGNOSTIC_TEST_REQUEST_DATE",
+            "nullable": true,
+            "type": "date"
+        },
+        {
+            "metadata": {},
+            "name": "DIAGNOSTIC_TEST_REQUEST_RECEIVED_DATE",
+            "nullable": true,
+            "type": "date"
+        },
+        {
+            "metadata": {},
+            "name": "DIAGNOSTIC_TEST_DATE",
+            "nullable": true,
+            "type": "date"
+        },
+        {
+            "metadata": {},
+            "name": "MONTH_OF_TEST",
+            "nullable": true,
+            "type": "integer"
+        },
+        {
+            "metadata": {},
+            "name": "YEAR_OF_TEST",
+            "nullable": true,
+            "type": "integer"
+        },
+        {
+            "metadata": {},
+            "name": "SERVICE_REPORT_ISSUE_DATE",
+            "nullable": true,
+            "type": "date"
+        },
+        {
+            "metadata": {},
+            "name": "TEST_REQUEST_TO_TEST_REQUEST_RECEIVED",
+            "nullable": true,
+            "type": "integer"
+        },
+        {
+            "metadata": {},
+            "name": "TEST_REQUEST_TO_TEST",
+            "nullable": true,
+            "type": "integer"
+        },
+        {
+            "metadata": {},
+            "name": "TEST_REQUEST_TO_SERVICE_REPORT_ISSUED",
+            "nullable": true,
+            "type": "integer"
+        },
+        {
+            "metadata": {},
+            "name": "TEST_REQUEST_RECEIVED_TO_TEST",
+            "nullable": true,
+            "type": "integer"
+        },
+        {
+            "metadata": {},
+            "name": "TEST_REQUEST_RECEIVED_TO_SERVICE_REPORT_ISSUED",
+            "nullable": true,
+            "type": "integer"
+        },
+        {
+            "metadata": {},
+            "name": "TEST_TO_SERVICE_REPORT_ISSUED",
+            "nullable": true,
+            "type": "integer"
+        },
+        {
+            "metadata": {},
+            "name": "IMAGING_CODE_NICIP",
+            "nullable": true,
+            "type": "string"
+        },
+        {
+            "metadata": {},
+            "name": "IMAGING_CODE_NICIP_DESCRIPTION",
+            "nullable": true,
+            "type": "string"
+        },
+        {
+            "metadata": {},
+            "name": "IMAGING_CODE_SNOMED_CT",
+            "nullable": true,
+            "type": "string"
+        },
+        {
+            "metadata": {},
+            "name": "IMAGING_CODE_SNOMED_CT_DESCRIPTION",
+            "nullable": true,
+            "type": "string"
+        },
+        {
+            "metadata": {},
+            "name": "MORPHOLOGY_ID",
+            "nullable": true,
+            "type": "string"
+        },
+        {
+            "metadata": {},
+            "name": "MORPHOLOGY",
+            "nullable": true,
+            "type": "string"
+        },
+        {
+            "metadata": {},
+            "name": "MODALITY_ID",
+            "nullable": true,
+            "type": "string"
+        },
+        {
+            "metadata": {},
+            "name": "MODALITY",
+            "nullable": true,
+            "type": "string"
+        },
+        {
+            "metadata": {},
+            "name": "SUB_MODALITY_ID",
+            "nullable": true,
+            "type": "string"
+        },
+        {
+            "metadata": {},
+            "name": "SUB_MODALITY",
+            "nullable": true,
+            "type": "string"
+        },
+        {
+            "metadata": {},
+            "name": "REGION_ID",
+            "nullable": true,
+            "type": "string"
+        },
+        {
+            "metadata": {},
+            "name": "REGION",
+            "nullable": true,
+            "type": "string"
+        },
+        {
+            "metadata": {},
+            "name": "SUB_REGION_ID",
+            "nullable": true,
+            "type": "string"
+        },
+        {
+            "metadata": {},
+            "name": "SUB_REGION",
+            "nullable": true,
+            "type": "string"
+        },
+        {
+            "metadata": {},
+            "name": "SYSTEM_ID",
+            "nullable": true,
+            "type": "string"
+        },
+        {
+            "metadata": {},
+            "name": "SYSTEM",
+            "nullable": true,
+            "type": "string"
+        },
+        {
+            "metadata": {},
+            "name": "SUB_SYSTEM_ID",
+            "nullable": true,
+            "type": "string"
+        },
+        {
+            "metadata": {},
+            "name": "SUB_SYSTEM",
+            "nullable": true,
+            "type": "string"
+        },
+        {
+            "metadata": {},
+            "name": "SUB_SYSTEM_COMPONENT_ID",
+            "nullable": true,
+            "type": "string"
+        },
+        {
+            "metadata": {},
+            "name": "SUB_SYSTEM_COMPONENT",
+            "nullable": true,
+            "type": "string"
+        },
+        {
+            "metadata": {},
+            "name": "FETAL_ID",
+            "nullable": true,
+            "type": "string"
+        },
+        {
+            "metadata": {},
+            "name": "FETAL",
+            "nullable": true,
+            "type": "string"
+        },
+        {
+            "metadata": {},
+            "name": "EARLY_CANCER_DIAGNOSIS",
+            "nullable": true,
+            "type": "string"
+        },
+        {
+            "metadata": {},
+            "name": "SUB_EARLY_CANCER_DIAGNOSIS",
+            "nullable": true,
+            "type": "string"
+        },
+        {
+            "metadata": {},
+            "name": "PROVIDER_SITE_CODE",
+            "nullable": true,
+            "type": "string"
+        },
+        {
+            "metadata": {},
+            "name": "PROVIDER_SITE_CODE_DESCRIPTION",
+            "nullable": true,
+            "type": "string"
+        },
+        {
+            "metadata": {},
+            "name": "PROVIDER_CODE",
+            "nullable": true,
+            "type": "string"
+        },
+        {
+            "metadata": {},
+            "name": "PROVIDER_NAME",
+            "nullable": true,
+            "type": "string"
+        },
+        {
+            "metadata": {},
+            "name": "COMMISSIONING_ORGANISATION_CODE",
+            "nullable": true,
+            "type": "string"
+        },
+        {
+            "metadata": {},
+            "name": "COMMISSIONING_ORGANISATION_NAME",
+            "nullable": true,
+            "type": "string"
+        },
+        {
+            "metadata": {},
+            "name": "SUBMITTER_ORGANISATION",
+            "nullable": true,
+            "type": "string"
+        },
+        {
+            "metadata": {},
+            "name": "PROVIDER_SHA_CODE",
+            "nullable": true,
+            "type": "string"
+        },
+        {
+            "metadata": {},
+            "name": "PROVIDER_SHA_NAME",
+            "nullable": true,
+            "type": "string"
+        },
+        {
+            "metadata": {},
+            "name": "DERIVED_IMAGING_CODE_SNOMED_CT",
+            "nullable": true,
+            "type": "string"
+        },
+        {
+            "metadata": {},
+            "name": "DERIVED_IMAGING_CODE_SNOMED_CT_DESCRIPTION",
+            "nullable": true,
+            "type": "string"
+        },
+        {
+            "metadata": {},
+            "name": "DERIVED_REFERRER_CODE",
+            "nullable": true,
+            "type": "string"
+        },
+        {
+            "metadata": {},
+            "name": "SUBMITTER_ORGANISATION_NAME",
+            "nullable": true,
+            "type": "string"
+        },
+        {
+            "metadata": {},
+            "name": "MIGRATION_DATE",
+            "nullable": true,
+            "type": "timestamp"
+        },
+        {
+            "metadata": {},
+            "name": "Person_ID",
+            "nullable": true,
+            "type": "string"
+        },
+        {
+            "metadata": {},
+            "name": "MPSConfidence",
+            "nullable": true,
+            "type": {
+                "fields": [
+                    {
+                        "metadata": {},
+                        "name": "DateOfBirthScorePercentage",
+                        "nullable": true,
+                        "type": "decimal(5,2)"
+                    },
+                    {
+                        "metadata": {},
+                        "name": "FamilyNameScorePercentage",
+                        "nullable": true,
+                        "type": "decimal(5,2)"
+                    },
+                    {
+                        "metadata": {},
+                        "name": "GenderScorePercentage",
+                        "nullable": true,
+                        "type": "decimal(5,2)"
+                    },
+                    {
+                        "metadata": {},
+                        "name": "GivenNameScorePercentage",
+                        "nullable": true,
+                        "type": "decimal(5,2)"
+                    },
+                    {
+                        "metadata": {},
+                        "name": "MatchedAlgorithmIndicator",
+                        "nullable": true,
+                        "type": "string"
+                    },
+                    {
+                        "metadata": {},
+                        "name": "MatchedConfidencePercentage",
+                        "nullable": true,
+                        "type": "decimal(5,2)"
+                    },
+                    {
+                        "metadata": {},
+                        "name": "PostcodeScorePercentage",
+                        "nullable": true,
+                        "type": "decimal(5,2)"
+                    }
+                ],
+                "type": "struct"
+            }
+        },
+        {
+            "metadata": {},
+            "name": "SUBMISSION_DATA_ID",
+            "nullable": true,
+            "type": "long"
+        },
+        {
+            "metadata": {},
+            "name": "EFFECTIVE_FROM",
+            "nullable": true,
+            "type": "timestamp"
+        },
+        {
+            "metadata": {},
+            "name": "EFFECTIVE_TO",
+            "nullable": true,
+            "type": "timestamp"
+        }
+    ],
+    "type": "struct"
+}

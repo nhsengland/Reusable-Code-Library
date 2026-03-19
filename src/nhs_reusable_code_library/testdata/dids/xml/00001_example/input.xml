@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DIDS xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.datadictionary.nhs.uk/data_dictionary/messages/DIDS-v1-0/">
+  <DIDSRecord>
+    <PersonalAndDemographics>
+      <NHSNumber extension="9018978892" />
+      <NHSNumberStatus code="01" />
+      <PersonBirthDate>1999-04-12</PersonBirthDate>
+      <EthnicCategory code="A" />
+      <PersonGenderCode code="2" />
+      <Address>
+        <postalCode>LS1 4BT</postalCode>
+      </Address>
+      <GPCodeRegistration extension="V81997" />
+    </PersonalAndDemographics>
+    <Referrals>
+      <PatientSourceSetting code="02" />
+      <ReferrerCode extension="C9999998" />
+      <ReferringOrgCode extension="RR8" />
+      <DiagnosticTestReqDate>2018-08-01</DiagnosticTestReqDate>
+      <DiagnosticTestReqRecDate>2018-08-02</DiagnosticTestReqRecDate>
+    </Referrals>
+    <ImagingActivity>
+      <ImagingCodeNICIP code="CSHRB" />
+      <ImagingCodeSNOMEDCT code="303686006" />
+      <DiagnosticTestDate>2018-08-03</DiagnosticTestDate>
+      <ServiceReportIssueDate>2018-08-06</ServiceReportIssueDate>
+      <ImagingSiteCode extension="RR801" />
+      <RadiologicalAccessionNumber extension="5121" />
+    </ImagingActivity>
+	<ImagingActivity>
+      <ImagingCodeNICIP code="CSHRB" />
+      <ImagingCodeSNOMEDCT code="303686006" />
+      <DiagnosticTestDate>2018-08-03</DiagnosticTestDate>
+      <ServiceReportIssueDate>2018-08-06</ServiceReportIssueDate>
+      <ImagingSiteCode extension="RR801" />
+      <RadiologicalAccessionNumber extension="5122" />
+    </ImagingActivity>
+  </DIDSRecord>
+</DIDS>

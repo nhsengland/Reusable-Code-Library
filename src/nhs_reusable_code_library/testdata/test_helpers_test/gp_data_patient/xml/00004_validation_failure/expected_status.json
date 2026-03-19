@@ -1,0 +1,11 @@
+{
+  "input_valid.xml": "success",
+  "input_xsd_failure.xml": "rejected",
+  "input_uniqueness_failure.xml": "rejected",
+  "input_ref_integrity_failure_1.xml": "rejected",
+  "input_ref_integrity_failure_2.xml": "rejected",
+  "input_business_rule_failure.xml": "rejected",
+  "input_not_compressed.xml": "rejected",
+  "input_bad_token.xml": "failed",
+  "input_data_conversion_failure.xml": "failed"
+}

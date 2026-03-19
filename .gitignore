@@ -127,3 +127,11 @@ dmypy.json
 
 # Text editors
 .vscode
+
+# Folders
+testdata/
+src/testdata/
+src/dsp/ref_data.lmdb/
+metastore_db/
+test.db/
+my.db/

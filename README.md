@@ -82,4 +82,4 @@ GitHub is a hosting site that allows for development and version control of soft
 Thanks in particular to the amazing work of both the [NHS Digital RAP Squad](https://nhsdigital.github.io/rap-community-of-practice), and the [NHS Codon Project](https://github.com/codonlibrary/codonPython) who greatly inspired this work and set the foundations for it years ago.
 
 ## Contact
-NHS England Data Architecture Team
+NHS England Data & Analysis Team

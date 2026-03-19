@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DIDS xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.datadictionary.nhs.uk/data_dictionary/messages/DIDS-v1-0/">
+  <DIDSRecord>
+    <PersonalAndDemographics>
+      <NHSNumber extension="9816160676" />
+      <NHSNumberStatus code="01" />
+      <PersonBirthDate>1963-06-04</PersonBirthDate>
+      <EthnicCategory code="S" />
+      <PersonGenderCode code="0" />
+      <Address>
+        <postalCode>LS25 2LZ</postalCode>
+      </Address>
+      <GPCodeRegistration extension="S11171" />
+    </PersonalAndDemographics>
+    <Referrals>
+      <PatientSourceSetting code="06" />
+      <ReferrerCode extension="C9999998" />
+      <ReferringOrgCode extension="8D262" />
+      <DiagnosticTestReqDate>2021-04-21</DiagnosticTestReqDate>
+      <DiagnosticTestReqRecDate>2021-04-22</DiagnosticTestReqRecDate>
+    </Referrals>
+    <ImagingActivity>
+      <ImagingCodeNICIP code="FHIPB" />
+      <ImagingCodeSNOMEDCT code="440212005" />
+      <DiagnosticTestDate>2021-04-23</DiagnosticTestDate>
+      <ServiceReportIssueDate>2021-04-24</ServiceReportIssueDate>
+      <ImagingSiteCode extension="W6B3S" />
+      <RadiologicalAccessionNumber extension="XML_NHSNoStat_01" />
+    </ImagingActivity>
+  </DIDSRecord>
+  <DIDSRecord>
+    <PersonalAndDemographics>
+      <NHSNumber extension="3187944337" />
+      <NHSNumberStatus code="02" />
+      <PersonBirthDate>1963-06-04</PersonBirthDate>
+      <EthnicCategory code="S" />
+      <PersonGenderCode code="0" />
+      <Address>
+        <postalCode>LS25 2LZ</postalCode>
+      </Address>
+      <GPCodeRegistration extension="S11171" />
+    </PersonalAndDemographics>
+    <Referrals>
+      <PatientSourceSetting code="06" />
+      <ReferrerCode extension="C9999998" />
+      <ReferringOrgCode extension="8D262" />
+      <DiagnosticTestReqDate>2021-04-21</DiagnosticTestReqDate>
+      <DiagnosticTestReqRecDate>2021-04-22</DiagnosticTestReqRecDate>
+    </Referrals>
+    <ImagingActivity>
+      <ImagingCodeNICIP code="FHIPB" />
+      <ImagingCodeSNOMEDCT code="440212005" />
+      <DiagnosticTestDate>2021-04-23</DiagnosticTestDate>
+      <ServiceReportIssueDate>2021-04-24</ServiceReportIssueDate>
+      <ImagingSiteCode extension="W6B3S" />
+      <RadiologicalAccessionNumber extension="XML_NHSNoStat_02" />
+    </ImagingActivity>
+  </DIDSRecord>
+  <DIDSRecord>
+    <PersonalAndDemographics>
+      <NHSNumber extension="3096298408" />
+      <NHSNumberStatus code="03" />
+      <PersonBirthDate>1963-06-04</PersonBirthDate>
+      <EthnicCategory code="S" />
+      <PersonGenderCode code="0" />
+      <Address>
+        <postalCode>LS25 2LZ</postalCode>
+      </Address>
+      <GPCodeRegistration extension="S11171" />
+    </PersonalAndDemographics>
+    <Referrals>
+      <PatientSourceSetting code="06" />
+      <ReferrerCode extension="C9999998" />
+      <ReferringOrgCode extension="8D262" />
+      <DiagnosticTestReqDate>2021-04-21</DiagnosticTestReqDate>
+      <DiagnosticTestReqRecDate>2021-04-22</DiagnosticTestReqRecDate>
+    </Referrals>
+    <ImagingActivity>
+      <ImagingCodeNICIP code="FHIPB" />
+      <ImagingCodeSNOMEDCT code="440212005" />
+      <DiagnosticTestDate>2021-04-23</DiagnosticTestDate>
+      <ServiceReportIssueDate>2021-04-24</ServiceReportIssueDate>
+      <ImagingSiteCode extension="W6B3S" />
+      <RadiologicalAccessionNumber extension="XML_NHSNoStat_03" />
+    </ImagingActivity>
+  </DIDSRecord>
+  <DIDSRecord>
+    <PersonalAndDemographics>
+      <NHSNumber extension="6413066490" />
+      <NHSNumberStatus code="04" />
+      <PersonBirthDate>1963-06-04</PersonBirthDate>
+      <EthnicCategory code="S" />
+      <PersonGenderCode code="0" />
+      <Address>
+        <postalCode>LS25 2LZ</postalCode>
+      </Address>
+      <GPCodeRegistration extension="S11171" />
+    </PersonalAndDemographics>
+    <Referrals>
+      <PatientSourceSetting code="06" />
+      <ReferrerCode extension="C9999998" />
+      <ReferringOrgCode extension="8D262" />
+      <DiagnosticTestReqDate>2021-04-21</DiagnosticTestReqDate>
+      <DiagnosticTestReqRecDate>2021-04-22</DiagnosticTestReqRecDate>
+    </Referrals>
+    <ImagingActivity>
+      <ImagingCodeNICIP code="FHIPB" />
+      <ImagingCodeSNOMEDCT code="440212005" />
+      <DiagnosticTestDate>2021-04-23</DiagnosticTestDate>
+      <ServiceReportIssueDate>2021-04-24</ServiceReportIssueDate>
+      <ImagingSiteCode extension="W6B3S" />
+      <RadiologicalAccessionNumber extension="XML_NHSNoStat_04" />
+    </ImagingActivity>
+  </DIDSRecord>
+  <DIDSRecord>
+    <PersonalAndDemographics>
+      <NHSNumber extension="5177799387" />
+      <NHSNumberStatus code="05" />
+      <PersonBirthDate>1963-06-04</PersonBirthDate>
+      <EthnicCategory code="S" />
+      <PersonGenderCode code="0" />
+      <Address>
+        <postalCode>LS25 2LZ</postalCode>
+      </Address>
+      <GPCodeRegistration extension="S11171" />
+    </PersonalAndDemographics>
+    <Referrals>
+      <PatientSourceSetting code="06" />
+      <ReferrerCode extension="C9999998" />
+      <ReferringOrgCode extension="8D262" />
+      <DiagnosticTestReqDate>2021-04-21</DiagnosticTestReqDate>
+      <DiagnosticTestReqRecDate>2021-04-22</DiagnosticTestReqRecDate>
+    </Referrals>
+    <ImagingActivity>
+      <ImagingCodeNICIP code="FHIPB" />
+      <ImagingCodeSNOMEDCT code="440212005" />
+      <DiagnosticTestDate>2021-04-23</DiagnosticTestDate>
+      <ServiceReportIssueDate>2021-04-24</ServiceReportIssueDate>
+      <ImagingSiteCode extension="W6B3S" />
+      <RadiologicalAccessionNumber extension="XML_NHSNoStat_05" />
+    </ImagingActivity>
+  </DIDSRecord>
+  <DIDSRecord>
+    <PersonalAndDemographics>
+      <NHSNumber extension="0539207772" />
+      <NHSNumberStatus code="06" />
+      <PersonBirthDate>1963-06-04</PersonBirthDate>
+      <EthnicCategory code="S" />
+      <PersonGenderCode code="0" />
+      <Address>
+        <postalCode>LS25 2LZ</postalCode>
+      </Address>
+      <GPCodeRegistration extension="S11171" />
+    </PersonalAndDemographics>
+    <Referrals>
+      <PatientSourceSetting code="06" />
+      <ReferrerCode extension="C9999998" />
+      <ReferringOrgCode extension="8D262" />
+      <DiagnosticTestReqDate>2021-04-21</DiagnosticTestReqDate>
+      <DiagnosticTestReqRecDate>2021-04-22</DiagnosticTestReqRecDate>
+    </Referrals>
+    <ImagingActivity>
+      <ImagingCodeNICIP code="FHIPB" />
+      <ImagingCodeSNOMEDCT code="440212005" />
+      <DiagnosticTestDate>2021-04-23</DiagnosticTestDate>
+      <ServiceReportIssueDate>2021-04-24</ServiceReportIssueDate>
+      <ImagingSiteCode extension="W6B3S" />
+      <RadiologicalAccessionNumber extension="XML_NHSNoStat_06" />
+    </ImagingActivity>
+  </DIDSRecord>
+  <DIDSRecord>
+    <PersonalAndDemographics>
+      <NHSNumber extension="5351875322" />
+      <NHSNumberStatus code="07" />
+      <PersonBirthDate>1963-06-04</PersonBirthDate>
+      <EthnicCategory code="S" />
+      <PersonGenderCode code="0" />
+      <Address>
+        <postalCode>LS25 2LZ</postalCode>
+      </Address>
+      <GPCodeRegistration extension="S11171" />
+    </PersonalAndDemographics>
+    <Referrals>
+      <PatientSourceSetting code="06" />
+      <ReferrerCode extension="C9999998" />
+      <ReferringOrgCode extension="8D262" />
+      <DiagnosticTestReqDate>2021-04-21</DiagnosticTestReqDate>
+      <DiagnosticTestReqRecDate>2021-04-22</DiagnosticTestReqRecDate>
+    </Referrals>
+    <ImagingActivity>
+      <ImagingCodeNICIP code="FHIPB" />
+      <ImagingCodeSNOMEDCT code="440212005" />
+      <DiagnosticTestDate>2021-04-23</DiagnosticTestDate>
+      <ServiceReportIssueDate>2021-04-24</ServiceReportIssueDate>
+      <ImagingSiteCode extension="W6B3S" />
+      <RadiologicalAccessionNumber extension="XML_NHSNoStat_07" />
+    </ImagingActivity>
+  </DIDSRecord>
+</DIDS
