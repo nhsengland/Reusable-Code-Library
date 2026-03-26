@@ -1,4 +1,4 @@
-from nhs_dq_rules_library.dids.derivations import (
+from nhs_dq_rules_library.business_rules.dids.derivations import (
     days_between_dates,
     first_non_null_col,
     time_between_timestamps_hms,

@@ -8,8 +8,8 @@ from typing import Any, ClassVar, Optional, Union
 from pydantic import BaseModel, root_validator, validate_arguments
 from typing_extensions import Literal
 
-from dve.core_engine.templating import template_object
-from dve.core_engine.type_hints import (
+from nhs_reusable_code_library.standard_data_validations.dve.metadata_parser.templating import template_object
+from nhs_reusable_code_library.standard_data_validations.dve.metadata_parser.type_hints import (
     ErrorCategory,
     ErrorCode,
     ErrorEmitValue,

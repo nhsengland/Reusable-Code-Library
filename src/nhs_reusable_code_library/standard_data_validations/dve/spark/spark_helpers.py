@@ -24,8 +24,8 @@ from pyspark.sql.column import Column
 from pyspark.sql.functions import lit, udf
 from typing_extensions import Annotated, Protocol, TypedDict, get_args, get_origin, get_type_hints
 
-from dve.core_engine.backends.base.utilities import _get_non_heterogenous_type
-from dve.core_engine.type_hints import URI
+from nhs_reusable_code_library.standard_data_validations.dve.backends.utilities import _get_non_heterogenous_type
+from nhs_reusable_code_library.standard_data_validations.dve.metadata_parser.type_hints import URI
 
 # It would be really nice if there was a more parameterisable
 # way of doing this.

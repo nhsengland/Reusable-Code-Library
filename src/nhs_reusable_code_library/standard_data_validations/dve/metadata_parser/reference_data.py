@@ -7,10 +7,10 @@ from typing import ClassVar, Generic, Optional, Union, get_type_hints
 from pydantic import BaseModel, Field
 from typing_extensions import Annotated, Literal
 
-from dve.core_engine.backends.base.core import get_entity_type
-from dve.core_engine.backends.exceptions import MissingRefDataEntity
-from dve.core_engine.backends.types import EntityType
-from dve.core_engine.type_hints import EntityName
+from nhs_reusable_code_library.standard_data_validations.dve.backends.core import get_entity_type
+from nhs_reusable_code_library.standard_data_validations.dve.backends.exceptions import MissingRefDataEntity
+from nhs_reusable_code_library.standard_data_validations.dve.backends.types import EntityType
+from nhs_reusable_code_library.standard_data_validations.dve.metadata_parser.type_hints import EntityName
 
 
 class ReferenceTable(BaseModel, frozen=True):

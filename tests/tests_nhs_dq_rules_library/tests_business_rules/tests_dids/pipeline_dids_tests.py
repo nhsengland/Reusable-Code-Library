@@ -5,7 +5,7 @@ import pytest
 from pyspark.sql import SparkSession
 from dsp.dam import dataset_loader
 from dsp import pipelines
-from nhs_dq_rules_library.dids import before_local_pds_cohort
+from nhs_dq_rules_library.business_rules.dids import before_local_pds_cohort
 from dsp.datasets.models.uplift.model_uplift import uplift
 from dsp.pipeline.dq_merge import create_dq_results
 from dsp.pipeline.models import PipelineContext

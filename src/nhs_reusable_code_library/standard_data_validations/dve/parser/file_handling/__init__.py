@@ -1,9 +1,9 @@
 """Tools for handling resource URIs."""
 
 # ruff: noqa: F401
-from dve.parser.file_handling.helpers import NonClosingTextIOWrapper, parse_uri
-from dve.parser.file_handling.log_handler import ResourceHandler
-from dve.parser.file_handling.service import (
+from nhs_reusable_code_library.standard_data_validations.dve.parser.file_handling.helpers import NonClosingTextIOWrapper, parse_uri
+from nhs_reusable_code_library.standard_data_validations.dve.parser.file_handling.log_handler import ResourceHandler
+from nhs_reusable_code_library.standard_data_validations.dve.parser.file_handling.service import (
     add_implementation,
     build_relative_uri,
     copy_prefix,

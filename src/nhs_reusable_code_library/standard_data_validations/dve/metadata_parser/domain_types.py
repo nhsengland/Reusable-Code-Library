@@ -12,7 +12,7 @@ from typing import ClassVar, Optional, TypeVar, Union
 from pydantic import fields, types, validate_arguments
 from typing_extensions import Literal
 
-from dve.metadata_parser import exc
+from nhs_reusable_code_library.standard_data_validations.dve.metadata_parser import exc
 
 T = TypeVar("T")
 
