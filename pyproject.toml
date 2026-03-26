@@ -43,7 +43,7 @@ dependencies = [
     "jaydebeapi",
     "mock", 
     "pytest_mock",
-    "pydantic",
+    "pydantic<2",
     "lxml",
     "spark",
     "typing_inspect",
@@ -87,3 +87,12 @@ testpaths = [
 [tool.setuptools]
 package-dir = {"" = "src"}
 include-package-data = true
+
+#check if functional
+[tool.coverage]
+[tool.coverage.run]
+command_line = "-m pytest"
+concurrency = ["multiprocessing"]
+source_pkgs = [
+    "nhs_reusable_code_library",
+]

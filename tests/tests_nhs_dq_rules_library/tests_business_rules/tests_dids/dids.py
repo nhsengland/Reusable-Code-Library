@@ -1,18 +1,19 @@
 from typing import Any
 import os
-from dsp.datasets.enrichments.dids import enrich_with_pds_mps
-from dsp.datasets.pipelines.mps_check import MPSCheckStage
+from dsp.enrichments.dids import enrich_with_pds_mps
+from dsp.pipelines.mps_check import MPSCheckStage
 from dsp.pipeline.stages.collect_mps_response import CollectMPSResponseStage
 from dsp.pipeline.stages.mps_enrich import MPSEnrichStage
 from dsp.pipeline.stages.pds_cross_check import PDSCrossCheckStage
 from dsp.shared.constants import PATHS, DS
 from dsp.dam.dq_errors import DQErrs
 from pyspark.sql import SparkSession, DataFrame
-from dsp.datasets.dids import POST_VALIDATION_TYPE_CORRECTIONS
-from dsp.datasets.loaders import dids_csv, LoaderRejectionError, dids_xml
-from dsp.datasets.loaders.helpers import write_invalid_schema_dq
-from dsp.datasets.validations.common import xml_schema_is_valid
-from dsp.dq.coerce_types import coerce_data_types
+from nhs_dq_rules_library.business_rules.dids import POST_VALIDATION_TYPE_CORRECTIONS
+from dsp.loaders.dids import dids_csv, dids_xml
+from dsp.loaders import LoaderRejectionError
+from dsp.loaders.helpers import write_invalid_schema_dq
+from dsp.validations.common import xml_schema_is_valid
+from dsp.dq_files.coerce_types import coerce_data_types
 from dsp.pipeline.models import PipelineContext, DataFrameInfo
 from dsp.pipeline.pipeline import PipelineRejection, PipelineStage
 from dsp.pipeline.stages import *

@@ -18,13 +18,13 @@ from pyspark.sql import SparkSession
 from pyspark.sql.types import StructField, StringType, TimestampType, StructType
 from pytest_mock import MockFixture
 
-from dsp.common.spark import spark_dev
+#from dsp.common.spark import spark_dev
 from dsp.pipeline.spark_state import set_broadcast_state, standard_broadcast_state
 from dsp.shared import local_path
 from dsp.shared.aws import s3_bucket, LOCAL_MODE, dynamodb, ddb_table
 from dsp.shared.common.test_helpers import LOCAL_TESTING_BUCKET
 # noinspection PyUnresolvedReferences
-from dsp.shared.conftest import *
+from dsp.validations.conftest import *
 # noinspection PyUnresolvedReferences
 from dsp.shared.conftest import initialise_logging
 from dsp.shared.logger import LogLevel
@@ -50,9 +50,14 @@ def sc(spark: SparkSession) -> SparkContext:
     return spark.sparkContext
 
 
-@pytest.fixture(scope='session')
-def spark() -> Generator[SparkSession, None, None]:
-    yield from _spark_factory()
+@pytest.fixture
+def spark():
+    spark = SparkSession.builder.getOrCreate()
+    yield spark
+
+# @pytest.fixture(scope='session')
+# def spark() -> Generator[SparkSession, None, None]:
+#     yield from _spark_factory()
 
 
 def _spark_factory() -> Generator[SparkSession, None, None]:
@@ -67,7 +72,7 @@ def _spark_factory() -> Generator[SparkSession, None, None]:
         print("--- start ---")
         print("")
 
-        session = spark_dev(metastore_home)
+        session = spark(metastore_home)
         yield session
 
         print("")

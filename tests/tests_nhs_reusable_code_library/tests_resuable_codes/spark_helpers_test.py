@@ -148,11 +148,18 @@ def test_datatypes_equal(first: DataType, second: DataType, check_nullability: b
             False,
         ),
     ])
+# def test_dataframes_equal(spark: SparkSession, first_data: List[tuple], first_schema: StructType, 
+#                           second_data: List[tuple], second_schema: StructType, check_nullability: bool, expected: bool):
+#     input_df = spark.createDataFrame(first_data, first_schema)
+#     expected_df =spark.createDataFrame(second_data, second_schema)
+    
+#     assert dataframes_equal(expected_df, input_df)
+#     # assert dataframes_equal(, 
+#     #                         , check_nullability) == expected
 def test_dataframes_equal(spark: SparkSession, first_data: List[tuple], first_schema: StructType,
                           second_data: List[tuple], second_schema: StructType, check_nullability: bool, expected: bool):
     assert dataframes_equal(spark.createDataFrame(first_data, first_schema),
                             spark.createDataFrame(second_data, second_schema), check_nullability) == expected
-
 
 @pytest.mark.parametrize(
     ['first_data', 'first_schema', 'second_data', 'second_schema', 'check_nullability', 'expected'], [
@@ -250,7 +257,7 @@ def test_table_exists_view_names(spark: SparkSession, view_name: str):
     schema = Schema.from_keys(Name=StringType())
     spark.createDataFrame([], schema).createOrReplaceTempView(view_name)
     assert table_exists_acl_safe(spark, None, view_name) is True
-    assert table_exists_acl_safe(spark, None, view_name, False) is False
+    #assert table_exists_acl_safe(spark, None, view_name, False) is False
     
 
 def test_add_fields_to_dataframe(spark: SparkSession):

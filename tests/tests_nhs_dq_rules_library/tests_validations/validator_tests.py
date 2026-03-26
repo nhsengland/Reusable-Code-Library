@@ -6,7 +6,7 @@ from pyspark.sql import SparkSession, DataFrame
 from pyspark.sql.types import StructType, StructField, StringType, ByteType, LongType, IntegerType
 import dsp.validations.validator
 from dsp import pipelines
-from nhs_dq_rules_library.dids import before_local_pds_cohort
+from nhs_dq_rules_library.business_rules.dids import before_local_pds_cohort
 from dsp.pipeline.models import PipelineContext
 from dsp.validations.validator import match_schema, match_row_count, validate_all_records_present, \
     compare_column_values, validate_all_records_present_by_hash
